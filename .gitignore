@@ -1,0 +1,39 @@
+# 忽略图片文件
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.tif
+*.ico
+*.svg
+*.webp
+
+# 忽略视频文件
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.flv
+*.wmv
+*.webm
+*.mpeg
+*.mpg
+
+# 忽略音频文件
+*.mp3
+*.wav
+*.flac
+*.aac
+*.ogg
+*.m4a
+*.wma
+*.aiff
+*.alac
+*.ape
+*.opus
+
+# 忽略icon文件
+*.ico
+*.icns
