@@ -34,6 +34,14 @@
 *.ape
 *.opus
 
+# 忽略字体文件
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.eot
+*.svg
+
 # 忽略icon文件
 *.ico
 *.icns
