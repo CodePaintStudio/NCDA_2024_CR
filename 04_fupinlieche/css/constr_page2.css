@@ -1,0 +1,111 @@
+.page2{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/construction/constr_page2_bg.png");
+    background-size: 100%;
+}
+
+/*.line{*/
+/*    position: absolute;*/
+/*    top: 27.552vw;*/
+/*    width: 100vw;*/
+/*    height: 0;*/
+/*    border: 0.208vw solid;*/
+/*    border-image: linear-gradient(90deg, rgba(138, 201, 99, 1), rgba(251, 195, 52, 1)) 4 4;*/
+/*}*/
+
+.text-area{
+    position: absolute;
+    top:37.885vw;
+    left: 6.979vw;
+    width: 88.542vw;
+    height: 15.365vw;
+    font-family: "Songti SC",serif;
+    font-weight: 400;
+    font-size: 1.25vw;
+    color: #000000;
+    line-height: 2.292vw;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.text-area.hidden
+{
+    opacity: 0;
+}
+
+.gallery{
+    display: flex;
+    position: absolute;
+    top: 10.302vw;
+    width: 100%;
+    justify-content: space-around;
+
+    /*padding-top: 5.7vw;*/
+}
+
+.gallery>.photo{
+    transition: transform 0.5s;
+    overflow: hidden;
+}
+
+
+.gallery>.photo>img{
+    width: 12.96875vw;
+    height: 17.552vw;
+    border-radius: 20px;
+}
+
+/*.gallery>.photo:hover{*/
+/*    transform: scale(1.125);*/
+/*}*/
+
+/*.active-photo{*/
+/*    transform: scale(1.175);*/
+/*}*/
+
+.indicator{
+    display: flex;
+    position: absolute;
+    top: 30.625vw;
+    /*left: 30.625vw;*/
+    width: 100vw;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+    /*margin-top: 0.6vw;*/
+}
+
+.indicator>div{
+    width: 0.99vw;
+    height: 0.99vw;
+    background: #8FC962;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.active-indicator{
+    opacity: 0;
+}
+
+.year{
+    display: flex;
+    position: absolute;
+    top: 32.1875vw;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.year>div{
+    text-align: center;
+    width: 6.771vw;
+    font-weight: 400;
+    font-size: 1.25vw;
+    font-family: "PingFang SC",sans-serif;
+}
+
+

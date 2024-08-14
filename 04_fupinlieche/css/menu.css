@@ -1,0 +1,58 @@
+.menu{
+    height: 3.125vw;
+    background: rgba(212,228,148,0.6);
+}
+
+.menu_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 5.208vw;
+    height: 100%;
+}
+
+.menu_list li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*margin: 1.042vw 0 0.885vw 4.115vw;*/
+    /*margin-right: 4.115vw;*/
+    width: 5.573vw;
+    height: 3.125vw;
+    padding: 0.26vw;
+    line-height: 3.125vw;
+
+    /*width: 1.458vw;*/
+}
+
+.menu_list li a{
+    font-family: PingFang SC, PingFang SC;
+    margin-top: 0.104vw;
+    font-weight: 400;
+    font-size: 0.829vw;
+    color: #37650F;
+    line-height: 0.833vw;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+    margin-bottom: 0.3125vw;
+}
+
+.menu_list .selected a{
+    color: #E88239;
+}
+
+.under_line{
+    opacity: 0;
+    width: 60%;
+    height: 0.15vw;
+    border-bottom: 0.15vw solid #E88239;
+}
+
+.selected .under_line{
+    opacity: 1;
+}
+/*.menu_list .selected{*/
+/*    border-bottom: 1px solid #E88239;*/
+/*}*/

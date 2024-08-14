@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+  }
+  .logo img{
+    position: absolute;
+    top: 1vh;
+    left: 3vw;
+    width: 2.7083vw;
+    z-index: 10000;
+  }
+  .caidan a,
+  .caidan a:visited,
+  .caidan a:hover,
+  .caidan a:active {
+    color:#37650F ;
+    text-decoration: none;
+  }
+  .buttom-menu {
+    position: absolute;
+    top: 0.75vw;
+    left: 1.5vw;
+    width: 4.5vw;
+    height: 4.5vw;
+    z-index: 99;
+  }
+  .menu {
+    width: 100vw;
+    height: 3.125vw;
+    background-color: rgba(255, 255, 255, 0.70);
+    transition: all 0.5s linear;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .caidan {
+    list-style: none;
+    padding: 0;
+    padding-left: 69vw;
+  }
+  
+  .caidan li {
+    margin: 1.5vw 2vw;
+    font-size: 1vw;
+    font-family: PingFang SC;
+    float: left;
+  }
+  .caidan a {
+    position: relative;
+    display: inline;
+    cursor: pointer;
+    transition: color 0.4s ease;
+  }
+  .caidan li a:hover {
+    color: rgb(55, 170, 126);
+  }
+  .caidan #x1::before,
+  .caidan #x1::after {
+    content: "";
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all 0.4s ease;
+    opacity: 0;
+  }
+  .caidan #x1::before {
+    right: -1vw;
+    top: 1vw;
+    border-bottom: 1px solid rgb(55, 170, 126);
+    border-right: 1px solid rgb(55, 170, 126);
+    transform: translate(-25%, -25%);
+  }
+  .caidan #x1:after {
+    left: -1vw;
+    bottom: 1vw;
+    border-top: 1px solid rgb(55, 170, 126);
+    border-left: 1px solid rgb(55, 170, 126);
+    transform: translate(25%, 25%);
+  }
+  .caidan #x1:hover:before,
+  .caidan #x1:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  #xiao{
+    color: rgb(55, 170, 126);
+  }
+  #xiao::before,
+  #xiao::after {
+    content: "";
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    opacity: 1;
+  }
+   #xiao::before {
+    right: -1vw;
+    top: 1vw;
+    border-bottom: 1px solid rgb(55, 170, 126);
+    border-right: 1px solid rgb(55, 170, 126);
+  }
+  #xiao::after {
+    left: -1vw;
+    bottom: 1vw;
+    border-top: 1px solid rgb(55, 170, 126);
+    border-left: 1px solid rgb(55, 170, 126);
+   
+  }
+  
+  
+  
+  

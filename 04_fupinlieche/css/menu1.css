@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+.caidan a,
+.caidan a:visited,
+.caidan a:hover,
+.caidan a:active {
+  /* color: rgb(70, 136, 124); */
+  color:#37650F ;
+  text-decoration: none;
+}
+.buttom-menu {
+  position: absolute;
+  top: 0.75vw;
+  left: 1.5vw;
+  width: 4.5vw;
+  height: 4.5vw;
+  z-index: 99;
+}
+.checkbox {
+  position: absolute;
+  z-index: 99;
+  cursor: pointer;
+  width: 4.5vw;
+  height: 4.5vw;
+  opacity: 0;
+}
+
+.menu {
+  width: 100vw;
+  height: 3.125vw;
+  background-color: rgba(255, 255, 255, 0.60);
+  transition: all 0.5s linear;
+  overflow: hidden;
+  display: flex;
+  /* justify-items: center; */
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* checked 伪类, checkbox选中状态 */
+.checkbox:checked ~ .menu {
+  pointer-events: auto;
+  /* 指针事件做出反应 */
+  visibility: visible;
+  /* 不可见的元素也会占据页面上的空间,元素是否可见 */
+  transform: translateY(-6vw);
+}
+
+.caidan {
+  list-style: none;
+  padding: 0;
+  padding-left: 69vw;
+}
+
+.caidan li {
+  margin: 1.5vw 2vw;
+  font-size: 1vw;
+  font-family: PingFang SC;
+  float: left;
+}
+.caidan a {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+.caidan li a:hover {
+  color: rgb(55, 170, 126);
+}
+.caidan a::before,
+.caidan a::after {
+  content: "";
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+.caidan a::before {
+  right: -1vw;
+  top: 1vw;
+  border-bottom: 4px solid #909392;
+  border-right: 4px solid #909392;
+  transform: translate(-25%, -25%);
+}
+.caidan a:after {
+  left: -1vw;
+  bottom: 1vw;
+  border-top: 4px solid #909392;
+  border-left: 4px solid #909392;
+  transform: translate(25%, 25%);
+}
+.caidan a:hover:before,
+.caidan a:hover:after {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+
+

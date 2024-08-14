@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'zihunlaozhaopai_trial';
+    src: url('../fonts/zihunlaozhaopai_trial.eot');
+    src: url('../fonts/zihunlaozhaopai_trial.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/zihunlaozhaopai_trial.woff2') format('woff2'),
+    url('../fonts/zihunlaozhaopai_trial.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.page{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cards{
+    position: absolute;
+    background-size: cover;
+    border: 0.15625vw solid #FFF;
+    box-shadow: 0.521vw 0.521vw 0.521vw 0.25vw rgba(255, 255, 255, 0.3);
+}
+
+.details{
+    position: absolute;
+    top: 40.521vw;
+    left: 3.333vw;
+    width: 93.333vw;
+    font-family: "PingFang SC",sans-serif;
+    z-index: 50;
+    /*background-color: rgb(0,0,0,0.1);*/
+
+    color: #fff;
+}
+
+.details .title{
+    font-weight: 900;
+    font-size: 1.667vw;
+    padding-bottom:1.71875vw;
+}
+
+.details .desc{
+    position: absolute;
+    font-weight: 400;
+    font-size: 1.25vw;
+    line-height: 2.083vw;
+    z-index: 50;
+}
+
+
+.liner-background{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 22.7125vw;
+    background: linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0));
+    z-index: 20;
+}
+
+/*.text{*/
+/*    position: absolute;*/
+/*    font-family: "Songti SC",sans-serif;*/
+/*    color: #FFF;*/
+/*}*/
+
+/*.text>h2{*/
+/*    font-size: 1.667vw;*/
+
+/*    font-weight: 900;*/
+/*}*/
