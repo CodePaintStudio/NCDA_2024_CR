@@ -1,0 +1,269 @@
+@font-face {
+  font-family: 'zihunfenghuayasong_trial';
+  src: url(../font/字魂风华雅宋\(商用需授权\).ttf);
+}
+
+@font-face {
+  font-family: 'HYShangWeiShouShuW';
+  src: url(../font/汉仪尚巍手书W.ttf);
+}
+
+@font-face {
+  font-family: 'HYQingZhouXing';
+  src: url(../font/手书体.ttf);
+}
+
+@font-face {
+  font-family: 'Zhongsong';
+  src: url(../font/华文中宋.ttf);
+}
+
+@font-face {
+  font-family: 'PingFang-thin';
+  src: url(../font/苹方/苹方/PingFang\ Thin.ttf);
+}
+
+body {
+  background-color: #F1E5D2;
+}
+
+
+
+
+.all {
+  width: 92vw;
+  height: 100vh;
+  /* background-color: #F1E5D2; */
+  display: flex;
+  flex-direction: column;
+  margin-left: 4vw;
+}
+
+.Logo {
+  
+  width: 100%;
+  height: 5%;
+  font-family: zihunfenghuayasong_trial, zihunfenghuayasong_trial;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  line-height: 3rem;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+  /* margin-left: 4vw; */
+  margin-top: 7vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Logo-left {
+  width: 8vw;
+  height: 150%;
+  background-color: #400F06;
+}
+
+
+.BigTitle{
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3vh;
+}
+
+
+
+.BigTitle-text {
+  width: 20%;
+  height: 100%;
+  font-family: zihunfenghuayasong_trial, zihunfenghuayasong_trial;
+  font-weight: 400;
+  font-size: 3.5rem;
+  color: rgba(0,0,0,0.9);
+  line-height: 4.1875rem;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+}
+
+.BigTitle-right {
+  width: 80%;
+  height: 100%;
+  /* padding-left: 4vw; */
+  display: flex;
+  flex-direction: column;
+
+}
+
+.BigTitle-right-content {
+  /* position: absolute;
+  right: 0; */
+  width: 30vw;
+  font-family: zihunfenghuayasong_trial, zihunfenghuayasong_trial;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: rgba(5,5,5,0.9);
+  /* line-height: 0px; */
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+  margin-left: auto;
+  
+}
+
+.BigTitle-right-line {
+  width: 100%;
+  height: .0625rem;
+  background-color: black;
+  margin-top: 1vh;
+}
+
+.content {
+  width: 100%;
+  height: 70%;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+}
+
+.content-image {
+  width: 39%;
+  height: 100%;
+  background: url(../image/对外/熊猫.png) 0 0 no-repeat;
+}
+
+.content-text {
+  margin-left: 3%;
+  width: 53%;
+  height: 100%;
+  font-family: zihunfenghuayasong_trial, zihunfenghuayasong_trial;
+}
+
+.content-text-title {
+  width: 100%;
+  height: 6%;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.875rem;
+  color: rgba(0,0,0,0.9);
+  line-height: 2.5rem;
+  /* text-align: center; */
+  font-style: normal;
+  text-transform: none;
+}
+
+.content-text-details {
+  width: 100%;
+  height: 50%;
+  margin-top: 10%;
+  font-weight: 400;
+  font-size: 1.375rem;
+  color: rgba(0,0,0,0.6);
+  line-height: 1.875rem;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: .125rem;
+}
+
+.ReturnBack {
+  width: 25%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+  margin-left: auto;
+}
+
+.ReturnBack-image {
+  width: 50%;
+  height: 100%;
+  background-image: url(../image/对外/返回.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ReturnBack-text {
+  width: 50%;
+  height: 100%;
+  font-family: Abril Fatface, Abril Fatface;
+  font-weight: 400;
+  font-size: 2.375rem;
+  color: #0A0A0A;
+  line-height: 2.4375rem;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  margin-top: 15%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 线的动画 */  
+@keyframes lineAppear {  
+  from {  
+    width: 0%;  
+    background-color: black;  
+  }  
+  to {  
+    width: 100%;  
+    background-color: black;  
+  }  
+}  
+  
+/* 文本的动画 */  
+@keyframes textAppear {  
+  from {  
+    opacity: 0;  
+  }  
+  to {  
+    opacity: 1;  
+  }  
+}  
+  
+.BigTitle-right {  
+  width: 80%;  
+  height: 100%;  
+  display: flex;  
+  flex-direction: column;  
+}  
+  
+.BigTitle-right-content {  
+  opacity: 0;
+  width: 30vw;  
+  animation: textAppear 1s 1s forwards; 
+}  
+  
+.BigTitle-right-line {  
+  width: 0%; 
+  height: .0625rem;  
+  background-color: black;  
+  animation: lineAppear 1s forwards;
+}  
+  
+
+
+.right-sidebar {  
+  position: absolute;
+  right: 0;  
+  top: 0; 
+  width: 50%;
+  height: 100%; 
+  background-image: url('../image/对外/背景/熊猫戏竹\(背景\)\ 1.png');
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: right top;
+  z-index: -999;
+
+}

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Font2';
+  src: url('../font/手书体.ttf') format('woff2'),
+    url('../font/手书体.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../font/字魂风华雅宋\(商用需授权\).ttf') format('woff2'),
+    url('../font/字魂风华雅宋\(商用需授权\).ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,497 @@
+@font-face {
+  font-family: 'zihunfenghuayasong_trial';
+  src: url(../font/字魂风华雅宋\(商用需授权\).ttf);
+}
+
+
+#myDropdown {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  cursor: default;
+  height: 100%;
+  margin: 0;
+}
+
+.all {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../image/川菜历史/背景图.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.ReturnLogo {
+  width: 2.6%;
+  height: 3.125rem;
+  position: absolute;
+
+  cursor: pointer;
+
+  top: 8.1481vh;
+  right: 3.3854vw;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.5;
+}
+
+.ReturnLogo-line {
+  width: 100%;
+  height: .1875rem;
+  background-color: #000000;
+}
+
+.top {
+  width: 100%;
+  height: 20%;
+}
+
+.main {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  background-image: url(../image/川菜历史/川菜背景\ 1.png);
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+  -webkit-background-size: cover;
+
+}
+
+.foot {
+  width: 100%;
+  height: 20%;
+}
+
+.main-choose {
+  width: 45%;
+  height: 100%;
+  text-align: center;
+  padding-top: 2vh;
+  padding-left: 2vw;
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* 未被选择 */
+.main-choose-left {
+  width: 5vw;
+  height: 90%;
+  font-family: zihunfenghuayasong_trial, zihunfenghuayasong_trial;
+  font-weight: 400;
+  font-size: 2.2vw;
+  color: #000000;
+  line-height: 4vw;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around
+}
+
+.main-choose-left-one {
+  width: 100%;
+  color: black;
+}
+
+.main-choose-right {
+  padding-left: 4.1vw;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  padding-top: 2vh;
+}
+
+
+.main-choose-right-one {
+  width: 2.6vw;
+  height: 92%;
+  font-family: zihunfenghuayasong_trial, zihunfenghuayasong_trial;
+  font-weight: 400;
+  font-size: 1.6vw;
+  color: #000000;
+  line-height: 2.1875rem;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: 0.5vh;
+  justify-content: space-around;
+}
+
+.main-choose-right-one-images {
+  margin-top: 2vh;
+  width: 125%;
+  height: 10%;
+  background-image: url(../image/川菜历史/醒园录\ 1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+  margin-left: -0.5vw;
+}
+
+.main-choose-right-two-images {
+  margin-top: 0vh;
+  width: 200%;
+  height: 20%;
+  margin-left: -2vw;
+  background-image: url(../image/川菜历史/古法制糖\ 2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+}
+
+.main-choose-right-three-images {
+  width: 150%;
+  height: 15%;
+  margin-left: -1vw;
+  margin-top: 1.5vh;
+  background-image: url(../image/川菜历史/唐代点心\ 1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+}
+
+.main-choose-right-four-images {
+  width: 150%;
+  height: 15%;
+  margin-left: -1vw;
+  margin-top: 1.5vh;
+  background-image: url(../image/川菜历史/宴饮图\ 1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+}
+
+.main-choose-right-five-images {
+  width: 150%;
+  height: 15%;
+  margin-left: -0.7vw;
+  margin-top: 1vh;
+  background-image: url(../image/川菜历史/秦汉地图\ 2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+}
+
+.main-choose-right-six-images {
+  width: 150%;
+  height: 25%;
+  margin-left: -1vw;
+  margin-top: -4vh;
+  background-image: url(../image/川菜历史/三星堆.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+}
+
+/* 导航栏 */
+.navigation {
+  position: fixed;
+  margin-top: 0vh;
+  left: 2%;
+  top: 25%;
+  width: 5%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  font-family: zihunfenghuayasong_trial, zihunfenghuayasong_trial;
+  font-weight: 400;
+  font-size: 2.5vw;
+  color: #000000;
+  line-height: 3.125rem;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  justify-content: space-around;
+}
+
+.navigation-one {
+  color: #000;
+}
+
+/* 被选中的文字 */
+.BeChoosed {
+  width: 120%;
+  height: 20%;
+  background-image: url(../image/川菜历史/路径\(1\).png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+  font-weight: 400;
+  font-size: 2.4vw;
+  color: #FFFFFF;
+  line-height: 3.125rem;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+}
+
+
+
+.BeChoosedDetails {
+  /* width: 4vw; */
+  /* height: 100%; */
+  /* width: 2.6vw;
+  height: 92%;  */
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 600;
+  font-size: 1.5vw;
+  color: #000000;
+  line-height: 3vw;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+}
+
+.main-choose-right-one-images-BeChoose {
+  margin-left: -1vw;
+  margin-top: 1vh;
+  width: 175%;
+  height: 20%;
+}
+
+.main-choose-right-two-images-BeChoose {
+  margin-top: 0vh;
+  width: 300%;
+  height: 25%;
+  margin-left: -3vw;
+}
+
+.main-choose-right-three-images-BeChoose {
+  width: 250%;
+  height: 20%;
+  margin-left: -2vw;
+  margin-top: 0vh;
+}
+
+.main-choose-right-four-images-BeChoose {
+  width: 200%;
+  height: 20%;
+  margin-left: -1.5vw;
+  margin-top: 1vh;
+}
+
+.main-choose-right-five-images-BeChoose {
+  width: 200%;
+  height: 20%;
+  margin-left: -1.5vw;
+  margin-top: 0vh;
+}
+
+.main-choose-right-six-images-BeChoose {
+  width: 250%;
+  height: 35%;
+  margin-left: -2vw;
+  margin-top: -4vh;
+}
+
+
+.main-details {
+  padding-left: 10%;
+  width: 45%;
+  height: 65%;
+  display: flex;
+  flex-direction: row;
+  padding-top: 10vh;
+}
+
+.main-details-content {
+  position: relative;
+  top: 5%;
+  /* margin-top: 1vh; */
+  width: 40%;
+  height: 90%;
+}
+
+.main-details-images {
+  width: 55%;
+  height: 100%;
+  background-image: url(../image/川菜历史/笔刷\ 1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+}
+
+.main-details-content {
+  /* width: 290px; */
+  /* height: 400px; */
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 400;
+  font-size: 1vw;
+  color: #000000;
+  line-height: 1.625rem;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+  /* letter-spacing: 3px; */
+  align-items: center;
+  letter-spacing: .3125rem;
+  /* text-align: center; */
+  /* text-align: justify;  */
+  text-justify: inter-ideograph;
+  text-indent: 3em;
+  line-height: 2.5vh;
+}
+
+.main-details-images-img {
+  /* padding-left: 2vw; */
+  margin-top: -9vh;
+  width: 100%;
+  height: 140%;
+}
+
+.main-details-images-content {
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.1875rem;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  margin-top: -12vh;
+}
+
+.XianQin-class {
+  margin-top: -9vh;
+  width: 100%;
+  height: 140%;
+}
+
+.XianQin-content {
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.1875rem;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  margin-top: -12vh;
+}
+
+.qin-class {
+  margin-top: 2vh;
+  width: 90%;
+  height: 80%;
+}
+
+.qin-content {
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.1875rem;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  margin-top: -0vh;
+}
+
+.liang-class {
+  margin-top: 2vh;
+  width: 90%;
+  height: 80%;
+}
+
+.liang-content {
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.1875rem;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  margin-top: 1vh;
+}
+
+.sui-class {
+  margin-top: 3vh;
+  width: 90%;
+  height: 80%;
+}
+
+.sui-content {
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.1875rem;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  margin-top: 1.5vh;
+}
+
+.song-class {
+  margin-top: 3vh;
+  width: 90%;
+  height: 80%;
+}
+
+.song-content {
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.1875rem;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  margin-top: 0vh;
+}
+
+.yuan-class {
+  margin-top: 3vh;
+  width: 90%;
+  height: 80%;
+}
+
+.yuan-content {
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.1875rem;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  margin-top: 1vh;
+}
+
+.back {
+  position: relative;
+  top: 20%;
+  left: 10%;
+  background-image: url(../image/川菜展示/logo\ 3.png);
+  width: 10%;
+  height: 1%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

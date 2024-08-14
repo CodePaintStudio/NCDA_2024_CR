@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  position: fixed;
+}
+
+.main {
+  width: 100%;
+  height: 101%;
+  display: flex;
+  position: relative;
+  /* transform-style: preserve-3d; */
+  /* transform: rotateX(-20deg) rotateY(30deg); */
+
+}
+
+.banner {
+  justify-self: center;
+  align-items: center;
+  /* position: relative; */
+  /* display: flex; */
+  width: 100vw;
+  height: 100vh;
+  /* background: url(../image/首页/首页（翻书1）.png) no-repeat center center/cover; */
+
+  z-index: 0;
+}
+
+.hg {
+  justify-self: center;
+  align-items: center;
+  /* position: relative; */
+  /* display: flex; */
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 1.2);
+  /* background: url(../image/首页/首页（翻书1）.png) no-repeat center center/cover; */
+  /* filter: brightness(0.5); */
+
+  z-index: 0;
+}
+
+.cuan {
+  position: absolute;
+  width: 8.2813vw;
+  height: 17.7778vh;
+  border-radius: 0px 0px 0px 0px;
+  /* top: 21.8519vh;
+  left: 10.3646vw; */
+  top: 37.037vh;
+  left: 13.0208vw;
+
+  transition: top 1s, left 1s;
+
+}
+
+.cai {
+  position: absolute;
+  width: 8.2813vw;
+  height: 17.7778vh;
+  border-radius: 0px 0px 0px 0px;
+  /* top: 70.0926vh;
+  left: 18.8542vw; */
+  top: 42.5926vh;
+  left: 16.1458vw;
+
+  transition: top 1s, left 1s;
+}
+
+.yi {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  width: 7.8125vw;
+  height: 37.5926vh;
+  text-orientation: upright;
+  justify-content: space-between;
+  top: 46.2963vh;
+  left: 10.3646vw;
+  font-family: 'MyCustomFont';
+
+  visibility: hidden;
+
+  transition: opacity 1.5s;
+}
+
+.son1 {
+  height: 37.5926vh;
+  width: 2.9167vw;
+  font-weight: 400;
+  font-size: 2.5vw;
+  color: #FFFFFF;
+  line-height: 3.0208vw;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+}
+
+.son2 {
+  height: 37.5926vh;
+  width: 2.9167vw;
+  font-weight: 400;
+  font-size: 2.5vw;
+  color: #FFFFFF;
+  line-height: 3.0208vw;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+}
+
+.er {
+  /* display: flex;
+  justify-content: space-between;
+  flex-direction: column; */
+  position: absolute;
+  width: 4.4271vw;
+  height: 101.8519vh;
+  font-family: 'MyCustomFont';
+  font-weight: 400;
+  font-size: 5.2083vw;
+  color: #FFFFFF;
+  line-height: 9.2593vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+  opacity: 0.2;
+
+  left: 1.25vw;
+  top: 0;
+}
+
+.son {
+  margin-top: 4.6296vh;
+}
+
+.zs {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 65.2083vw;
+  height: 99.7222vh;
+  /* background-color: #fff; */
+  top: 0;
+  left: 34.3229vw;
+}
+
+.zs1 {
+  width: 10.4167vw;
+  height: 99.7222vh;
+  /* background-color: #000; */
+  transform: translateY(-15.1852vh);
+
+  transition: transform 1s;
+}
+
+.zs2 {
+  width: 10.4167vw;
+  height: 99.7222vh;
+  transform: translateY(-4.2593vh);
+  transition: transform 1s;
+  /* background-color: #000; */
+}
+
+.zs3 {
+  width: 10.4167vw;
+  height: 99.7222vh;
+  transform: translateY(-16.5741vh);
+  transition: transform 1s;
+
+  /* background-color: #000; */
+}
+
+.zs4 {
+  width: 10.4167vw;
+  height: 99.7222vh;
+  transform: translateY(-3.9815vh);
+  transition: transform 1s;
+
+  /* background-color: #000; */
+}
+
+.zs5 {
+  width: 10.4167vw;
+  height: 99.7222vh;
+  transform: translateY(-1.1111vh);
+
+  transition: transform 1s;
+  /* background-color: #000; */
+}
+
+.yd {
+  transform: translateY(-100%);
+}
+
+.yd1 {
+  transform: translateY(100%);
+}

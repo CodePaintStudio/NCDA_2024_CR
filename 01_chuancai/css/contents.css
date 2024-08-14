@@ -1,0 +1,372 @@
+body {
+  margin: 0;
+  position: fixed;
+}
+
+.main {
+  width: 100%;
+  height: 101%;
+  /* transform-style: preserve-3d; */
+  /* transform: rotateX(-20deg) rotateY(30deg); */
+}
+
+.banner {
+  width: 100%;
+  height: 101%;
+  display: flex;
+  position: relative;
+  /* transform-style: preserve-3d; */
+
+  z-index: 1;
+}
+
+.sy {
+  justify-self: center;
+  align-items: center;
+  /* position: relative; */
+  /* display: flex; */
+  width: 100vw;
+  height: 100vh;
+  /* background: url(../image/首页/首页（翻书1）.png) no-repeat center center/cover; */
+
+  z-index: 0;
+}
+
+
+.la {
+  width: 18.2292vw;
+  height: 37.037vh;
+  position: absolute;
+
+  top: 6.6667vh;
+  left: 15.5729vw;
+  /* transition: transform 1s; */
+  visibility: hidden;
+
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.active {
+  animation: change 1.5s infinite alternate;
+
+}
+
+@keyframes change {
+  form {
+    transform: scale(0.3);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.xian {
+  position: absolute;
+  width: 18.2292vw;
+  height: 37.037vh;
+
+  top: 6.6667vh;
+  right: 7.0313vw;
+  visibility: hidden;
+
+  opacity: 0;
+  transition: opacity 1s;
+
+}
+
+.ma {
+  position: absolute;
+  width: 18.2292vw;
+  height: 37.037vh;
+
+  top: 62.7778vh;
+  left: 3.2292vw;
+  visibility: hidden;
+
+  opacity: 0;
+  transition: opacity 1s;
+
+}
+
+.xiang {
+  position: absolute;
+  width: 18.2292vw;
+  height: 37.037vh;
+  visibility: hidden;
+
+  top: 63.5185vh;
+  right: 3.2813vw;
+
+  opacity: 0;
+  transition: opacity 1s;
+
+}
+
+.mulu {
+  width: 31.25vw;
+  height: 17.963vh;
+  font-family: 'HYShangWeiShouShuW';
+  font-weight: 400;
+  font-size: 7.8125vw;
+  color: #FFFFFF;
+  line-height: 16.2963vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+  visibility: hidden;
+
+  position: absolute;
+  top: 20.463vh;
+  left: 34.2188vw;
+
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+
+
+.bq1 {
+  width: 18.2292vw;
+  height: 45.8333vh;
+
+  display: flex;
+  position: absolute;
+
+  top: 46.0185vh;
+  left: 4.4271vw;
+
+  filter: brightness(0.5);
+  /* align-items: center; */
+  justify-content: center;
+  z-index: 2;
+
+}
+
+.bq {
+  position: absolute;
+
+  width: 18.2292vw;
+  height: 45.8333vh;
+  z-index: 2;
+  filter: brightness(0.8);
+  transition: transform 1s, filter 1s;
+
+}
+
+.js1 {
+  position: absolute;
+  z-index: 3;
+  width: 2.1875vw;
+  height: 20vh;
+
+  text-orientation: upright;
+  /* 如果需要保持文字方向正常 */
+  font-family: 'HYShangWeiShouShuW';
+
+  font-size: 2.1875vw;
+  color: #fff;
+  /* 或 vertical-tb，取决于你想要的方向 */
+  /* writing-mode: vertical-rl; */
+
+  line-height: 5.5556vh;
+  letter-spacing: 0.463vh;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+
+  margin-top: 13.4259vh;
+
+  transition: transform 1s;
+}
+
+.js2 {
+  position: absolute;
+
+  z-index: 3;
+  width: 2.1875vw;
+  height: 20vh;
+
+  text-orientation: upright;
+  /* 如果需要保持文字方向正常 */
+  font-family: 'HYShangWeiShouShuW';
+
+  font-size: 2.1875vw;
+
+  color: #fff;
+  /* 或 vertical-tb，取决于你想要的方向 */
+  /* writing-mode: vertical-rl; */
+
+  line-height: 5.5556vh;
+  letter-spacing: 0.463vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  margin-top: 13.4259vh;
+
+  transition: transform 1s;
+
+}
+
+.js3 {
+  position: absolute;
+
+  z-index: 3;
+  width: 2.1875vw;
+  height: 20vh;
+
+  text-orientation: upright;
+  /* 如果需要保持文字方向正常 */
+  font-family: 'HYShangWeiShouShuW';
+
+  font-size: 2.1875vw;
+
+  color: #fff;
+  /* 或 vertical-tb，取决于你想要的方向 */
+  /* writing-mode: vertical-rl; */
+
+  line-height: 5.5556vh;
+  letter-spacing: 0.463vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  margin-top: 13.4259vh;
+
+  transition: transform 1s;
+
+}
+
+.js4 {
+  position: absolute;
+
+  z-index: 3;
+  width: 2.1875vw;
+  height: 20vh;
+
+  text-orientation: upright;
+  /* 如果需要保持文字方向正常 */
+  font-family: 'HYShangWeiShouShuW';
+
+  font-size: 2.1875vw;
+
+  color: #fff;
+  /* 或 vertical-tb，取决于你想要的方向 */
+  /* writing-mode: vertical-rl; */
+
+  line-height: 5.5556vh;
+  letter-spacing: 0.463vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  margin-top: 13.4259vh;
+
+  transition: transform 1s;
+
+}
+
+.js5 {
+  position: absolute;
+
+  z-index: 3;
+  width: 2.1875vw;
+  height: 20vh;
+
+  text-orientation: upright;
+  /* 如果需要保持文字方向正常 */
+  font-family: 'HYShangWeiShouShuW';
+
+  font-size: 2.1875vw;
+
+  color: #fff;
+  /* 或 vertical-tb，取决于你想要的方向 */
+  /* writing-mode: vertical-rl; */
+
+  line-height: 5.5556vh;
+  letter-spacing: 0.463vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  margin-top: 13.4259vh;
+
+  transition: transform 1s;
+
+}
+
+.bq2 {
+  width: 18.2292vw;
+  height: 45.8333vh;
+
+  display: flex;
+  position: absolute;
+
+  top: 46.0185vh;
+  left: 22.6563vw;
+
+  filter: brightness(0.5);
+  /* align-items: center; */
+  justify-content: center;
+  z-index: 2;
+
+}
+
+.bq3 {
+  width: 18.2292vw;
+  height: 45.8333vh;
+
+  display: flex;
+  position: absolute;
+
+  top: 46.0185vh;
+  left: 40.8854vw;
+
+  filter: brightness(0.5);
+  /* align-items: center; */
+  justify-content: center;
+  z-index: 2;
+
+}
+
+.bq4 {
+  width: 18.2292vw;
+  height: 45.8333vh;
+
+  display: flex;
+  position: absolute;
+
+  top: 46.0185vh;
+  left: 59.1146vw;
+
+  filter: brightness(0.5);
+  /* align-items: center; */
+  justify-content: center;
+  z-index: 2;
+
+}
+
+.bq5 {
+  width: 18.2292vw;
+  height: 45.8333vh;
+
+  display: flex;
+  position: absolute;
+
+  top: 46.0185vh;
+  left: 77.3438vw;
+
+  filter: brightness(0.5);
+  /* align-items: center; */
+  justify-content: center;
+  z-index: 2;
+
+}
+
+.qq {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s;
+}

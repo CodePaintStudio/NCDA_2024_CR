@@ -1,0 +1,758 @@
+body {
+  margin: 0;
+  position: fixed;
+}
+
+.main {
+  width: 100%;
+  height: 101%;
+  display: flex;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s;
+  transform-origin: 0 0 0;
+  /* transform: rotateX(-20deg) rotateY(30deg); */
+
+}
+
+.banner {
+  width: 100%;
+  height: 101%;
+  display: grid;
+  /* position: absolute; */
+  z-index: 1;
+}
+
+.hg {
+  /* display: inline-block; */
+  justify-self: center;
+  align-items: center;
+  /* position: relative; */
+  /* display: flex; */
+  width: 100vw;
+  height: 100vh;
+  /* background: url(../image/首页/首页（翻书1）.png) no-repeat center center/cover; */
+  /* transform: rotate(-90deg); */
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.6);
+  filter: brightness(0.2);
+
+}
+
+.sd {
+  position: absolute;
+
+  width: 17.8646vw;
+  height: 8.4259vh;
+
+  top: 19.4444vh;
+  left: 9.375vw;
+}
+
+.cc {
+  /* display: flex; */
+  position: absolute;
+
+  width: 7.8125vw;
+  height: 12.7778vh;
+  /* color: #100B06; */
+  /* background-color: #fff; */
+  background: url(../image/home/logo2\ 1.png) no-repeat center/cover;
+
+  top: 5.0926vh;
+  left: 4.1667vw;
+}
+
+
+.sdzx {
+  width: 17.8646vw;
+  height: 8.4259vh;
+  margin-top: 2.6852vh;
+
+  color: #fff;
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: 400;
+  font-size: 3.9583vw;
+  line-height: 8.4259vh;
+  text-align: left;
+
+}
+
+.px {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 22.9167vw;
+  height: 48.2407vh;
+
+  left: 6.5625vw;
+  top: 38.9815vh;
+  color: #773C00;
+  justify-content: space-between;
+}
+
+.rp {
+  width: 22.9167vw;
+  height: 13.6111vh;
+  cursor: pointer;
+}
+
+.yp {
+  width: 22.9167vw;
+  height: 13.6111vh;
+  cursor: pointer;
+
+}
+
+.ybc {
+  width: 22.9167vw;
+  height: 13.6111vh;
+  cursor: pointer;
+
+}
+
+.wz {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  width: 56.3542vw;
+  height: 24.0741vh;
+  font-family: 'MyCustomFont', sans-serif;
+  color: #fff;
+
+  top: 13.2407vh;
+  right: 6.5625vw;
+
+  font-weight: 400;
+  font-size: 1.25vw;
+  line-height: 4.1667vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+
+.wz1 {
+  font-family: 'HYShangWeiShouShuW', sans-serif;
+  font-size: 2.6042vw;
+  line-height: 2.7778vh;
+
+}
+
+.tu {
+  position: absolute;
+  width: 41.4583vw;
+  height: 63.6111vh;
+
+  display: flex;
+
+  right: 9.1146vw;
+  top: 34.7222vh;
+  cursor: pointer;
+}
+
+.tu1 {
+  position: absolute;
+  width: 41.4583vw;
+  height: 63.6111vh;
+
+  display: none;
+
+  cursor: pointer;
+}
+
+.banner1 {
+  position: absolute;
+  width: 1vw;
+  height: 101vh;
+  display: flex;
+  z-index: 0;
+  opacity: 0;
+  transition: transform 1s, opacity 1s, width 1s, left 1s;
+
+  left: 50%;
+}
+
+.hg1 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.8;
+}
+
+.sd1 {
+  position: absolute;
+  width: 21.25vw;
+  height: 41.6667vh;
+  color: #fff;
+  font-family: 'MyCustomFont', sans-serif;
+  /* transition: opacity 1s; */
+  top: 21.7593vh;
+  left: 6.7188vw;
+}
+
+.cc1 {
+  width: 25vw;
+  height: 6.6667vh;
+  color: #fff;
+  font-size: 3.125vw;
+  line-height: 6.6667vh;
+  text-align: left;
+}
+
+.sdzx1 {
+  width: 21.25vw;
+  height: 25vh;
+
+  font-size: 1.25vw;
+  line-height: 4.1667vh;
+  text-align: left;
+  margin-top: 10vh;
+}
+
+.asd {
+  width: 45.5208vw;
+  height: 71.9444vh;
+
+  position: absolute;
+
+  right: 6.3021vw;
+  top: 22.1296vh;
+}
+
+.sb {
+  width: 10.3646vw;
+  height: 12.1296vh;
+  position: absolute;
+
+  top: 10.4167vw;
+  left: 31.25vw;
+}
+
+.mp {
+  position: absolute;
+
+  width: 9.5833vw;
+  height: 13.8889vh;
+
+  top: 13.7037vh;
+  right: 35.3646vw;
+}
+
+.gb {
+  position: absolute;
+
+  width: 9.0625vw;
+  height: 12.5926vh;
+
+  top: 21.2963vh;
+  right: 14.5313vw;
+}
+
+.qj {
+  position: absolute;
+
+  width: 10.6771vw;
+  height: 13.6111vh;
+
+  top: 76.3889vh;
+  right: 5.9375vw
+}
+
+.tp {
+  position: absolute;
+
+  width: 15.625vw;
+  height: 27.7778vh;
+
+  top: 36.2037vh;
+  left: 33.8542vw;
+}
+
+.dp {
+  position: absolute;
+
+  width: 9.0104vw;
+  height: 15.9259vh;
+
+  top: 68.4259vh;
+  left: 33.4375vw;
+}
+
+.w1 {
+  position: absolute;
+
+  width: 4.7396vw;
+  height: 0px;
+  font-family: 'MyCustomFont', sans-serif;
+
+  font-weight: 400;
+  font-size: 1.1458vw;
+  color: #FFFFFF;
+  line-height: 0px;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  top: 27.5926vh;
+  left: 43.75vw;
+}
+
+.w2 {
+  position: absolute;
+
+  width: 7.5521vw;
+  height: 0px;
+  font-family: 'MyCustomFont', sans-serif;
+
+  font-weight: 400;
+  font-size: 1.1458vw;
+  color: #FFFFFF;
+  line-height: 0px;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  top: 20.3704vh;
+  left: 66.5104vw;
+}
+
+.w3 {
+  position: absolute;
+
+  width: 8.0208vw;
+  height: 0px;
+  font-family: 'MyCustomFont', sans-serif;
+
+  font-weight: 400;
+  font-size: 1.1458vw;
+  color: #FFFFFF;
+  line-height: 0px;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  top: 26.2037vh;
+  right: 5.4688vw;
+}
+
+.w4 {
+  position: absolute;
+
+  width: 6.5104vw;
+  height: 0px;
+  font-family: 'MyCustomFont', sans-serif;
+
+  font-weight: 400;
+  font-size: 1.1458vw;
+  color: #FFFFFF;
+  line-height: 0px;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  top: 84.7222vh;
+  right: 18.3854vw;
+}
+
+.w5 {
+  position: absolute;
+
+  width: 6.0938vw;
+  height: 0px;
+  font-family: 'MyCustomFont', sans-serif;
+
+  font-weight: 400;
+  font-size: 1.1458vw;
+  color: #FFFFFF;
+  line-height: 0px;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  top: 58.1481vh;
+  left: 43.75vw;
+}
+
+.w6 {
+  position: absolute;
+
+  width: 6.5104vw;
+  height: 0px;
+  font-family: 'MyCustomFont', sans-serif;
+
+  font-weight: 400;
+  font-size: 1.1458vw;
+  color: #FFFFFF;
+  line-height: 0px;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  top: 82.8704vh;
+  left: 43.75vw;
+}
+
+.ls {
+  position: absolute;
+
+  width: 2.0833vw;
+  height: 9.2593vh;
+
+  background: linear-gradient(180deg, #CA0000 0%, #FFC8C8 100%);
+  font-family: 'MyCustomFont', sans-serif;
+
+  font-weight: 400;
+  font-size: 1.5625vw;
+  color: #FFFFFF;
+  line-height: 1.5;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  text-orientation: upright;
+
+  top: 62.7778vh;
+  right: 36.4583vw;
+}
+
+.cd {
+  position: absolute;
+
+  width: 2.0833vw;
+  height: 9.2593vh;
+
+  background: linear-gradient(180deg, #CA0000 0%, #FFC8C8 100%);
+  font-family: 'MyCustomFont', sans-serif;
+
+  font-weight: 400;
+  font-size: 1.5625vw;
+  color: #FFFFFF;
+  line-height: 1.5;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  text-orientation: upright;
+
+  top: 48.1481vh;
+  right: 27.0833vw;
+}
+
+.banner2 {
+  position: absolute;
+  width: 1vw;
+  height: 101vh;
+  display: flex;
+  z-index: 0;
+  opacity: 0;
+  transition: transform 1s, opacity 1s, width 1s, left 1s;
+
+  left: 50%;
+}
+
+.lyt {
+  width: 10.4167vw;
+  height: 27.7778vh;
+
+  position: absolute;
+
+  top: 18.5185vh;
+  left: 32.7604vw;
+}
+
+.wzky {
+  width: 10.4167vw;
+  height: 27.7778vh;
+
+  position: absolute;
+
+  top: 10.0926vh;
+  right: 36.4583vw;
+}
+
+.scy {
+  width: 10.4167vw;
+  height: 27.7778vh;
+
+
+  position: absolute;
+
+  top: 17.7778vh;
+  right: 18.2292vw;
+}
+
+.yej {
+  width: 11.4583vw;
+  height: 27.7778vh;
+
+  position: absolute;
+
+  top: 69.4444vh;
+  right: 16.1979vw;
+}
+
+.dynr {
+  width: 15.625vw;
+  height: 37.037vh;
+
+  position: absolute;
+  font-size: 20px;
+  top: 37.037vh;
+  left: 31.25vw;
+}
+
+.jslm {
+  position: absolute;
+
+  width: 13.0208vw;
+  height: 32.4074vh;
+
+  top: 60.1852vh;
+  left: 33.8542vw;
+}
+
+.ww1 {
+  position: absolute;
+
+  width: 10.4167vw;
+  height: 0px;
+  font-family: 'MyCustomFont', sans-serif;
+
+  font-weight: 400;
+  font-size: 1.1458vw;
+  color: #FFFFFF;
+  line-height: 0px;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  top: 27.7778vh;
+  left: 43.75vw;
+}
+
+.ww2 {
+  position: absolute;
+
+  width: 10.4167vw;
+  height: 0px;
+  font-family: 'MyCustomFont', sans-serif;
+
+  font-weight: 400;
+  font-size: 1.1458vw;
+  color: #FFFFFF;
+  line-height: 0px;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  top: 20.3704vh;
+  left: 64.0625vw;
+}
+
+.ww3 {
+  position: absolute;
+
+  width: 10.4167vw;
+  height: 0px;
+  font-family: 'MyCustomFont', sans-serif;
+
+  font-weight: 400;
+  font-size: 1.1458vw;
+  color: #FFFFFF;
+  line-height: 0px;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  top: 27.7778vh;
+  right: 6.5104vw;
+}
+
+.ww4 {
+  position: absolute;
+
+  width: 10.4167vw;
+  height: 0px;
+  font-family: 'MyCustomFont', sans-serif;
+
+  font-weight: 400;
+  font-size: 1.1458vw;
+  color: #FFFFFF;
+  line-height: 0px;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  top: 84.7222vh;
+  right: 22.1354vw;
+}
+
+.ww5 {
+  position: absolute;
+
+  width: 10.4167vw;
+  height: 0px;
+  font-family: 'MyCustomFont', sans-serif;
+
+  font-weight: 400;
+  font-size: 1.1458vw;
+  color: #FFFFFF;
+  line-height: 0px;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  top: 60.1852vh;
+  left: 45.0521vw;
+}
+
+.ww6 {
+  position: absolute;
+
+  width: 10.4167vw;
+  height: 0px;
+  font-family: 'MyCustomFont', sans-serif;
+
+  font-weight: 400;
+  font-size: 1.1458vw;
+  color: #FFFFFF;
+  line-height: 0px;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  top: 83.3333vh;
+  left: 45.5729vw;
+}
+
+.dz {
+  position: absolute;
+
+  width: 2.0833vw;
+  height: 9.2593vh;
+
+  background: linear-gradient(180deg, #CA0000 0%, #FFC8C8 100%);
+  font-family: 'MyCustomFont', sans-serif;
+
+  font-weight: 400;
+  font-size: 1.5625vw;
+  color: #FFFFFF;
+  line-height: 1.5;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  text-orientation: upright;
+
+  top: 39.8148vh;
+  right: 25.5208vw;
+}
+
+.cq {
+  justify-self: center;
+  position: absolute;
+
+  width: 2.0833vw;
+  height: 9.2593vh;
+
+  background: linear-gradient(180deg, #CA0000 0%, #FFC8C8 100%);
+  font-family: 'MyCustomFont', sans-serif;
+
+  font-weight: 400;
+  font-size: 1.5625vw;
+  color: #FFFFFF;
+  line-height: 1.5;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  text-orientation: upright;
+
+  top: 64.8148vh;
+  right: 22.3958vw;
+}
+
+.banner3 {
+  position: absolute;
+  width: 1vw;
+  height: 101vh;
+  display: flex;
+  z-index: 0;
+  opacity: 0;
+  transition: transform 1s, opacity 1s, width 1s, left 1s;
+
+  left: 50%;
+}
+
+.sznr {
+  width: 10.4167vw;
+  height: 18.5185vh;
+
+
+  position: absolute;
+
+  top: 17.7778vh;
+  right: 18.2292vw;
+}
+
+.show1 {
+  opacity: 1;
+
+}
+
+.show2 {
+  display: flex;
+}
+
+.show3 {
+  width: 100%;
+  opacity: 1;
+  /* display: flex; */
+  z-index: 2;
+  left: 0;
+}
+
+.caca {
+  width: 2.0833vw;
+  height: 3.4259vh;
+
+  position: absolute;
+
+  top: 8.2407vh;
+  right: 4.5313vw;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.caca:hover {
+  transform: rotateZ(360deg);
+}
+
+.jiantou {
+  width: 4.5833vw;
+  height: 8.5185vh;
+
+  position: absolute;
+
+  top: 64.3519vh;
+  right: 46.875vw;
+}
+
+.dj {
+  width: 8.2813vw;
+  height: 3.6111vh;
+  font-family: 'HYShangWeiShouShuW', sans-serif;
+
+  font-weight: 400;
+  font-size: 1.9792vw;
+  color: #FFFFFF;
+  line-height: 3.6111vh;
+  text-align: right;
+  font-style: normal;
+  text-transform: none;
+
+  position: absolute;
+  top: 75vh;
+  right: 48.9583vw;
+
+  opacity: 0.5;
+}

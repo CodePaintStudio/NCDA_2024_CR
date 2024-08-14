@@ -1,0 +1,370 @@
+@font-face {
+  font-family: 'zihunfenghuayasong_trial';
+  src: url(../font/字魂风华雅宋\(商用需授权\).ttf);
+}
+
+@font-face {
+  font-family: 'HYShangWeiShouShuW';
+  src: url(../font/汉仪尚巍手书W.ttf);
+}
+
+@font-face {
+  font-family: 'HYQingZhouXing';
+  src: url(../font/手书体.ttf);
+}
+
+@font-face {
+  font-family: 'Zhongsong';
+  src: url(../font/华文中宋.ttf);
+}
+
+@font-face {
+  font-family: 'PingFang-thin';
+  src: url(../font/苹方/苹方/PingFang\ Thin.ttf);
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  cursor: default;
+  height: 100%;
+  margin: 0;
+}
+
+.all {
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url(../image/川菜历史/背景图.png); */
+  /* background-color: black; */
+  display: flex;
+  flex-direction: row;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+/* 导航栏 */
+.navigation {
+  position: fixed;
+  margin-top: -10vh;
+  left: 2%;
+  top: 25%;
+  width: 5%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  font-family: zihunfenghuayasong_trial, zihunfenghuayasong_trial;
+  font-weight: 400;
+  font-size: 2.5vw;
+  color: #000000;
+  line-height: 4vw;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  justify-content: space-around;
+}
+
+.navigation-one {
+  color: #000;
+}
+
+/* 被选中的文字 */
+.BeChoosed {
+  width: 120%;
+  height: 20%;
+  background-image: url(../image/川菜历史/路径\(1\).png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+  font-weight: 400;
+  font-size: 2.8vw;
+  color: #FFFFFF;
+  line-height: 4vw;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+body,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', SimSun, 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+  font-size: .875rem;
+  /* background: #6f0b02; */
+  /* background-color: black; */
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  background: transparent;
+}
+
+a:focus {
+  outline: none;
+}
+
+img {
+  border: 0;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.center {
+  width: 1000px;
+  margin: 0 auto 0;
+}
+
+/*content*/
+.content {
+  position: relative;
+  margin: 0px auto 0;
+  width: 80%;
+  height: 100%;
+  /* background-color: black; */
+}
+
+.l-bg-index {
+  position: absolute;
+  top: 0;
+  left: 485px;
+  z-index: 1;
+  width: 20px;
+  height: 88vh;
+  background: url("../image/川菜历史/现代/左2.png") 0 0 no-repeat;
+  /* background-repeat: repeat; */
+  background-size: cover;
+}
+
+.r-bg-index {
+  position: absolute;
+  top: 0;
+  left: 504px;
+  z-index: 1;
+  width: 20px;
+  height: 80vh;
+  /* background-image: url("../image/其他/j3.png"); */
+  /* background: url("../image/其他/j3.png") 0 0 no-repeat; */
+  background: url("../image/川菜历史/现代/画卷\ 2.png") right 0 no-repeat;
+  background-size: cover;
+}
+
+.main-index {
+  display: none;
+  /* overflow: hidden; */
+  zoom: 1;
+  position: absolute;
+  left: 10vw;
+  top: 10%;
+  width: 65%;
+  z-index: 5;
+  height: 72%;
+  left: 14.5vw;
+  top: 13vh;
+  color: #2e2e2e;
+
+}
+
+
+.intro-text {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.all {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../image/川菜历史/背景图.png);
+  /* 背景图垂直、水平均居中 */
+  background-position: center center;
+  /* 背景图不平铺 */
+  background-repeat: no-repeat;
+  /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+  background-attachment: fixed;
+  /* 让背景图基于容器大小伸缩 */
+  background-size: 100% 100%;
+}
+
+.intro-text-title {
+  margin-left: 3%;
+  width: 10%;
+  height: 70%;
+  font-family: HYShangWeiShouShuW, HYShangWeiShouShuW;
+  font-weight: 400;
+  font-size: 5rem;
+  color: #000000;
+  line-height: 5.875rem;
+  /* text-align: center; */
+  font-style: normal;
+  text-transform: none;
+  /* 从右到左的垂直书写 */
+  writing-mode: vertical-rl;
+  text-align: center;
+}
+
+
+.multi-column-text {
+  width: 100%;
+  height: 60vh;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5;
+  margin: 0 auto;
+  /* 水平居中 */
+  width: 100%;
+  /* 从右到左的垂直书写 */
+  writing-mode: vertical-rl;
+  /* 允许在单词内换行（如果需要的话） */
+  word-wrap: break-word;
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 400;
+  font-size: 1.2vw;
+  color: #000000;
+  line-height: 2vw;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  display: flex;
+  letter-spacing: 0.5rem;
+}
+
+.middle {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  z-index: 1;
+  width: 30%;
+  height: 94%;
+  /* background-image: url("../image/其他/j3.png"); */
+  /* background: url("../image/其他/j3.png") 0 0 no-repeat; */
+  background: url("../image/川菜历史/现代/middle.png") right 0 no-repeat;
+  background-size: cover;
+}
+
+.flying {
+  position: relative;
+  top: 85vh;
+  width: 100%;
+  height: 8%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -5%;
+}
+
+.flyingImage-left {
+  /* position: relative; */
+  /* left: 5%; */
+  /* bottom: 0; */
+  width: 10%;
+  height: 100%;
+  /* background-image: url(../image/川菜历史/现代/辣椒2\ 2.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: flyInLeft 2s ease-out forwards;
+}
+
+.flyingImage-right {
+  animation: flyInRight 2s ease-out forwards;
+  /* position: relative; */
+  /* left: 95%; */
+  /* bottom: 0; */
+  width: 10%;
+  height: 100%;
+  /* background-image: url(../image/川菜历史/现代/美食\ 1.png); */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.flyingImage-left-x {
+  width: 100%;
+  height: 200%;
+}
+
+.flyingImage-right-x {
+  width: 100%;
+  height: 200%;
+}
+
+
+
+@keyframes flyInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes flyInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
