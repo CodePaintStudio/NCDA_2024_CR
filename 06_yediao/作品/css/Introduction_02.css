@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: '庞门正道粗书体';
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    position: relative;
+    width: 66.6667vw;
+    height: 440.5185vh;
+    background: no-repeat url('../images/I-bgi.jpg');
+    background-size: cover;
+    overflow-x: hidden;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0 !important
+}
+
+.logo_bock {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    position: absolute;
+    left: 6.5vw;
+    top: 6vh;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.nav {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    position: absolute;
+    /* background-color: #fff; */
+    top: 20vh;
+}
+
+.el1 {
+    width: 25.9375vw;
+    height: 46.1111vh;
+}
+
+.tp1 {
+    background-color: transparent;
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    transform: scale(1.5);
+}
+
+.tp2 {
+    background-color: transparent;
+    position: absolute;
+    top: 20vh;
+    left: 66vw;
+    transform: rotateY(180deg) scale(1.5);
+}
+
+.el2 {
+    display: flex;
+    position: absolute;
+    width: 19.6875vw;
+    height: 39.537vh;
+    background: rgba(212, 192, 146, 1);
+    top: 17vh;
+    left: 40vw;
+}
+
+.el2-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15.6042vw;
+    height: 33.463vh;
+    border: 6px dashed rgba(102, 87, 52, 1);
+    background: no-repeat url('../images/YX 1.svg');
+    background-position: center;
+    transition: background-size 1s ease;
+}
+
+.el2-item:hover {
+    background-size: 220%;
+    /* 鼠标移入时背景图变大 */
+}
+
+.wz1 {
+    position: absolute;
+    width: 15.5729vw;
+    height: 5.9259vh;
+    top: 92vh;
+    left: 65%;
+    text-shadow: 11px 6px 6px rgba(148, 125, 71, 1);
+    /** 文本1 */
+    font-size: 72px;
+    font-weight: 400;
+    /* letter-spacing: 0px;
+    line-height: 99.79px; */
+    color: rgba(69, 58, 34, 1);
+    text-align: left;
+    vertical-align: top;
+}
+
+.el3 {
+    display: flex;
+    position: absolute;
+    top: 95vh;
+    left: -3vw;
+}
+
+.item img {
+    position: absolute;
+    top: 120vh;
+    left: 20%;
+    transform: scale(2.1);
+}
+
+.item-right img {
+    position: absolute;
+    top: 120vh;
+    left: 95%;
+    transform: scale(2.1);
+}
+
+.el4 {
+    display: flex;
+    position: absolute;
+    top: 100vh;
+    left: 80vw;
+    overflow-x: hidden;
+}
+
+.wz2 {
+    position: absolute;
+    width: 46.9792vw;
+    height: 24.3519vh;
+    top: 175vh;
+    left: 40%;
+    /** 文本1 */
+    font-size: 48px;
+    font-weight: 400;
+    /* letter-spacing: 0px;
+    line-height: 66.53px; */
+    color: rgba(69, 58, 34, 1);
+    text-align: left;
+    vertical-align: top;
+    text-indent: 2em;
+}
+
+.logo {
+    width: 20.5729vw;
+    height: 51.8519vh;
+    display: flex;
+    position: absolute;
+    left: 80vw;
+    top: 190vh;
+}
+
+.logo img {
+    opacity: 0.5;
+}
+
+.logo .item-left {
+    position: absolute;
+    transform: scale(2.5);
+    left: -360%;
+    opacity: 1;
+}
+
+.wz3 {
+    width: 20.5729vw;
+    height: 51.8519vh;
+    display: flex;
+    position: absolute;
+    top: 18vh;
+    left: 5vw;
+    text-shadow: 11px 6px 6px rgba(148, 125, 71, 1);
+    /** 文本1 */
+    font-size: 100px;
+    font-weight: 400;
+    letter-spacing: 3vw;
+    line-height: 138.6px;
+    color: rgba(69, 58, 34, 1);
+    text-align: left;
+    vertical-align: top;
+}
+
+.el5 {
+    display: flex;
+    position: absolute;
+    top: 219vh;
+    left: 30vw;
+    transform: scale(1.2);
+}
+
+.wz4 {
+    display: flex;
+    position: absolute;
+    width: 46.9792vw;
+    height: 37.037vh;
+    top: 290vh;
+    left: 35%;
+    /** 文本1 */
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 66.53px;
+    color: rgba(69, 58, 34, 1);
+    text-align: left;
+    vertical-align: top;
+    text-indent: 2em;
+}
+
+.logo2 {
+    width: 20.5729vw;
+    height: 51.8519vh;
+    display: flex;
+    position: absolute;
+    left: 80vw;
+    top: 300vh;
+}
+
+.logo2 img {
+    opacity: 0.5;
+}
+
+.el6 {
+    display: flex;
+    position: absolute;
+    top: 325vh;
+    left: 20vw;
+    transform: scale(1.5);
+}
+
+.wz5 {
+    display: flex;
+    position: absolute;
+    top: 360vh;
+    left: 24vw;
+    width: 46.9792vw;
+    height: 37.037vh;
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 66.53px;
+    color: rgba(69, 58, 34, 1);
+    text-align: left;
+    vertical-align: top;
+    text-indent: 2em;
+}
+
+.logo3 {
+    width: 20.5729vw;
+    height: 51.8519vh;
+    display: flex;
+    position: absolute;
+    left: 80vw;
+    top: 380vh;
+}
+
+.logo3 img {
+    opacity: 0.5;
+}
+
+.logo3 .item-left {
+    position: absolute;
+    top: 15vh;
+    left: -330%;
+    transform: rotate(45deg) scale(2.5);
+    opacity: 1;
+}
+
+.el7 {
+    display: flex;
+    position: absolute;
+    top: 340vh;
+    left: 80vw;
+    transform: scale(1);
+}
+
+.el8 {
+    display: flex;
+    position: absolute;
+    top: 410vh;
+    left: -13vw;
+    transform: scale(1);
+}
+
+.el9 {
+    display: flex;
+    position: absolute;
+    top: 237vh;
+    left: -10vw;
+    transform: scale(1);
+}
+
+/* 按钮样式 */
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    z-index: 1000;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    /* background-color: #4CAF50; */
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 20px;
+    background: rgba(69, 58, 34, 1);
+    box-shadow: 0px 2px 4px rgba(46, 39, 23, 1);
+}
+
+.scroll-to-top img {
+    fill: #fff;
+}
+
+.f {
+    position: absolute;
+    top: 5vh;
+    left: 80vw;
+    transform: scale(1.5) rotate(-45deg);
+    z-index: 50;
+}
+
+.q {
+    position: absolute;
+    width: 7vw;
+    height: 9vh;
+    border-radius: 50%;
+    border: 1px solid;
+    top: 3vh;
+    left: 90vw;
+    font-size: 1.0417vw;
+    cursor: pointer;
+    z-index: 100;
+    text-align: center;
+    letter-spacing: 1vh;
+}

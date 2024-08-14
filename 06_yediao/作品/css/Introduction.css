@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: '庞门正道粗书体';
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: no-repeat url('../images/BJ2.png');
+    background-size: 100%;
+    /* background-position: center; */
+    overflow: hidden;
+}
+
+.logo_bock {
+    width: 90px;
+    height: 90px;
+    margin-top: 13vh;
+    margin-left: 8vw;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.main {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    background: no-repeat url('../images/JX 2.svg');
+    background-size: cover;
+    position: absolute;
+    margin-top: 30vh;
+    /* padding-left: 5vw; */
+}
+
+.section {
+    flex: 1;
+    position: relative;
+    background: no-repeat url('../images/K2.svg');
+    /* background-size: cover; */
+    background-position: center;
+    writing-mode: vertical-rl;
+    /* 竖向排列 */
+    text-align: center;
+    /* 居中对齐 */
+    white-space: nowrap;
+    /* 防止换行 */
+    text-shadow: 11px 6px 6px rgba(145, 131, 93, 0.62);
+    /** 文本1 */
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 65vh;
+    letter-spacing: 0px;
+    color: rgba(0, 0, 0, 1);
+    vertical-align: top;
+}
+
+.el {
+    cursor: pointer;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>历史渊源2</title>
+    <link rel="stylesheet" href="../css/history_02.css">
+</head>
+
+<body>
+    <div class="logo_bock">
+        <img src="../images/logoBZ.svg" alt="" class="btn">
+    </div>
+    <img src="../images/YX 4.svg" alt="" class="f">
+    <div class="nav">
+        <div class="el1">
+            <img src="../images/I-2-z-1.svg" alt="" class="tp1_1">
+            <img src="../images/I-2-z-2.svg" alt="" class="tp1_2">
+            <img src="../images/I-2-z-3.svg" alt="" class="tp1_3">
+        </div>
+        <div class="el2">
+            <div class="el2-item"></div>
+        </div>
+        <div class="el1">
+            <img src="../images/I-2-z-1.svg" alt="" class="tp2_1">
+            <img src="../images/I-2-z-2.svg" alt="" class="tp2_2">
+            <img src="../images/I-2-z-3.svg" alt="" class="tp2_3">
+        </div>
+    </div>
+    <div class="main">
+        <div class="bock">
+            <img src="../images/JX 4-2-2.svg" alt="">
+        </div>
+        <div class="wz">
+            叶雕艺术的技艺已相当普及,有诗描绘了当时民间叶雕盛行的情景:"汉妃抱娃窗前耍,巧剪桐叶照窗纱。"汉代的妇女抱着孩子窗前玩,用梧桐叶剪成图形来装饰生活,这说明汉代的剪叶艺术已经相当普及。
+        </div>
+        <div class="wz2">汉代</div>
+    </div>
+    <div>
+        <img src="../images/line-8.svg" alt="" class="el3">
+    </div>
+    <div>
+        <img src="../images/line-8.svg" alt="" class="el4">
+    </div>
+    <div>
+        <img src="../images/line-8.svg" alt="" class="el5">
+    </div>
+    <div>
+        <img src="../images/line-8.svg" alt="" class="el6">
+    </div>
+    <button type="button" class="q">返回</button>
+    <script>
+        const btn = document.querySelector('.btn')
+        btn.addEventListener('click', () => {
+            window.location.href = 'back2.html'
+        })
+        let flag = false
+        const bock = document.querySelector('.bock')
+        const wz = document.querySelector('.wz')
+        const wz2 = document.querySelector('.wz2')
+        const a = document.querySelector('.bock').querySelector('img')
+        a.addEventListener('mouseover', () => {
+            if (!flag) {
+                bock.style.left = '65vw'
+                setTimeout(() => {
+                    a.style.transform = 'rotateY(360deg)'
+                    wz.style.opacity = '1'
+                    wz2.style.opacity = '1'
+                }, 500)
+            }
+        })
+        a.addEventListener('click', () => {
+            flag = true
+            setTimeout(() => {
+                a.style.transform = 'rotateY(0deg)'
+                wz.style.opacity = '0'
+                wz2.style.opacity = '0'
+                bock.style.left = '40vw'
+                setTimeout(() => {
+                    flag = false
+                }, 800)
+            }, 500)
+        })
+        const q = document.querySelector('.q')
+        q.addEventListener('click', function () {
+            window.location.href = '../HTML/history2.html'
+        })
+    </script>
+</body>
+
+</html>
