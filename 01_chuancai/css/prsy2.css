@@ -1,0 +1,391 @@
+body {
+  margin: 0;
+  position: fixed;
+}
+
+.main {
+  width: 100%;
+  height: 101%;
+  display: flex;
+  position: relative;
+  /* transform-style: preserve-3d; */
+  /* transform: rotateX(-20deg) rotateY(30deg); */
+
+}
+
+.banner {
+  width: 100%;
+  height: 101%;
+  z-index: 1;
+}
+
+.banner1 {
+  width: 100%;
+  height: 101%;
+  position: absolute;
+  /* display: none; */
+  transition: opacity 1s;
+  opacity: 0;
+  z-index: 0;
+}
+
+.hg {
+  justify-self: center;
+  align-items: center;
+  /* position: relative; */
+  /* display: flex; */
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* background: url(../image/首页/首页（翻书1）.png) no-repeat center center/cover; */
+  filter: brightness(0.4);
+
+  z-index: 0;
+}
+
+.box1 {
+  position: absolute;
+  width: 13.5417vw;
+  height: 13.5185vh;
+  top: 7.8704vh;
+  left: 5.7292vw;
+
+  /* font-family: 'MyCustomFont', sans-serif; */
+
+}
+
+.cc {
+  display: block;
+  width: 7.8125vw;
+  height: 13.8889vh;
+  /* background: #fff; */
+  /* border-radius: 0px 0px 0px 0px; */
+  /* border: 1px solid #707070; */
+  background: url(../image/home/logo2\ 1.png) no-repeat center/cover;
+}
+
+.box2 {
+  position: absolute;
+  width: 27.0833vw;
+  height: 45.5556vh;
+  /* background-color: #754545; */
+
+  top: 27.3148vh;
+  left: 13.125vw;
+
+  transition: opacity 0.1s;
+}
+
+.w1 {
+  width: 27.0833vw;
+
+  height: 2.963vh;
+  font-family: "宋体";
+  font-weight: 400;
+  font-size: 1.25vw;
+  color: #FFFFFF;
+  line-height: 2.5926vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  /* transition: innerHTML 0.5s; */
+}
+
+.w2 {
+  width: 27.0833vw;
+  height: 4.4444vh;
+  font-family: 'MyCustomFont', sans-serif;
+
+  font-weight: 400;
+  font-size: 2.0833vw;
+  color: #FFFFFF;
+  line-height: 4.3519vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  margin-top: 3.2407vh;
+}
+
+.w3 {
+  width: 27.0833vw;
+
+  height: 11.1111vh;
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: 400;
+  font-size: 6.25vw;
+  color: #FFFFFF;
+  line-height: 10.8333vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  margin-top: 6.5741vh;
+}
+
+.w4 {
+  width: 27.0833vw;
+
+  height: 4.4444vh;
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: 400;
+  font-size: 2.0833vw;
+  color: #FFFFFF;
+  line-height: 4.3519vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  margin-top: 6.5741vh
+}
+
+.w5 {
+  width: 27.0833vw;
+
+  height: 2.963vh;
+  font-family: "宋体";
+  font-weight: 400;
+  font-size: 1.25vw;
+  color: #FFFFFF;
+  line-height: 2.5926vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  margin-top: 3.2407vh;
+}
+
+.bt {
+  position: absolute;
+
+  width: 10vw;
+  height: 2.963vh;
+  font-family: "宋体";
+  font-weight: 400;
+  font-size: 1.25vw;
+  color: #FFFFFF;
+  line-height: 2.5926vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+  transition: opacity 0.1s, top 0.5s, left 0.5s;
+  z-index: 3;
+
+  left: 60.2604vw;
+  top: 72.5vh;
+}
+
+.tu1 {
+  position: absolute;
+
+  width: 52.6042vw;
+  height: 37.037vh;
+  /* background-color: #000; */
+  top: 31.5741vh;
+  right: 6.4062vw;
+  transform-origin: left center;
+  /* opacity: 1; */
+  cursor: pointer;
+
+  transition: transform 1s, opacity 0.5s;
+
+}
+
+.tu2 {
+  position: absolute;
+  cursor: pointer;
+
+  width: 52.6042vw;
+  height: 37.037vh;
+  /* background-color: #000; */
+  top: 31.5741vh;
+  right: 6.4062vw;
+  /* opacity: 0; */
+  transition: transform 1s, opacity 0.5s;
+
+  transform-origin: left center;
+  transform: rotateZ(270deg);
+}
+
+.tu {
+  width: 33.8542vw;
+  height: 37.037vh;
+  /* background-color: #fff; */
+  border-radius: 30px 30px 30px 30px;
+  margin-left: 17.9167vw;
+}
+
+.cp {
+  position: absolute;
+  /* width: ; */
+  height: 0px;
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: 400;
+  font-size: 1.25vw;
+  color: #fff;
+  line-height: 0px;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  /* z-index: 3; */
+
+  top: 13.7037vh;
+  left: 82.7083vw;
+}
+
+.xian1 {
+  position: absolute;
+  width: 62.5vw;
+  height: 0px;
+  border: 1px solid #FFFFFF;
+  /* z-index: 3; */
+  top: 17.6852vh;
+  left: 18.75vw;
+}
+
+.z2 {
+  width: 67.7083vw;
+  height: 4.1667vh;
+  font-family: '宋体';
+  font-weight: 400;
+  font-size: 1.3021vw;
+  color: #FFFFFF;
+  line-height: 4.1667vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  position: absolute;
+  top: 19.7222vh;
+  left: 18.75vw;
+}
+
+.act {
+  width: 20.8333vw;
+  height: 5.0926vh;
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: 400;
+  font-size: 2.6042vw;
+  color: #FFFFFF;
+  line-height: 4.1667vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  position: absolute;
+  top: 9.537vh;
+  left: 18.75vw;
+}
+
+.sp {
+  width: 62.5vw;
+  height: 62.5vh;
+  /* background: #FFFFFF; */
+  border-radius: 1.5625vw 1.5625vw 1.5625vw 1.5625vw;
+
+  position: absolute;
+  top: 25.9259vh;
+  left: 18.75vw;
+}
+
+.caca {
+  width: 2.0833vw;
+  height: 3.4259vh;
+
+  position: absolute;
+
+  top: 8.2407vh;
+  right: 4.5313vw;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.caca:hover {
+  transform: rotateZ(360deg);
+}
+
+.jiantou {
+  width: 2.0833vw;
+  height: 3.7037vh;
+
+  position: absolute;
+
+  top: 64.8148vh;
+  right: 45.8333vw;
+  /* animation: shows 2.5s infinite alternate; */
+
+}
+
+.dj {
+  width: 5.5208vw;
+  height: 3.6111vh;
+  font-family: 'HYShangWeiShouShuW', sans-serif;
+
+  font-weight: 400;
+  font-size: 0.8333vw;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 3.6111vh;
+  text-align: right;
+  font-style: normal;
+  text-transform: none;
+
+  position: absolute;
+
+  top: 68.8889vh;
+  right: 47.7604vw;
+  /* animation: shows 2.5s infinite alternate; */
+
+}
+
+.xxbox {
+  position: absolute;
+  bottom: 3vh;
+  left: 48.3854vw;
+  width: 3.3333vw;
+  height: 6.2037vh;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  font-family: 'HYShangWeiShouShuW', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  animation: shows 3s infinite alternate;
+}
+
+.xx {
+  width: 1.5625vw;
+  height: 2.7778vh;
+}
+
+.xxhd {
+  width: 3.3333vw;
+  height: 2.7778vh;
+  font-size: 0.8333vw;
+}
+
+@keyframes shows {
+  0% {
+    opacity: 0;
+    /* color: rgba(255, 255, 255, 0.6); */
+
+  }
+
+  50% {
+    opacity: 0.8;
+    /* color: rgba(255, 255, 255, 1); */
+
+  }
+
+  100% {
+    opacity: 0;
+    /* color: rgba(255, 255, 255, 0.6); */
+
+  }
+}

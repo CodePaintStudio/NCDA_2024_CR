@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  position: fixed;
+}
+
+.main {
+  width: 100%;
+  height: 101%;
+  display: flex;
+  position: relative;
+  /* transform-style: preserve-3d; */
+  /* transition: all 0.5s; */
+  /* transform-origin: 0 0 0; */
+  /* transform: rotateX(-20deg) rotateY(30deg); */
+
+}
+
+.banner {
+  width: 100vw;
+  height: 100vh;
+  /* display: grid; */
+}
+
+.prsy {
+  justify-self: center;
+  align-items: center;
+  /* position: relative; */
+  /* display: flex; */
+  width: 100vw;
+  height: 100vh;
+  /* background: url(../image/首页/首页（翻书1）.png) no-repeat center center/cover; */
+  /* transform: rotate(-90deg); */
+  /* z-index: 0;
+  background: rgba(0, 0, 0, 0.6);
+  filter: brightness(0.2); */
+}
+
+.cuan {
+  position: absolute;
+
+  width: 7.8125vw;
+  height: 15vh;
+
+  /* top: 15.7407vh;
+  right: 18.6979vw; */
+  top: 34.0741vh;
+  right: 16.6667vw;
+  /* transform: rotate(2deg); */
+  transition: top 1s, right 1s;
+}
+
+.cai {
+  position: absolute;
+
+  width: 7.8125vw;
+  height: 15vh;
+
+  /* top: 69.537vh;
+  right: 7.9167vw; */
+  top: 40.0926vh;
+  right: 13.75vw;
+  transition: top 1s, right 1s;
+
+  /* transform: rotate(-8deg); */
+}
+
+.yi {
+
+  position: absolute;
+  display: flex;
+  width: 7.8125vw;
+  height: 37.5926vh;
+  text-orientation: upright;
+  justify-content: space-between;
+  top: 35.1852vh;
+  right: 18.4375vw;
+  font-family: 'MyCustomFont';
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity 1.5s;
+}
+
+.son1 {
+  height: 37.5926vh;
+  width: 2.9167vw;
+  font-weight: 400;
+  font-size: 2.5vw;
+  color: #FFFFFF;
+  line-height: 3.0208vw;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+}
+
+.son2 {
+  height: 37.5926vh;
+  width: 2.9167vw;
+  font-weight: 400;
+  font-size: 2.5vw;
+  color: #FFFFFF;
+  line-height: 3.0208vw;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+}
+
+.er {
+  position: absolute;
+  width: 4.4271vw;
+  height: 93.3333vh;
+  font-family: 'MyCustomFont';
+  font-weight: 400;
+  font-size: 6.25vw;
+  color: #FFFFFF;
+  line-height: 13.3333vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+  opacity: 0.2;
+
+  right: 1.25vw;
+  bottom: 10.3704vh;
+}
