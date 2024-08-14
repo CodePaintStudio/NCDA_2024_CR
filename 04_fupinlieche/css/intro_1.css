@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'zihunlaozhaopai_trial';
+    src: url('../fonts/zihunlaozhaopai_trial.eot');
+    src: url('../fonts/zihunlaozhaopai_trial.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/zihunlaozhaopai_trial.woff2') format('woff2'),
+    url('../fonts/zihunlaozhaopai_trial.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.page{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #FFFFFF;
+}
+
+.title{
+    position: absolute;
+    left: 48.542vw;
+    top: 7.865vw;
+    width: 22.292vw;
+    height: 5.608vw;
+}
+
+.title h1{
+    font-family: zihunlaozhaopai_trial,serif;
+    font-size: 3.4375vw;
+    line-height: 4.115vw;
+    font-weight: 400;
+    color: #216600;
+}
+
+.train{
+    position: absolute;
+    top: 53vw;
+    z-index: 1;
+    /*background-color: #acd699;*/
+    width: 100%;
+    height: 4.84375vw;
+}
+
+.train>img{
+    width: 100vw;
+    height: 4.84375vw;
+}
+
+.area{
+    position: absolute;
+    left: 5.833vw;
+    top: 7.083vw;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.area>img{
+    width: 38.802vw;
+    height: 31.198vw;
+}
+
+
+.gallery{
+    position: absolute;
+    display: flex;
+    /*column-gap: 3.802vw;*/
+    /*justify-content: space-around;*/
+    top: 40.625vw;
+    left: 4.115vw;
+    width: 92.7vw;
+    height: 12.292vw;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.gallery>div{
+    display: flex;
+    column-gap: 3.802vw;
+    padding: 0 1.901vw;
+}
+
+.gallery img{
+    height: 12.292vw;
+}
+
+.gallery div{
+    white-space: nowrap;
+    animation: animate var(--t) linear infinite;
+    animation-delay: calc(var(--t) * -1);
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+
+    }
+}
+
+.scroll > div:nth-child(2) {
+    animation: animate2 var(--t) linear infinite;
+    animation-delay: calc(var(--t) / -2);
+}
+@keyframes animate2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+
+    }
+}
+
+
+.scroll:hover > div {
+    animation-play-state: paused;
+}
+
+
+.text{
+    position: absolute;
+    left: 48.542vw;
+    top:16.09375vw;
+    width: 43.021vw;
+    height: 17.76vw;
+    font-family: "PingFang SC",serif;
+    font-weight: 400;
+    font-size: 1.146vw;
+    color: #3F3F3F;
+    line-height: 2.292vw;
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+}
+
+.bg_mountain{
+    position: absolute;
+    width: 70.15625vw;
+    height: 23.271vw;
+    top: 32.979vw;
+    opacity: 0.8;
+}
+
+.bg_bamboo{
+    position: absolute;
+    width: 24.21875vw;
+    height: 44.6875vw;
+    top: 5.635vw;
+    right: -5vw;
+    overflow: hidden;
+}
+
+
+.logo{
+    position: absolute;
+    z-index: 40;
+    top: 0.417vw;
+    left: 2.917vw;
+}
+
+.logo img{
+    width: 2.708vw;
+    height: 2.292vw;
+}

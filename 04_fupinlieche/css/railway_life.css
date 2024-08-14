@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'zihunlaozhaopai_trial';
+    src: url('../fonts/zihunlaozhaopai_trial.eot');
+    src: url('../fonts/zihunlaozhaopai_trial.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/zihunlaozhaopai_trial.woff2') format('woff2'),
+    url('../fonts/zihunlaozhaopai_trial.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+.page{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: no-repeat  url("../images/railway_life/rail_life_bg.png");
+    background-size: cover;
+    overflow: hidden;
+    /*z-index: 1;*/
+}
+
+.people{
+    position: absolute;
+    width: 85.104vw;
+    height: 32.5vw;
+    right: -0.833vw;
+    bottom: -2.135vw;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.people img{
+    width: 100%;
+}
+
+.title{
+    position: absolute;
+    width: 18.802vw;
+    height: 9.01vw;
+    left: 4.21875vw;
+    top: 31.042vw;
+}
+
+.title h1{
+    font-family: zihunlaozhaopai_trial,sans-serif;
+    color: #FFF;
+    font-size: 3.4375vw;
+    line-height: 4.115vw;
+    word-spacing: 0.9vw;
+    font-weight: 400;
+}
+
+.caidan li:nth-child(2) a{
+    color: rgb(55, 170, 126);
+}
+
+.logo{
+    position: absolute;
+    z-index: 40;
+    top: 0.417vw;
+    left: 2.917vw;
+}
+
+.logo img{
+    width: 2.708vw;
+    height: 2.292vw;
+}
+
+.caidan a,
+.caidan a:visited,
+.caidan a:hover,
+.caidan a:active {
+    color:#37650F ;
+    text-decoration: none;
+}
+.buttom-menu {
+    position: absolute;
+    top: 0.75vw;
+    left: 1.5vw;
+    width: 4.5vw;
+    height: 4.5vw;
+    z-index: 99;
+}
+.menu {
+    width: 100vw;
+    height: 3.125vw;
+    background-color: rgba(255, 255, 255, 0.70);
+    transition: all 0.5s linear;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.caidan {
+    list-style: none;
+    padding: 0;
+    padding-left: 69vw;
+}
+
+.caidan li {
+    margin: 1.5vw 2vw;
+    font-size: 1vw;
+    font-family: PingFang SC;
+    float: left;
+}
+.caidan a {
+    position: relative;
+    display: inline;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+.caidan li a:hover {
+    color: rgb(55, 170, 126);
+}
+.caidan a::before,
+.caidan a::after {
+    content: "";
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+.caidan a::before {
+    right: -1vw;
+    top: 1vw;
+    border-bottom: 1px solid rgb(55, 170, 126);
+    border-right: 1px solid rgb(55, 170, 126);
+    transform: translate(-25%, -25%);
+}
+.caidan a:after {
+    left: -1vw;
+    bottom: 1vw;
+    border-top: 1px solid rgb(55, 170, 126);
+    border-left: 1px solid rgb(55, 170, 126);
+    transform: translate(25%, 25%);
+}
+.caidan a:hover:before,
+.caidan a:hover:after {
+    transform: translate(0, 0);
+    opacity: 1;
+}

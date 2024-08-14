@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 245);
+    height: calc(100vh);
+    width: calc(100vw);
+  }
+  .train1 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/惠脉/more/bg.png");
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .map img{
+    position: absolute;
+    margin-top:5vh;
+    margin-left: 5vw;
+    width: 39vw;
+  }
+.train img{
+  position: absolute;
+  bottom: -2%;
+  width: 45vw
+}
+
+.hua img{
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  width: 4vw;
+}
+.ck img{
+  position: absolute;
+  left: 57%;
+  top: 10%;
+  width: 19vw
+}
+.text {
+  position: absolute;
+  left: 50%;
+  bottom: 34%;
+  width: 45vw;
+  height: 40vh;
+  font-family: PingFang SC;
+  font-size: 1.1458vw;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 2.2396vw;
+  color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  
+}
+.text p{
+  text-indent: 2em;
+  margin-bottom: 1vh;
+}
+.bigbox{
+  position: absolute;
+  bottom: 4%;
+  left: 30%;
+  width: 80vw;
+  height: 25vh;
+}
+.che img{
+  position: absolute;
+  left: -15%;
+  bottom: -40%;
+  width: 46vw
+}
+/* 11 */
+ul{
+  position: absolute;
+  width: 45vw;
+  /* 去除无序列表默认的小圆点 */
+  list-style: none;
+  /* 弹性布局 让元素均匀排列 */
+  display: flex;
+  justify-content: space-around;
+  left: 24%;
+  bottom: 5%;
+}
+
+ul li{
+  /* 相对定位 */
+  position: relative;
+  width: 30vw;
+  /* height: 300px; */
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+ul li:hover{
+  cursor: pointer;
+}
+
+ul li img{
+  width: 100%;
+  height: 100%;
+}
+
+.mask{
+  /* 绝对定位 */
+  position: absolute;
+  top:100%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ border-radius: 12%;
+  background:rgb(249, 249, 249);
+  opacity: 0.7;
+
+}
+
+ul li:hover .mask{
+  top: 0;
+}
+
+.mask h1{
+  line-height: 50px;
+}
+/* more-2下面页面细节修改 */
+.che2 img{
+  left: -18%;
+}
+#xiao2{
+  bottom: 12%;
+}
+/* more-3调整 */
+#wei{
+  left: 50%;
+  bottom: 40%;
+}
+#tiao img{
+    top: 1%;
+    left: 3%;
+    width: 40vw
+}
+#wei2 img{
+  width: 35vw;
+}
+#wei3{
+  bottom: -5%;
+}
+/* more-4 微调*/
+/* 修改che */
+#wei4 img{
+  width: 40vw;
+}
+
+h1{
+  font-size: 1.25vw;
+  font-weight: 400;
+}
+
+

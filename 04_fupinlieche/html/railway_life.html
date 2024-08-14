@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>列车上的生活</title>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/railway_life.css">
+    <link rel="stylesheet" href="../css/menu2.css" />
+    <style>
+        .logo img{
+        position: absolute;
+        top: 0vh;
+        left: 0.3vw;
+        width: 2.7083vw;
+        z-index: 10000;
+  }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/general/main-logo.png" alt="logo"></a>
+        </div>
+        <div class="menu">
+            <ul class="caidan">
+                <li><a href="./huimai.html" id="x1">惠脉</a></li>
+                <li><a href="./railway_life.html" id="xiao">暖途</a></li>
+                <li><a href="./story_of_constr.html" id="x1">筑迹</a></li>
+                <li><a href="./xingkan.html" id="x1">兴瞰</a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>列车上的<br>生活</h1>
+        </div>
+        <div class="people">
+            <img src="../images/railway_life/rail_life_people.png" alt="">
+        </div>
+    </div>
+<script>
+    const peopleEl = document.querySelector(".people");
+    peopleEl.addEventListener("click",()=> window.location.href='./life_gallery.html');
+</script>
+</body>
+</html>
