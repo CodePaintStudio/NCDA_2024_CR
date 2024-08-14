@@ -1,0 +1,1047 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+  position: relative;
+
+  width: 100vw;
+  height: 100vh;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url("../access/SS_1/Rectangle_27.png");
+
+  background-position: conter;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  overflow: hidden;
+}
+/* .main::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+
+} */
+.star {
+  position: absolute;
+  background-position: conter;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 2vw;
+  height: 3vh;
+  animation: blink 1.5s infinite;
+  z-index: 1;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.1;
+  }
+
+  20% {
+    opacity: 0.2;
+  }
+
+  40% {
+    opacity: 0.4;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.5;
+  }
+
+  80% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+.header_contianer {
+  width: 95vw;
+  height: 8vh;
+  position: absolute;
+  left: 50vw;
+  top: 8vh;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+.bighr {
+  position: absolute;
+  left: 50vw;
+  top: 14vh;
+  transform: translate(-50%, -50%);
+
+  width: 95.1vw;
+  height: 0.5vh;
+  box-shadow: 1 1 10px balck;
+  background-image: url("../access/SS_1/Rectangle_3.png");
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+.header_contianer a[class^="title_header_"] {
+  margin-top: 0.65vh;
+  list-style-type: none;
+  width: 6.54vw;
+  height: 6.32vh;
+}
+.title_header_1 {
+  background-image: url("../access/SS_1/qxsl.png");
+  
+}
+.title_header_3 {
+  background-image: url("../access/SS_1/sgsy.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: over;
+}
+.title_header_4 {
+  background-image: url("../access/SS_1/gscs.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: over;
+}
+.title_header_5 {
+  background-image: url("../access/SS_1/hsxt.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: over;
+}
+.circles_contianer {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  width: 130vh;
+  height: 130vh;
+}
+.circles_contianer div[class^="circle_"] {
+  position: absolute;
+}
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.circle_1 {
+  border-radius: 50%;
+  border-style: none none solid solid;
+  border-color: transparent transparent transparent silver;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  top: 50%;
+  left: 50%;
+  animation: rotate 14s linear infinite;
+  animation-direction: reverse;
+  z-index: 10;
+}
+.circle_2 {
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 105%;
+  height: 105%;
+  top: 50%;
+  left: 50%;
+  border-style: solid solid none none;
+  border-color: silver transparent transparent transparent;
+  animation: rotate running 14s linear infinite;
+  z-index: 10;
+}
+.circle_3 {
+  border-radius: 50%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-style: none none solid solid;
+  border-color: transparent transparent transparent silver;
+  animation: rotate running 12s linear infinite;
+  animation-direction: reverse;
+  z-index: 10;
+}
+
+.circle_4 {
+  border-radius: 50%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 75%;
+  height: 75%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-style: solid solid none none;
+  border-color: silver transparent transparent transparent;
+  animation: rotate 12s linear infinite;
+  z-index: 10;
+}
+.circle_5 {
+  border-radius: 50%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 60%;
+  height: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-style: none none solid solid;
+  border-color: transparent transparent transparent silver;
+  animation: rotate running 8s linear infinite;
+  animation-direction: reverse;
+  z-index: 10;
+}
+.circle_6 {
+  border-radius: 50%;
+
+  width: 45%;
+  height: 45%;
+  top: 50%;
+  left: 50%;
+  animation: rotate running 8s linear infinite;
+  transform: translate(-50%, -50%);
+  border-style: solid solid none none;
+  border-color: silver transparent transparent transparent;
+  z-index: 10;
+}
+.circle_7 {
+  border-radius: 50%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-style: none none solid solid;
+  border-color: transparent transparent transparent silver;
+  animation: rotate running 6s linear infinite;
+  animation-direction: reverse;
+  z-index: 10;
+}
+.circle_8 {
+  border-radius: 50%;
+
+  width: 20%;
+  height: 20%;
+  top: 50%;
+  left: 50%;
+  animation: rotate running 6s linear infinite;
+  transform: translate(-50%, -50%);
+  border-style: solid solid none none;
+  border-color: silver transparent transparent transparent;
+  z-index: 10;
+}
+
+.circle_9 {
+  border-radius: 50%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 10%;
+  height: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-style: none none solid solid;
+  border-color: transparent transparent transparent silver;
+  animation: rotate running 16s linear infinite;
+  animation-direction: reverse;
+  z-index: 10;
+}
+
+.herodata_1 {
+  width: 7vh;
+  height: 7vh;
+  position: absolute;
+  top: 86.2%;
+  left: 14.8%;
+  transform: translate(-50%, -50%);
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.heroname_1 {
+  text-shadow: #c24c4c 0px 0px 10px;
+
+  position: absolute;
+  width: 8vh;
+  height: 4vh;
+  background-size: 100%, 100%;
+  transform: rotate(223deg);
+  background-position: center;
+  background-image: url("../access/SS_1/hkx/hkx_n.png");
+  background-repeat: no-repeat;
+  left: 25%;
+  top: -20%;
+}
+.herostar_1 {
+  position: absolute;
+  width: 7vh;
+  height: 7vh;
+  background-image: url("../access/SS_1/star_1.png");
+  background-size: 100%, 100%;
+  background-position: conter;
+  background-repeat: no-repeat;
+  animation: blink1 1.5s infinite;
+}
+.herodata_2 {
+  width: 7vh;
+  height: 7vh;
+  position: absolute;
+  top: 15.45%;
+  left: 85.6%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.heroname_2 {
+  width: 8vh;
+  height: 4vh;
+  position: absolute;
+  top: 38%;
+  left: -44.5%;
+
+  background-size: 100%, 100%;
+  background-image: url("../access/SS_1/lzh/lzh_n.png");
+  background-repeat: no-repeat;
+  transform: rotate(42deg);
+
+  background-position: center;
+}
+.herostar_2 {
+  position: absolute;
+  width: 7vh;
+  height: 7vh;
+  background-image: url("../access/SS_1/star_12.png");
+  top: 0;
+  right: 0;
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: conter;
+  animation: blink1 1.5s infinite;
+}
+.herodata_3 {
+  width: 7vh;
+  height: 7vh;
+  position: absolute;
+  top: 86.2%;
+  left: 14.8%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+}
+.heroname_3 {
+  text-shadow: #c24c4c 0px 0px 10px;
+
+  position: absolute;
+  width: 8vh;
+  height: 4vh;
+  background-size: 100%, 100%;
+  transform: rotate(223deg);
+  background-position: center;
+  background-image: url("../access/SS_1/xsl/xsl_n.png");
+  background-repeat: no-repeat;
+  left: 25%;
+  top: -20%;
+}
+.herostar_3 {
+  position: absolute;
+  width: 7vh;
+  height: 7vh;
+  left: 0;
+  top: 0;
+  background-image: url("../access/SS_1/star_1.png");
+  background-size: 100%, 100%;
+  background-position: conter;
+  background-repeat: no-repeat;
+  animation: blink1 1.5s infinite;
+}
+.herodata_4 {
+  width: 7vh;
+  height: 7vh;
+  position: absolute;
+  top: 15.7%;
+  left: 85.5%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.heroname_4 {
+  width: 8vh;
+  height: 4vh;
+  position: absolute;
+  top: 38%;
+  left: -44.5%;
+
+  background-size: 100%, 100%;
+  background-image: url("../access/SS_1/ljs/ljs_n.png ");
+  background-repeat: no-repeat;
+  transform: rotate(42deg);
+
+  background-position: center;
+}
+.herostar_4 {
+  position: absolute;
+  width: 7vh;
+  height: 7vh;
+  background-image: url("../access/SS_1/star_12.png");
+  top: 0;
+  right: 0;
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: conter;
+  animation: blink1 1.5s infinite;
+}
+.herodata_5 {
+  width: 7vh;
+  height: 7vh;
+  position: absolute;
+  top: 86.2%;
+  left: 14.4%;
+  transform: translate(-50%, -50%);
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.heroname_5 {
+  text-shadow: #c24c4c 0px 0px 10px;
+
+  position: absolute;
+  width: 8vh;
+  height: 4vh;
+  background-size: 100%, 100%;
+  transform: rotate(223deg);
+  background-position: center;
+  background-image: url("../access/SS_1/lyl/lyl_n.png");
+  background-repeat: no-repeat;
+  left: 25%;
+  top: -20%;
+}
+.herostar_5 {
+  position: absolute;
+  width: 7vh;
+  height: 7vh;
+  background-image: url("../access/SS_1/star_1.png");
+  background-size: 100%, 100%;
+  background-position: conter;
+  background-repeat: no-repeat;
+  animation: blink1 1.5s infinite;
+}
+.herodata_6 {
+  width: 7vh;
+  height: 7vh;
+  position: absolute;
+  top: 16.5%;
+  left: 85.8%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.heroname_6 {
+  width: 8vh;
+  height: 4vh;
+  position: absolute;
+  top: 38%;
+  left: -44.5%;
+
+  background-size: 100%, 100%;
+  background-image: url("../access/SS_1/why/wyh_n.png");
+  background-repeat: no-repeat;
+  transform: rotate(42deg);
+
+  background-position: center;
+}
+.herostar_6 {
+  position: absolute;
+  width: 7vh;
+  height: 7vh;
+  background-image: url("../access/SS_1/star_12.png");
+  top: 0;
+  right: 0;
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: conter;
+  animation: blink1 1.5s infinite;
+}
+.herodata_7 {
+  width: 7vh;
+  height: 7vh;
+  position: absolute;
+  top: 86.9%;
+  left: 13.7%;
+  transform: translate(-50%, -50%);
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.heroname_7 {
+  text-shadow: #c24c4c 0px 0px 10px;
+
+  position: absolute;
+  width: 8vh;
+  height: 4vh;
+  background-size: 100%, 100%;
+  transform: rotate(223deg);
+  background-position: center;
+  background-image: url("../access/SS_1/ycw/ycw_n.png");
+  background-repeat: no-repeat;
+  left: 25%;
+  top: -20%;
+}
+.herostar_7 {
+  position: absolute;
+  width: 7vh;
+  height: 7vh;
+  background-image: url("../access/SS_1/star_1.png");
+  background-size: 100%, 100%;
+  background-position: conter;
+  background-repeat: no-repeat;
+  animation: blink1 1.5s infinite;
+}
+.herodata_8 {
+  width: 7vh;
+  height: 7vh;
+  position: absolute;
+  top: 18.6%;
+  left: 86.5%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.heroname_8 {
+  width: 8vh;
+  height: 4vh;
+  position: absolute;
+  top: 38%;
+  left: -44.5%;
+
+  background-size: 100%, 100%;
+  background-image: url("../access/SS_1/ytm/ytm_n.png");
+  background-repeat: no-repeat;
+  transform: rotate(42deg);
+
+  background-position: center;
+}
+.herostar_8 {
+  position: absolute;
+  width: 7vh;
+  height: 7vh;
+  background-image: url("../access/SS_1/star_12.png");
+  top: 0;
+  right: 0;
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: conter;
+  animation: blink1 1.5s infinite;
+}
+/* .herodata_9{
+    width: 7vh;
+    height:7vh;
+  position: absolute;
+  top:86.2%;
+  left:14.8%;
+  transform: translate(-50%, -50%);
+  flex-wrap: wrap;
+  }
+  .heroname_9{
+  
+  text-shadow: #C24C4C 0px 0px 10px;
+  
+  
+  position: absolute;
+  width: 8vh;
+  height:4vh;
+  background-size: 100%,100%;
+  transform: rotate(223deg);
+  background-position: center;
+  background-image: url("../access/群星璀璨/黄开湘/黄开湘.png");
+  background-repeat: no-repeat;
+  left: 25%;
+  top: -20%;
+  }
+  .herostar_9{
+  position: absolute;
+  width:7vh;
+  height: 7vh;
+  background-image: url('../access/群星璀璨/星1.png');
+  background-size: 100%,100%;
+  background-position: conter;
+  background-repeat: no-repeat;
+  animation: blink1 1.5s infinite;
+  } */
+
+@keyframes blink1 {
+  0% {
+    opacity: 0.4;
+  }
+
+  20% {
+    opacity: 0.6;
+  }
+
+  40% {
+    opacity: 0.8;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.8;
+  }
+
+  80% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+.hero_picture {
+  background-image: url("../access/SS_1/Public_picture/Rectangle_29.png");
+  width: 100vw;
+  height: 100vh;
+  background-position: conter;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  overflow: hidden;
+  z-index: 12;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+}
+.contents_ {
+  background-image: url("../access/SS_1/Public_picture/Rectangle_28.png");
+  position: absolute;
+  width: 75vw;
+  height: 75vh;
+
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: over;
+}
+
+.upbutton_A {
+  background-image: url("../access/SS_1/Public_picture/A1_2.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
+  background-position: center;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+.upbutton_A_A {
+  background-image: url("../access/SS_1/Public_picture/A2_1.png");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: -6.5%;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.up_move {
+  animation: upmove 1s ease-in-out forwards;
+}
+@keyframes upmove {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.down_move {
+  animation: downmove 1s ease-in-out forwards;
+}
+
+@keyframes downmove {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.button-container {
+  position: relative;
+  width: 10vw;
+  height: 20vh;
+
+  left: 5%;
+  top: 70%;
+  cursor: pointer;
+}
+.button-container::after{
+
+
+content: " ";
+background-image: url("../access/SS_1/fan.png");
+
+background-repeat: no-repeat;
+background-size: 100%,100%;
+background-position: center;
+
+width: 3vw;
+height: 3vh;
+
+position: absolute;
+
+bottom: -20%;
+left: 50%;
+transform: translate(-50%, 0);
+
+
+
+}
+.button-container:hover .upbutton_A_A {
+  opacity: 1;
+}
+.long {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: over;
+  background-repeat: no-repeat;
+  background-image: url("../access/SS_1/Public_picture/long.png");
+  background-position: right;
+}
+.star_A {
+  width: 10%;
+  height: 20%;
+
+  animation: blink 1.5s infinite;
+  position: absolute;
+  background-image: url("../access/SS_1/Public_picture/stars.png");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 5%;
+  top: 4%;
+}
+.contents_ div[class^="porson_data_"] {
+  position: absolute;
+  width: 10vw;
+  height: 25vh;
+  top: 7%;
+  left: 7%;
+  border-radius: 1%;
+  border: 0.1px solid rgb(100, 99, 99);
+}
+
+.contents_ div[class^="porson_data_"] div[class^="name_porson_"] {
+  width: 50%;
+  height: 20%;
+  top: 102%;
+  left: 27%;
+  transform: scale(1.5);
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
+  background-position: center;
+  position: absolute;
+}
+.name_porson_1 {
+  background-image: url("../access/SS_1/hkx/hkx_n.png");
+}
+.name_porson_2 {
+  background-image: url("../access/SS_1/lzh/lzh_n.png");
+}
+.name_porson_3 {
+  background-image: url("../access/SS_1/xsl/xsl_n.png");
+}
+.name_porson_4 {
+  background-image: url("../access/SS_1/ljs/ljs_n.png");
+}
+.name_porson_5 {
+  background-image: url("../access/SS_1/lyl/lyl_n.png");
+}
+.porson_dataFE {
+  width: 80%;
+  height: 15%;
+  background-position: conter;
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
+  position: absolute;
+  left: 8%;
+  top: 8%;
+}
+.name_porson_6 {
+  background-image: url("../access/SS_1/ycw/ycw_n.png");
+}
+.name_porson_7 {
+  background-image: url("../access/SS_1/ytm/ytm_n.png");
+}
+img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.introduce_1 {
+  width: 80%;
+  height: 30%;
+  position: absolute;
+  left: 17vw;
+  top: 7vh;
+  container-type: inline-size;
+  font-size: 1.5cqw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.p_1 {
+  margin-top: 2vh;
+  margin-left: 2vw;
+  width: 80%;
+  height: 80%;
+}
+.introduce_1_a {
+  width: 80%;
+  height: 30%;
+  position: absolute;
+  left: 5vw;
+  top: 40vh;
+  container-type: inline-size;
+  font-size: 1.5cqw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.introduce_FE {
+  width: 80%;
+  height: 30%;
+  container-type: inline-size;
+  font-size: 1.5cqw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  left: 10%;
+  top: 25%;
+  position: absolute;
+}
+.inform {
+  background-image: url("../access/SS_1/Group_100.png");
+
+  background-size: 100%, 100%;
+
+  background-repeat: no-repeat;
+cursor: pointer;
+  position: absolute;
+  left: 20%;
+  top: 25%;
+  width: 60vw;
+
+  height: 60vh;
+
+  z-index: 10;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-start;
+transition: all 1.5s;
+  align-items: center;
+  animation: clipRectSpIn 2s forwards ;
+  animation-fill-mode: both;
+}
+.inform_word_3 {
+  background-image: url("../access/SS_1/inform_3.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80%;
+  height: 30%;
+  margin-top: 10vh;
+}
+
+.inform_word_1 {
+  background-image: url("../access/SS_1/inform_2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80%;
+  height: 10%;
+
+  margin-top: 3vh;
+}
+.inform_word_2 {
+  background-image: url("../access/SS_1/inform_1.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60%;
+  height: 5%;
+  margin-top: 3vh;
+}
+
+.besmall {
+  
+  z-index: -1;
+}
+.Down{
+  animation: move 1.5s  ;
+  cursor: pointer;
+  width: 2vw;
+  background-image: url("../access/SS_1/Union.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  right: 1%;
+  top: -5%;
+  height: 25vh;
+  width: 2vw;
+  z-index: 10;
+  transition:  top 0.3s;
+}
+.Down::after{
+position: absolute;
+left: -30%;
+bottom: -15%;
+content:" " ;
+background-image: url("../access/SS_1/gong.png");
+background-position: conter;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+width: 3vw;
+height: 3vh;
+
+
+transition: opacity 1s;
+}
+ 
+.Down:active {
+  top: 0%;
+}
+.animated{
+ animation: clipRectSpIn 2s forwards ;
+
+}
+.reserve{
+
+  animation: clipRectSpIn 2s forwards ;
+
+  animation-direction:reverse;
+ }
+
+
+
+@keyframes clipRectSpIn {
+  0%   {
+      clip-path: polygon(50% 20%, 50% 50%, 20% 50%, 50% 50%, 50% 80%, 50% 50%, 80% 50%, 50% 50%);
+  }
+  100% {
+      clip-path: polygon(50% 0%, 0% 0%, 0% 50%, 0% 100%, 50% 100%, 100% 100%, 100% 50%, 100% 0%);
+  }
+}
+
+.titles{
+
+width: 40vw;
+height: 20vh;
+position: absolute;
+left: 50%;
+top: 50%;
+background-image: url("../access/SS_1/FLY.png");
+background-size: 100% 100%;
+background-repeat: no-repeat;
+z-index: 10;
+transform: translate(-50%,-50%) ;
+z-index: 0;
+opacity: 0.9;
+}
+.Back{
+  animation: move 1.5s ;
+  
+  
+  background-image: url("../access/SS_1/Union.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 1%;
+  top: -5%;
+  height: 25vh;
+  width: 2vw;
+  z-index: 10;
+  transition: top 0.3s;
+
+
+}
+.Back:active {
+  top: 0%;
+}
+.Back::after{
+  position: absolute;
+  left: -30%;
+  bottom: -15%;
+  content:" ";
+  background-image: url("../access/SS_1/back_.png");
+  background-position: conter;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 3vw;
+  height: 3vh;
+  
+  
+  transition: opacity 1s;
+  }
+  @keyframes move{
+
+50%{
+
+transform: translateY(4vh);
+
+
+
+}
+100%{
+
+transform: translateY(0);
+
+
+}
+
+
+
+
+  }

@@ -1,0 +1,71 @@
+.bg-layer{
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-2%);
+    -moz-transform: translateY(-50%) translateX(-2%);
+    -ms-transform: translateY(-50%) translateX(-2%);
+    -o-transform: translateY(-50%) translateX(-2%);
+    transform: translateY(-50%) translateX(-2%);
+    /* its dimentions will be overwritten using jQuery to proportionally fit the viewport */
+    height: 100%;
+    /* our sprite is composed of 25 frames */
+    width: 2500%;
+    background: url('../access/SS_0/ink\ .png') no-repeat 0 0;
+    background-size: 100% 100%;
+    z-index: 1000000000;
+
+  }
+  .bg-layer {
+    -webkit-animation: cd-sequence 1s steps(24);
+    -moz-animation: cd-sequence 1s steps(24);
+    animation: cd-sequence 1s steps(24);
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes cd-sequence {
+    0% {
+      /* translateX(-2%) is used to horizontally center the first frame inside the viewport */
+      -webkit-transform: translateY(-50%) translateX(-2%);
+    }
+    100% {
+      /* translateX(-98%) (2% + 96) is used to horizontally center the last frame inside the viewport  */
+      -webkit-transform: translateY(-50%) translateX(-98%);
+    }
+  }
+  @-moz-keyframes cd-sequence {
+    0% {
+      /* translateX(-2%) is used to horizontally center the first frame inside the viewport */
+      -moz-transform: translateY(-50%) translateX(-2%);
+    }
+    100% {
+      /* translateX(-98%) (2% + 96) is used to horizontally center the last frame inside the viewport  */
+      -moz-transform: translateY(-50%) translateX(-98%);
+    }
+  }
+  @keyframes cd-sequence {
+    0% {
+      /* translateX(-2%) is used to horizontally center the first frame inside the viewport */
+      -webkit-transform: translateY(-50%) translateX(-2%);
+      -moz-transform: translateY(-50%) translateX(-2%);
+      -ms-transform: translateY(-50%) translateX(-2%);
+      -o-transform: translateY(-50%) translateX(-2%);
+      transform: translateY(-50%) translateX(-2%);
+    }
+    100% {
+      /* translateX(-98%) (2% + 96) is used to horizontally center the last frame inside the viewport  */
+      -webkit-transform: translateY(-50%) translateX(-98%);
+      -moz-transform: translateY(-50%) translateX(-98%);
+      -ms-transform: translateY(-50%) translateX(-98%);
+      -o-transform: translateY(-50%) translateX(-98%);
+      transform: translateY(-50%) translateX(-98%);
+    }
+  }
+  .bg-index
+{
+z-index: -10000;
+
+width:0;
+}
