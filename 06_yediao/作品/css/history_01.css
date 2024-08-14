@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: '庞门正道粗书体';
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    position: relative;
+    width: 66.6667vw;
+    height: 135.9259vh;
+    background: no-repeat url('../images/BASE.webp');
+    background-size: cover;
+    overflow-x: hidden;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0 !important
+}
+
+.logo_bock {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    position: absolute;
+    left: 3.5vw;
+    top: 5vh;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.nav {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    position: absolute;
+    /* background-color: #fff; */
+    top: 20vh;
+}
+
+.tp1_1 {
+    display: flex;
+    position: absolute;
+    top: 3vh;
+    left: 16vw;
+    transform: scale(2);
+}
+
+.tp1_2 {
+    display: flex;
+    position: absolute;
+    top: 2vh;
+    left: 24vw;
+    transform: scale(2);
+}
+
+.tp1_3 {
+    display: flex;
+    position: absolute;
+    top: 33vh;
+    left: 4vw;
+    transform: scale(2);
+}
+
+.tp2_1 {
+    display: flex;
+    position: absolute;
+    top: 3vh;
+    left: 66vw;
+    transform: scale(2) rotateY(180deg);
+}
+
+.tp2_2 {
+    display: flex;
+    position: absolute;
+    top: 2vh;
+    left: 70.2vw;
+    transform: scale(2) rotateY(180deg);
+}
+
+.tp2_3 {
+    display: flex;
+    position: absolute;
+    top: 33vh;
+    left: 87vw;
+    transform: scale(2) rotateY(180deg);
+}
+
+.el2 {
+    display: flex;
+    position: absolute;
+    width: 19.6875vw;
+    height: 39.537vh;
+    background: rgba(212, 192, 146, 1);
+    top: 0vh;
+    left: 41vw;
+}
+
+.el2-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14.6875vw;
+    height: 34.537vh;
+    border: 6px dashed rgba(102, 87, 52, 1);
+    background: no-repeat url('../images/YX 2.svg');
+    background-position: center;
+    transition: background-size 1s ease;
+}
+
+.el2-item:hover {
+    background-size: 220%;
+    /* 鼠标移入时背景图变大 */
+}
+
+.main {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 40vh;
+    /* background-color: #fff; */
+    top: 70vh;
+}
+
+.bock {
+    display: flex;
+    position: absolute;
+    width: 20.8333vw;
+    height: 55.5556vh;
+    left: 35vw;
+    border-radius: 20px;
+    background: rgba(212, 192, 146, 1);
+    transition: left 1s;
+}
+
+.bock img {
+    display: flex;
+    position: relative;
+    top: 2vh;
+    left: 2vw;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+.wz {
+    display: flex;
+    position: absolute;
+    border-radius: 24px;
+    width: 36.4583vw;
+    height: 37.037vh;
+    top: 13vh;
+    left: 40vw;
+    background: rgba(204, 196, 173, 1);
+    align-items: center;
+    flex-wrap: wrap;
+    /** 文本1 */
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.8519vh;
+    line-height: 4vh;
+    color: rgba(255, 255, 255, 1);
+    /* text-shadow: 11px 6px 6px rgba(148, 125, 71, 1); */
+    text-align: left;
+    vertical-align: top;
+    text-indent: 2em;
+    padding-left: 1vw;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.el3 {
+    display: flex;
+    position: absolute;
+    top: 84vh;
+    left: 87vw;
+}
+
+.el4 {
+    display: flex;
+    position: absolute;
+    top: 110vh;
+    left: 87vw;
+}
+
+.el5 {
+    display: flex;
+    position: absolute;
+    top: 84vh;
+    left: -6vw;
+}
+
+.el6 {
+    display: flex;
+    position: absolute;
+    top: 110vh;
+    left: -6vw;
+}
+
+.wz2 {
+    display: flex;
+    position: absolute;
+    top: -1vh;
+    left: 53vw;
+    text-shadow: 11px 6px 6px rgba(145, 131, 93, 0.62);
+    /** 文本1 */
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 83.16px;
+    color: rgba(0, 0, 0, 1);
+    text-align: left;
+    vertical-align: top;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.f {
+    position: absolute;
+    top: 0vh;
+    left: 82vw;
+    transform: scale(1.5) rotate(-45deg);
+}
+
+.q {
+    position: absolute;
+    width: 7vw;
+    height: 9vh;
+    border-radius: 50%;
+    border: 1px solid;
+    top: 3vh;
+    left: 90vw;
+    font-size: 1.0417vw;
+    cursor: pointer;
+}

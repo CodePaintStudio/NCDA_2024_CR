@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: '庞门正道粗书体';
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    position: relative;
+    width: 66.6667vw;
+    height: 160.9259vh;
+    background: no-repeat url('../images/BASE.webp');
+    background-size: cover;
+    overflow-x: hidden;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0 !important
+}
+
+.logo_bock {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    position: absolute;
+    left: 3.5vw;
+    top: 5vh;
+    cursor: pointer;
+}
+
+.nav {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    position: absolute;
+    /* background-color: #fff; */
+    top: 20vh;
+}
+
+.tp1_1 {
+    display: flex;
+    position: absolute;
+    top: 3vh;
+    left: 16vw;
+    transform: scale(2);
+}
+
+.tp1_2 {
+    display: flex;
+    position: absolute;
+    top: 2vh;
+    left: 24vw;
+    transform: scale(2);
+}
+
+.tp1_3 {
+    display: flex;
+    position: absolute;
+    top: 33vh;
+    left: 4vw;
+    transform: scale(2);
+}
+
+.tp2_1 {
+    display: flex;
+    position: absolute;
+    top: 3vh;
+    left: 66vw;
+    transform: scale(2) rotateY(180deg);
+}
+
+.tp2_2 {
+    display: flex;
+    position: absolute;
+    top: 2vh;
+    left: 70.2vw;
+    transform: scale(2) rotateY(180deg);
+}
+
+.tp2_3 {
+    display: flex;
+    position: absolute;
+    top: 33vh;
+    left: 87vw;
+    transform: scale(2) rotateY(180deg);
+}
+
+.el2 {
+    display: flex;
+    position: absolute;
+    width: 19.6875vw;
+    height: 39.537vh;
+    background: rgba(212, 192, 146, 1);
+    top: 0vh;
+    left: 41vw;
+}
+
+.el2-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14.6875vw;
+    height: 34.537vh;
+    border: 6px dashed rgba(102, 87, 52, 1);
+    background: no-repeat url('../images/圆形 4.svg');
+    background-position: center;
+    transition: background-size 1s ease;
+}
+
+.el2-item:hover {
+    background-size: 220%;
+    /* 鼠标移入时背景图变大 */
+}
+
+.main {
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    top: 75vh;
+    /* background-color: #fff; */
+    background: no-repeat url('../images/JPG-1.svg');
+    /* background-size: cover; */
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 1075px;
+    height: 634px;
+    opacity: 1;
+    border-radius: 20px;
+    background: linear-gradient(360deg, rgba(56, 56, 56, 1) 0%, rgba(56, 56, 56, 0) 47.22%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wz {
+    position: absolute;
+    width: 12.5vw;
+    height: 7.7778vh;
+    top: 32vh;
+    left: 30vw;
+    /** 文本1 */
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 83.16px;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    vertical-align: top;
+}
+
+.wz2 {
+    position: absolute;
+    width: 24.2188vw;
+    height: 7.7778vh;
+    top: 38vh;
+    left: 30vw;
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 27.72px;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    vertical-align: top;
+    text-indent: 2em;
+}
+
+.item1 {
+    position: absolute;
+    top: 113vh;
+    left: 54vw;
+    cursor: pointer;
+}
+
+.item2 {
+    position: absolute;
+    top: 113vh;
+    left: 63vw;
+    cursor: pointer;
+}
+
+.item3 {
+    position: absolute;
+    top: 113vh;
+    left: 72vw;
+    cursor: pointer;
+}
+
+.item4 {
+    position: absolute;
+    top: 113vh;
+    left: 81vw;
+    cursor: pointer;
+}
+
+.btn2 {
+    position: absolute;
+    top: 140vh;
+    left: 52vw;
+    cursor: pointer;
+}
+
+.btn3 {
+    position: absolute;
+    display: flex;
+    transform: rotateY(180deg);
+    top: 140vh;
+    left: 43vw;
+    cursor: pointer;
+}

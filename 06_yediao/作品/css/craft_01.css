@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: '庞门正道粗书体';
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: no-repeat url('../images/BASE.webp');
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.logo_bock {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    position: absolute;
+    left: 3.5vw;
+    top: 5vh;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.item1 {
+    position: absolute;
+    top: 25vh;
+    left: 10vw;
+    transform: scale(1.4);
+    border-radius: 15%;
+}
+
+.item2 {
+    position: absolute;
+    top: 50vh;
+    left: 10vw;
+    transform: scale(1.4);
+    border-radius: 15%;
+}
+
+.item3 {
+    position: absolute;
+    top: 75vh;
+    left: 14vw;
+    transform: scale(2);
+    border-radius: 15%;
+}
+
+.el4 {
+    position: absolute;
+    top: 136vh;
+    left: 86vw;
+}
+
+.el5 {
+    position: absolute;
+    top: 90vh;
+    left: 86vw;
+}
+
+.el6 {
+    position: absolute;
+    top: 136vh;
+    left: -8vw;
+}
+
+.el7 {
+    position: absolute;
+    top: 105vh;
+    left: -8vw;
+}
+
+.el8 {
+    position: absolute;
+    top: 74vh;
+    left: -8vw;
+}
+
+.beside {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16.3542vw;
+    height: 100vh;
+    background: rgba(212, 192, 146, 1);
+    z-index: -2;
+}
+
+.el1 img {
+    position: absolute;
+    left: 80vw;
+    top: 0;
+    opacity: 0.5;
+}
+
+.wz1 {
+    position: absolute;
+    left: 83vw;
+    top: 12vh;
+    text-shadow: 11px 6px 6px rgba(148, 125, 71, 1);
+    font-size: 96px;
+    font-weight: 400;
+    letter-spacing: 50px;
+    line-height: 11vw;
+    color: rgba(69, 58, 34, 1);
+    text-align: center;
+    vertical-align: top;
+    opacity: 1;
+    writing-mode: vertical-rl;
+    width: 11vw;
+}
+
+.wz2 {
+    display: flex;
+    position: absolute;
+    left: 40vw;
+    top: 20vh;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 48px;
+    line-height: 60.26px;
+    color: rgba(69, 58, 34, 1);
+    /* text-align: center; */
+    vertical-align: top;
+    height: 20vh;
+    align-items: center;
+    width: 40vw;
+    text-indent: 2em;
+}
+
+.el2 img {
+    position: absolute;
+    left: 40vw;
+    top: 45vh;
+    opacity: 0.5;
+}
+
+.wz6 {
+    position: absolute;
+    left: 43vw;
+    top: 57vh;
+    text-shadow: 11px 6px 6px rgba(148, 125, 71, 1);
+    font-size: 96px;
+    font-weight: 400;
+    letter-spacing: 50px;
+    line-height: 11vw;
+    color: rgba(69, 58, 34, 1);
+    text-align: left;
+    vertical-align: top;
+    opacity: 1;
+    writing-mode: vertical-rl;
+    width: 11vw;
+}
+
+.wz7 {
+    display: flex;
+    position: absolute;
+    left: 57vw;
+    top: 60vh;
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 48px;
+    line-height: 60.26px;
+    color: rgba(69, 58, 34, 1);
+    /* text-align: center; */
+    vertical-align: top;
+    height: 20vh;
+    align-items: center;
+    width: 40vw;
+    text-indent: 2em;
+}
+
+.q {
+    position: absolute;
+    width: 7vw;
+    height: 9vh;
+    border-radius: 50%;
+    border: 1px solid;
+    top: 3vh;
+    left: 90vw;
+    font-size: 1.0417vw;
+    cursor: pointer;
+}

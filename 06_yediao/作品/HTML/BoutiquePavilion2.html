@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精品馆</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: '庞门正道粗书体';
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
+            overflow: hidden;
+            background: no-repeat url('../images/JPG-1.svg');
+            background-size: cover;
+            background-position: center;
+            overflow: -moz-scrollbars-none;
+            -ms-overflow-style: none;
+            transition: opacity 0.5;
+        }
+
+        body::-webkit-scrollbar {
+            width: 0 !important
+        }
+
+        .logo_bock {
+            width: 90px;
+            height: 90px;
+            display: flex;
+            position: absolute;
+            left: 3.5vw;
+            top: 5vh;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        .overlay {
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            opacity: 1;
+            border-radius: 20px;
+            background: linear-gradient(360deg, rgba(56, 56, 56, 1) 0%, rgba(56, 56, 56, 0) 47.22%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .wz span {
+            position: absolute;
+            top: 75vh;
+            left: 5vw;
+            font-size: 105px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            line-height: 83.16px;
+            color: rgba(255, 255, 255, 1);
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .wz2 span {
+            position: absolute;
+            width: 29.75vw;
+            top: 83vh;
+            left: 5vw;
+            /** 文本1 */
+            font-size: 30px;
+            font-weight: 400;
+            letter-spacing: 10px;
+            line-height: 35.72px;
+            color: rgba(255, 255, 255, 1);
+            text-align: left;
+            vertical-align: top;
+            text-indent: 2em;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 30vh;
+            right: 5vw;
+        }
+
+        .footer img {
+            transform: scale(1.5);
+            transition: transform 0.5s;
+            cursor: pointer;
+        }
+
+        .item1 {
+            position: absolute;
+            right: 40vw;
+        }
+
+        .item2 {
+            position: absolute;
+            right: 25vw;
+        }
+
+        .item3 {
+            position: absolute;
+            right: 11vw;
+        }
+
+        .item4 {
+            position: absolute;
+            right: -3vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo_bock">
+        <img src="../images/logoBZ.svg" alt="" class="btn">
+    </div>
+    <div class="overlay"></div>
+    <div class="wz">
+        <span>单色叶雕</span>
+    </div>
+    <div class="wz2">
+        <span>利用叶子本身的颜色(如绿的杨叶，红的黄栌叶，黄的银杏叶等)进行雕琢，作品纯朴、自然，尽显大自然质朴的神韵。</span>
+    </div>
+    <div class="footer">
+        <img src="../images/JPG-5.svg" alt="" class="item1">
+        <img src="../images/JPG-2.svg" alt="" class="item2">
+        <img src="../images/JPG-3.svg" alt="" class="item3">
+        <img src="../images/JPG-4.svg" alt="" class="item4">
+    </div>
+    <script src="../js/BoutiquePavilion2.js"></script>
+</body>
+
+</html>
