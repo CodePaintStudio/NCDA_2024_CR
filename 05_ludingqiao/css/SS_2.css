@@ -1,0 +1,99 @@
+.main {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	left: 0px;
+	top: 0px;
+	background-image: url("../access/SS_2/bzwl.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+  }
+  .header_contianer {
+	width: 95vw;
+	height: 8vh;
+	position: absolute;
+	left: 50vw;
+	top: 6vh;
+	transform: translate(-50%, -50%);
+  
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+	z-index: 1000!important;
+  }
+  .bighr {
+	position: absolute;
+	left: 50vw;
+	top: 12vh;
+	transform: translate(-50%, -50%);
+  
+	width: 95.1vw;
+	height: 1vh;
+	box-shadow: 1 1 10px balck;
+	background-image: url("../access/SS_4/Rectangle_3.png");
+	border-bottom: 2px solid black;
+	border-top: 2px solid black;
+  
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: CONTER;
+  }
+  
+  .title_header_1 {
+	background-image: url("../access/SS_2/csgs.png");
+	
+  }
+  .title_header_3 {
+	background-image: url("../access/SS_2/hsxt.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: over;
+  }
+  .title_header_4 {
+	background-image: url("../access/SS_2/sgsy.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: over;
+  }
+  .title_header_5 {
+	background-image: url("../access/SS_2/qxsl.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: over;
+  }
+  #back{
+
+	background-image: url("../access/SS_3/back_1.png");
+	list-style: none;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	position: absolute;
+	width:4%;
+	height: 6%;
+	bottom: 5%;
+	left:3%;
+	z-index: 20;
+	}
+	#back::after{
+		content: " ";
+		
+		background-image: url("../access/SS_3/Back.png");
+
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: center;
+position: absolute;
+width:6vw;
+height: 3vh;
+bottom: -3vh;
+left: -1vw;
+z-index: 10;
+		
+	}
+  

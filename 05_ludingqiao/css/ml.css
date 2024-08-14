@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 500px) {
+  body {
+    min-width: 500px;
+  }
+}
+
+@media (min-height: 300px) {
+  body {
+    min-height: 300px;
+  }
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none; /* 去除默认的下划线 */
+  outline: none; /* 去除旧版浏览器的点击后的外虚线框 */
+  color: #000; /* 去除默认的颜色和点击后变化的颜色 */
+}
+
+.main_2 {
+  background-image: url("../access/SS_0/AA_2/Rectangle_28.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  z-index: 0;
+}
+.HQ {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../access/SS_0/AA_2/Rectangle_50.png");
+
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.pic_1{
+  opacity: 0.2;
+background-image: url("../access/SS_0/AA_2/Polygon_4.png");
+background-size: 100% 100%;
+background-repeat: no-repeat;
+background-position: center;
+width: 50%;
+height: 50%;
+position: absolute;
+bottom: 0;
+right: 0;
+z-index: 1;
+}
+.pic_2{
+opacity: 0.2;
+background-image: url("../access/SS_0/AA_2/Polygon_5.png");
+background-size: 100% 100%;
+background-repeat: no-repeat;
+background-position: center;
+width: 50%;
+height: 50%;
+position: absolute;
+top: 0;
+right: 0;
+
+z-index: 1;
+
+}
+.container_ML {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ML {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.container_ML {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  height: 80%;
+  z-index: 10;
+}
+.ML {
+  position: relative;
+  width: 100%;
+
+  height: 20%;
+}
+.h_j {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../access/SS_0/AA_2/hj.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: conter;
+  transition: opacity 1.5s;
+  opacity: 0;
+}
+div[class^="a_"] {
+  position: absolute;
+  width: 65%;
+  height: 65%;
+
+  transform: translate(-50%, -50%);
+  top: 45%;
+  left: 53%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: conter;
+}
+
+.a_1 {
+  background-image: url("../access/SS_0/AA_2/sgsy_1.png");
+}
+.a_2 {
+  background-image: url("../access/SS_0/AA_2/qxsy.png");
+}
+.a_3 {
+  background-image: url("../access/SS_0/AA_2/csgs.png");
+}
+.a_4 {
+  background-image: url("../access/SS_0/AA_2/hsxt.png");
+}
+div[class^="as_"] {
+  position: absolute;
+  width: 65%;
+  height: 65%;
+
+  top: 15%;
+  left: 20%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: conter;
+  opacity: 0;
+  z-index: 1;
+  transition: all 1s;
+}
+.as_1 {
+  background-image: url("../access/SS_0/AA_2/sgsy.png");
+}
+.as_2 {
+  background-image: url("../access/SS_0/AA_2/qxsy_1.png");
+}
+.as_3 {
+  background-image: url("../access/SS_0/AA_2/csgs\ _1.png");
+}
+.as_4 {
+  background-image: url("../access/SS_0/AA_2/hsxt_1.png");
+}
+.ML:hover div[class^="as_"] {
+  opacity: 1;
+}
+.ML:hover .h_j {
+  opacity: 1;
+}
+.titles {
+  width: 35vw;
+  height: 10vh;
+  position: absolute;
+  top: 43%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  container-type: inline-size;
+  font-size: 2.5cqw;
+  font-family: LiSu;
+  z-index: 11;
+}
+
+.Title_E {
+  width: 40%;
+  height: 100%;
+  container-type: inline-size;
+  font-size: 8cqw;
+  font-size: LiSu;
+  color: #000000;
+  cursor: pointer;
+border-radius: 10px;
+text-align: center;
+
+}
+
+.Title_F {
+  width: 40%;
+  height: 100%;
+  container-type: inline-size;
+  font-size: 8cqw;
+  font-size: LiSu;
+  color: #000000;
+  cursor: pointer;
+border-radius: 20px;
+}
+
+
+.button_containter {
+  position: absolute;
+  width: 40vw;
+  height: 45vh;
+  overflow: hidden;
+  top: 68%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  z-index: 10;
+}
+.Animate-card_1 {
+  position: absolute;
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  transition: all 1s;
+}
+.animate-card_wrod_1 {
+  container-type: inline-size;
+  font-size: 1.8cqw;
+  font-family: LiSu;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+}
+.animate-card_picture_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  transition: all 1s;
+  opacity: 1;
+}
+/* .Animate-card_1:hover .animate-card_picture_1 {
+  transform: translateX(0);
+  
+}
+.Animate-card_1:hover .animate-card_wrod_1 {
+  transform: translateX(-100%);
+  opacity: 0;
+} */
+.Animate-card_2 {
+  position: absolute;
+  transition: all 1s;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+}
+.animate-card_wrod_2 {
+  container-type: inline-size;
+  font-size: 1.8cqw;
+  font-family: LiSu;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  opacity: 1;
+}
+.animate-card_picture_2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateX(100%);
+  transition: all 1s;
+}
+/* .Animate-card_2:hover .animate-card_picture_2 {
+  transform: translateX(0);
+}
+.Animate-card_2:hover .animate-card_wrod_2 {
+  transform: translateX(-100%);
+  opacity: 0;
+} */
+.animate-card_1 {
+  z-index: 1;
+}
+.animate-card_2 {
+  z-index: 0;
+}
+.move_up {
+  z-index: 0;
+  opacity: 0;
+}
+.move_down {
+  z-index: 1;
+  opacity: 1;
+}
+.back{
+
+  background-image: url("../access/SS_0/AA_2/back_1.png");
+
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: center;
+position: absolute;
+width:6vw;
+height: 3vh;
+bottom: 2%;
+left: 2%;
+z-index: 10;
+}
+#back{
+
+  background-image: url("../access/SS_0/AA_2/back.png");
+  list-style: none;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  position: absolute;
+  width:2.5vw;
+  height: 5vh;
+  top: 90%;
+  left: 3%;
+  z-index: 20;
+  }

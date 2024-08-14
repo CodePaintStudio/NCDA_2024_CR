@@ -1,0 +1,59 @@
+
+a{
+  list-style-type: none;
+}
+
+
+.title_header2 {
+  list-style-type: none;
+  width: 6.54vw;
+  height: 6.32vh;
+}
+.red {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  background-size: 100% 100%;
+  transition: all 0.5s ease-in-out;
+  z-index: 1000;
+}
+a:hover .red {
+  opacity: 1;
+
+  z-index: 1000!important;
+}
+
+.header_contianer a[class^="title_header_"] {
+  margin-top: 0.65vh;
+  list-style-type: none;
+  width: 6.54vw;
+  height: 6.32vh;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  z-index: 100;
+}
+.header_contianer a:hover {
+  transform: scale(1.1) !important;
+}
+.header_contianer .title_header_1 {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: over;
+  transform: scale(1.5);
+
+ 
+
+  width: 6.54vw;
+  height: 6.32vh;
+
+
+
+}
+.header_contianer {
+  
+  border-top: 2px solid #000000;
+  border-right: 2px solid #000000;
+  border-left: 2px solid #000000;
+}

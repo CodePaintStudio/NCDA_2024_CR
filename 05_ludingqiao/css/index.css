@@ -1,0 +1,284 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  min-width: 810px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  position: relative;
+  background-image: url("../access/index/Rectangle_50.png");
+
+  overflow: hidden;
+
+  background-position: conter;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+
+  overflow: hidden;
+}
+
+.fivestar{
+
+background-image: url("../access/index/wujiao.png");
+
+background-position: conter;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+width: 5.5vw;
+height: 10vh;
+position: absolute;
+z-index: 10;
+
+left: 50%;
+top: 13%;
+transform:translate(-50%,-50%);
+perspective: 1000px;
+transform-style: preserve-3d;
+animation: rotater 5s linear infinite;
+}
+@keyframes rotater{
+
+
+to{
+
+  transform:translate(-50%,-50%) rotateY(360deg);
+}
+
+
+}
+.title_1 {
+  position: absolute;
+transition: all  0.4s ease-in-out ;
+  background-image: url("../access/index/duoqiao.png");
+  background-position: over;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 20%;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+}
+.hr_1 {
+  position: absolute;
+  height: 0.4vh;
+  width: 50%;
+
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+
+  border: 2px solid #000000;
+}
+.left {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 40%;
+  background-position: conter;
+z-index: 1;
+  right: -4%;
+  top: 28%;
+  background-image: url("../access/index/a68c51eeedc8e004a49c5a95e05c8c08c07721796232-4ULPov_fw658webp_1.png");
+  position: absolute;
+}
+.right {
+  position: absolute;
+  background-image: url("../access/index/a68c51eeedc8e004a49c5a95e05c8c08c07721796232-4ULPov_fw658webp_2.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 30%;
+  height: 40%;
+  background-position: conter;
+  left: -4%;
+  top: 28%;
+  z-index: 1;
+}
+.picture_1 {
+  background-image: url("../access/index/Polygon_4.png");
+  background-position: conter;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+}
+.picture_2 {
+  position: absolute;
+  background-image: url("../access/index/Polygon_5.png");
+  background-position: conter;
+  background-size: 100% 120%;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-repeat: no-repeat;
+}
+.hr_2 {
+  position: absolute;
+  height: 0.4vh;
+  width: 30%;
+
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%,-50%);
+  background-color: #000000;
+
+  border: 1.5px solid #000000;
+}
+.title_2{
+
+
+
+background-image:url("../access/index/flyTO.png");
+
+position: absolute;
+background-position:over;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+width: 55%;
+height: 10%;
+left: 50%;
+top: 55%;
+transform: translate(-50%, -50%);
+
+}
+
+.title_3{
+background-image: url("../access/index/word.png");
+width: 40%;
+height: 5%;
+background-size: 100% 100%;
+background-position: conter;
+position: absolute;
+background-repeat: no-repeat;
+left: 43%;
+top: 65%;
+transform: translate(-50%, -50%);
+}
+.picture_3{
+
+background-image: url("../access/index/8e05bd3b537d9a2784beb6834cb1d5ca34106095393a-Xm4rtY_fw658webp_2.png");
+
+width: 5%;
+height: 10%;
+background-repeat: no-repeat;
+background-size: 100% 100%;
+position: absolute;
+left: 70%;
+top: 68%;
+transform: translate(-50%, -50%);
+transition: all 0.3s ease-in-out;
+
+}
+.picture_3:hover{
+
+transform:translate(-50%,-50%) scale(1.2);
+
+
+}
+.title_6{
+width: 12vw;
+height: 4.5vh;
+position: absolute;
+background-position: conter;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+background-image: url("../access/index/Remember.png");
+left: 32%;
+top: 24%;
+}
+.title_7{
+background-image: url("../access/index/1953.png");
+position: absolute;
+background-position: conter;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+width: 18vw;
+height: 6vh;
+left: 62%;
+top: 26%;
+transform: translate(-50%, -50%);
+}
+ .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+    background: url("../access/index/bolang.png");
+    background-size: 1600px 200px;
+}
+@keyframes animate-wave{
+    0%{
+        background-position-x:0 ;
+    }
+    100%{
+        background-position-x:1600px;
+    }
+}
+   .wave.wave1{
+    animation: animate-wave 10s linear infinite;
+    z-index: 10;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+ .wave.wave2{
+    animation: animate-wave 5s linear infinite;
+    z-index: 9;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+ .wave.wave3{
+    animation: animate-wave 10s linear infinite;
+    z-index: 7;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+ .wave.wave4{
+    animation: animate-wave 2s linear infinite;
+    z-index: 6;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+.title_1:hover{
+
+
+transform: translate(-50%, -50%) scale(1.2) ;
+
+
+
+}
+.title_1 div{
+
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+
+}
+.title_1:hover div{
+
+
+  opacity: 1;
+}
