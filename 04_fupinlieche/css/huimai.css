@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    width: 100%;
+    background-color: rgb(243, 240, 240);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 30px;
+    background-color: #dadada;
+  }
+  .flex-slide {
+    flex: 1;
+    margin-right: 0.625vw;
+    cursor: pointer;
+    transition: all 1.5s ease;
+    position: relative;
+  }
+  
+  .flex-slide:hover {
+    flex-grow: 3;
+  }
+  /* .btn a {
+    text-decoration: none;
+    color: #c4c0c0;
+  } */
+  .a {
+    display: block;
+    background: url(../images/惠脉/1.png);
+    background-size: cover;
+    background-position: center center;
+  }
+  .b {
+    background: url(../images/惠脉/2.png);
+    background-size: cover;
+    background-position: center center;
+  }
+  .c {
+    background: url(../images/惠脉/3.png);
+    background-size: cover;
+    background-position: center center;
+  }
+  .d {
+    background: url(../images/惠脉/4.png);
+    background-size: cover;
+    background-position: center center;
+  }
+ 

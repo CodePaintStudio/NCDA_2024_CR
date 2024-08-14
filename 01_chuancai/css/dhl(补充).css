@@ -1,0 +1,36 @@
+.top {
+  width: 10%;
+  height: 100%;
+}
+
+.ReturnLogo {
+  width: 5%;
+  height: 3.125rem;
+  /* background-color: black; */
+  position: absolute;
+
+  cursor: pointer;
+
+  top: 8.1481vh;
+  right: 3.3854vw;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.5;
+}
+
+.ReturnLogo-line {
+  width: 50%;
+  height: 3px;
+  background-color: #000000;
+}
+
+.back {
+  position: relative;
+  top: 20%;
+  left: 10%;
+  background-image: url(../image/川菜展示/logo\ 3.png);
+  width: 10%;
+  height: 1%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

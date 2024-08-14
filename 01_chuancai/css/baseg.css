@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  position: fixed;
+}
+
+.main {
+  width: 100%;
+  height: 101%;
+  /* transform-style: preserve-3d; */
+  /* transform: rotateX(-20deg) rotateY(30deg); */
+}
+
+.banner {
+  width: 100%;
+  height: 101%;
+  display: flex;
+  position: relative;
+  /* transform-style: preserve-3d; */
+
+  z-index: 1;
+}
+
+.sy {
+  justify-self: center;
+  align-items: center;
+  /* position: relative; */
+  /* display: flex; */
+  width: 100vw;
+  height: 100vh;
+  /* background: url(../image/首页/首页（翻书1）.png) no-repeat center center/cover; */
+
+  z-index: 0;
+}
+
+.yhcx {
+  position: absolute;
+  width: 26.9792vw;
+  height: 38.7963vh;
+
+  top: 21.2963vh;
+  left: 37.3438vw;
+  cursor: pointer;
+  z-index: 2;
+  transition: transform 1s;
+}
+
+.yhcx:hover {
+  transform: scale(1.1);
+}
+
+.hg {
+  position: absolute;
+  width: 40.7813vw;
+  height: 45.2778vh;
+
+  top: 55.5556vh;
+  left: 32.0833vw;
+  transform: translateY(80%);
+  transition: transform 2s;
+}
+
+.la {
+  width: 18.2292vw;
+  height: 37.037vh;
+  position: absolute;
+
+  top: 6.6667vh;
+  left: 15.5729vw;
+  /* transition: transform 1s; */
+  animation: change 1.5s infinite alternate;
+}
+
+@keyframes change {
+  form {
+    transform: scale(0.3);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.xian {
+  position: absolute;
+  width: 18.2292vw;
+  height: 37.037vh;
+
+  top: 6.6667vh;
+  right: 7.0313vw;
+  animation: change 2s infinite alternate;
+}
+
+.ma {
+  position: absolute;
+  width: 18.2292vw;
+  height: 37.037vh;
+
+  top: 62.7778vh;
+  left: 3.2292vw;
+
+  animation: change 1.7s infinite alternate;
+
+}
+
+.xiang {
+  position: absolute;
+  width: 18.2292vw;
+  height: 37.037vh;
+
+  top: 63.5185vh;
+  right: 3.2813vw;
+
+  animation: change 1.3s infinite alternate;
+
+}
+
+.yanw {
+  width: 35.6771vw;
+  height: 52.6852vh;
+  border-radius: 0px 0px 0px 0px;
+
+  position: absolute;
+  opacity: 0;
+  top: 36.4815vh;
+  left: 32.8125vw;
+  transform: opacity 2s;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.show1 {
+  animation: show 3s infinite alternate;
+
+}

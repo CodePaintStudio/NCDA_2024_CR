@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  .prv{
+    margin: 0 auto;
+  }
+  .prv h1{
+    margin: 4vh auto;
+    text-align: center;
+  }
+  .prv>img:nth-child(1){
+    width: 100%;
+    z-index: 999;
+    /* height: 70vh; */
+  }
+  .prv img:nth-child(2){
+    position: absolute;
+    width: 18vw;
+    top: 23%;
+    left: 8%;
+  }
+  .prv h1{
+    font-family: Songti SC;
+    font-weight: 100;
+  }
+  .prv p{
+    margin: 4vh auto;
+    width: 78vw;
+    font-family: PingFang SC;
+    font-size: 0.9vw;
+    letter-spacing: 4px;
+    line-height: 5vh;
+    text-indent:2em
+  }
+  .train2 img{
+    position: absolute;
+    z-index: 9;
+  }
+  

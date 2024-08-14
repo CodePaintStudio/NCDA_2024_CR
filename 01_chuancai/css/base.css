@@ -1,0 +1,709 @@
+body {
+  margin: 0;
+  position: fixed;
+}
+
+.main {
+  width: 100%;
+  height: 101%;
+  display: flex;
+  position: relative;
+  /* transform-style: preserve-3d; */
+  /* transform: rotateX(-20deg) rotateY(30deg); */
+
+}
+
+/* 页面转换 */
+.active {
+  transform: rotateY(180deg);
+}
+
+.syy {
+  width: 50%;
+  height: 101%;
+  position: absolute;
+  display: flex;
+  transform-style: preserve-3d;
+  left: 48%;
+  transition: all 0.5s;
+  transform-origin: 0 0 0;
+
+  /* border-left: 0; */
+}
+
+.main .mainson1 {
+  width: 100%;
+  height: 101%;
+  display: flex;
+  position: relative;
+  /* transform-style: preserve-3d; */
+
+  z-index: 1;
+}
+
+.mainson2 {
+  /* display: none; */
+  z-index: 0;
+  width: 100%;
+  height: 101%;
+  display: flex;
+  position: absolute;
+  /* transform-style: preserve-3d; */
+  /* transform: rotateY(-90deg) translateX(-50vw) translateZ(-50vw); */
+}
+
+/* 背景图 */
+.banner {
+  justify-self: center;
+  align-items: center;
+  /* position: relative; */
+  /* display: flex; */
+  width: 100vw;
+  height: 100vh;
+  /* background: url(../image/首页/首页（翻书1）.png) no-repeat center center/cover; */
+
+  z-index: 0;
+}
+
+.banner1 {
+  justify-self: center;
+  align-items: center;
+  /* position: relative; */
+  /* display: flex; */
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* background: url(../image/首页/首页（翻书1）.png) no-repeat center center/cover; */
+  filter: brightness(0.5);
+
+  z-index: 0;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../font/汉仪尚巍手书W.ttf') format('woff2'),
+    url('../font/汉仪尚巍手书W.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 文字 */
+.yan {
+  position: absolute;
+
+  width: 9.375vw;
+  height: 21.574074vh;
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: 400;
+  font-size: 9.375vw;
+  color: #FFFFFF;
+  line-height: 19.537037vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  top: 6.4341vh;
+  left: 29.375vw;
+}
+
+.huo {
+  position: absolute;
+
+  width: 9.375vw;
+  height: 21.574074vh;
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: 400;
+  font-size: 9.375vw;
+  color: #FFFFFF;
+  line-height: 19.537037vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  top: 24.537037vh;
+  left: 34.5833333vw;
+
+}
+
+.chuan {
+  position: absolute;
+
+  width: 9.375vw;
+  height: 21.574074vh;
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: 400;
+  font-size: 9.375vw;
+  color: #FFFFFF;
+  line-height: 19.537037vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  top: 48.518vh;
+  left: 34.5833333vw;
+}
+
+.xiang {
+  position: absolute;
+
+  width: 9.375vw;
+  height: 21.574074vh;
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: 400;
+  font-size: 9.375vw;
+  color: #FFFFFF;
+  line-height: 19.537037vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  top: 70.0925vh;
+  left: 29.375vw;
+}
+
+.main .hv {
+  display: grid;
+  /* position: relative; */
+
+  width: 20.8333vw;
+  height: 58.8235vh;
+
+  position: absolute;
+  border-radius: 30px 30px 30px 30px;
+  background-color: #FFFFFF;
+
+  top: 22.2222vh;
+  left: 8.5416vw;
+}
+
+.hv .hvson {
+  display: grid;
+
+  justify-self: center;
+  align-self: center;
+
+  width: 18.489583vw;
+  height: 55.5555vh;
+
+  position: absolute;
+  border-radius: 30px 30px 30px 30px;
+  background-color: #FFFFFF;
+
+  border: 2px solid #000000;
+}
+
+.hvson .yanzi {
+
+  width: 5.2083vw;
+  height: 14.2593vh;
+
+
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+
+.father {
+  position: absolute;
+  display: flex;
+
+  width: 1.5625vw;
+  height: 34.1667vh;
+
+  flex-direction: column;
+  justify-content: flex-start;
+
+  top: 32.963vh;
+  left: 18.9583vw;
+
+}
+
+.vertical-text {
+  position: absolute;
+
+  width: 3.125vw;
+  height: 28.8889vh;
+
+
+
+
+  text-orientation: upright;
+  /* 如果需要保持文字方向正常 */
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: 400;
+  font-size: 3.125vw;
+  color: #000000;
+  /* 或 vertical-tb，取决于你想要的方向 */
+  /* writing-mode: vertical-rl; */
+
+  line-height: 3.64583vw;
+  /* letter-spacing: 1.6666vh; */
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+
+  top: 25.2777vh;
+  left: 24.53125vw;
+}
+
+.vertical-text2 {
+  position: absolute;
+
+  width: 3.125vw;
+  height: 28.8889vh;
+
+
+
+
+  text-orientation: upright;
+  /* 如果需要保持文字方向正常 */
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: 400;
+  font-size: 3.125vw;
+  color: #000000;
+  /* 或 vertical-tb，取决于你想要的方向 */
+  /* writing-mode: vertical-rl; */
+
+  line-height: 3.64583vw;
+  /* letter-spacing: 1.6666vh; */
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+
+  left: 21.40625vw;
+  top: 32.5vh;
+}
+
+.vertical-text3 {
+
+  width: 1.5625vw;
+  height: 9.6094vw;
+
+
+  text-orientation: upright;
+  /* 如果需要保持文字方向正常 */
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: normal;
+  font-size: 1.5625vw;
+  color: #000000;
+  /* 或 vertical-tb，取决于你想要的方向 */
+  /* writing-mode: vertical-rl; */
+
+  line-height: 1.3;
+  /* letter-spacing: 1.6666vh; */
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+
+}
+
+
+.vertical-text4 {
+
+  width: 1.5625vw;
+  height: 9.6094vw;
+
+  text-orientation: upright;
+  /* 如果需要保持文字方向正常 */
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: normal;
+  font-size: 1.5625vw;
+  color: #000000;
+  /* 或 vertical-tb，取决于你想要的方向 */
+  /* writing-mode: vertical-rl; */
+
+  line-height: 1.3;
+  /* letter-spacing: 1.6666vh; */
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+
+  margin-top: 1.8229vw;
+}
+
+.vertical-text5 {
+  position: absolute;
+
+  width: 1.5625vw;
+  height: 30.3704vh;
+
+  text-orientation: upright;
+  /* 如果需要保持文字方向正常 */
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: normal;
+  font-size: 1.5625vw;
+  color: #000000;
+  /* 或 vertical-tb，取决于你想要的方向 */
+  /* writing-mode: vertical-rl; */
+
+  line-height: 1.3;
+  /* letter-spacing: 1.6666vh; */
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+
+  top: 35.8333vh;
+  left: 16.875vw;
+}
+
+.vertical-text6 {
+  position: absolute;
+
+  width: 1.5625vw;
+  height: 34.1667vh;
+
+  text-orientation: upright;
+  /* 如果需要保持文字方向正常 */
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: normal;
+  font-size: 1.5625vw;
+  color: #000000;
+  /* 或 vertical-tb，取决于你想要的方向 */
+  /* writing-mode: vertical-rl; */
+
+  line-height: 1.3;
+  /* letter-spacing: 1.6666vh; */
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+
+  top: 33.0556vh;
+  left: 14.7396vw;
+}
+
+.vertical-text7 {
+  position: absolute;
+
+  width: 1.5625vw;
+  height: 34.1667vh;
+
+  text-orientation: upright;
+  /* 如果需要保持文字方向正常 */
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: normal;
+  font-size: 1.5625vw;
+  color: #000000;
+  /* 或 vertical-tb，取决于你想要的方向 */
+  /* writing-mode: vertical-rl; */
+
+  line-height: 1.3;
+  /* letter-spacing: 1.6666vh; */
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+
+  top: 35.8333vh;
+  left: 12.6042vw;
+}
+
+.vertical-text8 {
+  position: absolute;
+
+  width: 1.5625vw;
+  height: 34.1667vh;
+
+  text-orientation: upright;
+  /* 如果需要保持文字方向正常 */
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: normal;
+  font-size: 1.5625vw;
+  color: #000000;
+  /* 或 vertical-tb，取决于你想要的方向 */
+  /* writing-mode: vertical-rl; */
+
+  line-height: 1.3;
+  /* letter-spacing: 1.6666vh; */
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+
+  top: 41.4815vh;
+  left: 10.4167vw;
+}
+
+/* 页面卷起 */
+#book-corner {
+  position: absolute;
+  cursor: pointer;
+
+
+  bottom: 0;
+  right: 0;
+  width: 19.5313vw;
+  height: 34.7222vh;
+  transition: transform 1s ease-out;
+  z-index: 1;
+}
+
+.hidden {
+  transform: skewY(0deg);
+  opacity: 0;
+  display: none;
+}
+
+.mainson2 .xm {
+  position: absolute;
+  ;
+  height: 31.4815vh;
+  width: 26.0417vw;
+  /* transform: rotateY(180deg); */
+  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 0px 0px; */
+
+  top: 12.2222vh;
+  left: 37.7083vw;
+}
+
+.mainson2 .mu {
+  position: absolute;
+  /* transform: rotateY(180deg); */
+
+  width: 15.625vw;
+  height: 36.0185vh;
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: 400;
+  font-size: 15.625vw;
+  color: #FFFFFF;
+  line-height: 32.5926vh;
+  letter-spacing: 1.5625vw;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  top: 10vh;
+  left: 23.9583vw;
+}
+
+.mainson2 .lu {
+  position: absolute;
+  /* transform: rotateY(180deg); */
+
+  width: 15.625vw;
+  height: 36.0185vh;
+  font-family: 'MyCustomFont', sans-serif;
+  font-weight: 400;
+  font-size: 15.625vw;
+  color: #FFFFFF;
+  line-height: 32.5926vh;
+  letter-spacing: 1.5625vw;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  top: 10vh;
+  left: 63.75vw;
+}
+
+
+
+.bq1 {
+  width: 18.2292vw;
+  height: 45.8333vh;
+
+  display: grid;
+  position: absolute;
+
+  top: 46.0185vh;
+  left: 4.4271vw;
+
+  /* filter: brightness(0.5); */
+  align-items: center;
+
+}
+
+.bq {
+  position: absolute;
+
+  width: 18.2292vw;
+  height: 45.8333vh;
+  z-index: 2;
+  filter: brightness(0.8);
+
+}
+
+.js1 {
+  position: absolute;
+  z-index: 3;
+  width: 2.6042vw;
+  height: 24.0741vh;
+
+  text-orientation: upright;
+  /* 如果需要保持文字方向正常 */
+  font-family: 'MyCustomFont', sans-serif;
+  font-size: 2.6042vw;
+  color: #fff;
+  /* 或 vertical-tb，取决于你想要的方向 */
+  /* writing-mode: vertical-rl; */
+
+  line-height: 5.5556vh;
+  letter-spacing: 0.463vh;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+
+  justify-self: center;
+
+}
+
+.js2 {
+  position: absolute;
+
+  z-index: 3;
+  width: 2.6042vw;
+  height: 24.0741vh;
+
+  text-orientation: upright;
+  /* 如果需要保持文字方向正常 */
+  font-family: 'MyCustomFont', sans-serif;
+  font-size: 2.6042vw;
+  color: #fff;
+  /* 或 vertical-tb，取决于你想要的方向 */
+  /* writing-mode: vertical-rl; */
+
+  line-height: 5.5556vh;
+  letter-spacing: 0.463vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  justify-self: center;
+
+}
+
+.js3 {
+  position: absolute;
+
+  z-index: 3;
+  width: 2.6042vw;
+  height: 24.0741vh;
+
+  text-orientation: upright;
+  /* 如果需要保持文字方向正常 */
+  font-family: 'MyCustomFont', sans-serif;
+  font-size: 2.6042vw;
+  color: #fff;
+  /* 或 vertical-tb，取决于你想要的方向 */
+  /* writing-mode: vertical-rl; */
+
+  line-height: 5.5556vh;
+  letter-spacing: 0.463vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  justify-self: center;
+
+}
+
+.js4 {
+  position: absolute;
+
+  z-index: 3;
+  width: 2.6042vw;
+  height: 24.0741vh;
+
+  text-orientation: upright;
+  /* 如果需要保持文字方向正常 */
+  font-family: 'MyCustomFont', sans-serif;
+  font-size: 2.6042vw;
+  color: #fff;
+  /* 或 vertical-tb，取决于你想要的方向 */
+  /* writing-mode: vertical-rl; */
+
+  line-height: 5.5556vh;
+  letter-spacing: 0.463vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  justify-self: center;
+
+}
+
+.js5 {
+  position: absolute;
+
+  z-index: 3;
+  width: 2.6042vw;
+  height: 24.0741vh;
+
+  text-orientation: upright;
+  /* 如果需要保持文字方向正常 */
+  font-family: 'MyCustomFont', sans-serif;
+  font-size: 2.6042vw;
+  color: #fff;
+  /* 或 vertical-tb，取决于你想要的方向 */
+  /* writing-mode: vertical-rl; */
+
+  line-height: 5.5556vh;
+  letter-spacing: 0.463vh;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+
+  justify-self: center;
+
+}
+
+.bq2 {
+  width: 18.2292vw;
+  height: 45.8333vh;
+
+  display: grid;
+  position: absolute;
+
+  top: 46.0185vh;
+  left: 22.6563vw;
+
+  /* filter: brightness(0.5); */
+  align-items: center;
+}
+
+.bq3 {
+  width: 18.2292vw;
+  height: 45.8333vh;
+
+  display: grid;
+  position: absolute;
+
+  top: 46.0185vh;
+  left: 40.8854vw;
+
+  /* filter: brightness(0.5); */
+  align-items: center;
+}
+
+.bq4 {
+  width: 18.2292vw;
+  height: 45.8333vh;
+
+  display: grid;
+  position: absolute;
+
+  top: 46.0185vh;
+  left: 59.1146vw;
+
+  /* filter: brightness(0.5); */
+  align-items: center;
+}
+
+.bq5 {
+  width: 18.2292vw;
+  height: 45.8333vh;
+
+  display: grid;
+  position: absolute;
+
+  top: 46.0185vh;
+  left: 77.3438vw;
+
+  /* filter: brightness(0.5); */
+  align-items: center;
+}
+
+.fanyan {
+  position: absolute;
+  width: 100vw;
+  height: 13.1481vh;
+  z-index: 1;
+  top: 0;
+}

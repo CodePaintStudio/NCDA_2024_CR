@@ -1,0 +1,288 @@
+@font-face {
+  font-family: 'zihunfenghuayasong_trial';
+  src: url(../font/字魂风华雅宋\(商用需授权\).ttf);
+}
+
+@font-face {
+  font-family: 'HYShangWeiShouShuW';
+  src: url(../font/汉仪尚巍手书W.ttf);
+}
+
+@font-face {
+  font-family: 'HYQingZhouXing';
+  src: url(../font/手书体.ttf);
+}
+
+@font-face {
+  font-family: 'Zhongsong';
+  src: url(../font/华文中宋.ttf);
+}
+
+@font-face {
+  font-family: 'PingFang-thin';
+  src: url(../font/苹方/苹方/PingFang\ Thin.ttf);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  cursor: default;
+  height: 100%;
+  margin: 0;
+  background-color: #F1E5D2;
+}
+
+.all {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: #F1E5D2; */
+}
+
+/* 导航栏 */
+.navigation {
+  position: fixed;
+  margin-top: -10vh;
+  left: 2%;
+  top: 25%;
+  width: 5%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  font-family: zihunfenghuayasong_trial, zihunfenghuayasong_trial;
+  font-weight: 400;
+  font-size: 2.5vw;
+  color: #000000;
+  line-height: 4vw;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  justify-content: space-around;
+}
+
+.navigation-one {
+  color: #000;
+}
+
+/* 被选中的文字 */
+.BeChoosed {
+  width: 120%;
+  height: 20%;
+  background-image: url(../image/川菜历史/路径\(1\).png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 100% 100%;
+  font-weight: 400;
+  font-size: 3.0vw;
+  color: #FFFFFF;
+  line-height: 4vw;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+}
+
+
+
+
+/* 返回logo */
+.top {
+  position: fixed;
+  left: 95%;
+  top: 5%;
+  width: 5%;
+  height: 20%;
+}
+
+.ReturnLogo {
+  width: 50%;
+  height: 3.125rem;
+  /* background-color: black; */
+  position: absolute;
+
+  cursor: pointer;
+
+  top: 8.1481vh;
+  right: 3.3854vw;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.5;
+}
+
+.ReturnLogo-line {
+  width: 100%;
+  height: .1875rem;
+  background-color: #000000;
+}
+
+
+
+.swiper-container {
+  margin-left: 10%;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  /* width: 700px;
+  height: 100%; */
+}
+
+.swiper-container .swiper-slide {
+  width: 50%;
+  /* text-align: center; */
+  /* font-size: 18px; */
+  border: #000 .3125rem;
+  /* background: rgba(232, 227, 209, 0.8); */
+  /* border-left: 1px solid #beb8a3; */
+  /* margin-left: -30px; */
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  /* -webkit-justify-content: center; */
+  /* justify-content: center; */
+  /* -webkit-box-align: center; */
+  /* -ms-flex-align: center; */
+  /* -webkit-align-items: center; */
+  /* align-items: center; */
+  transition: all 1s;
+  flex-direction: column;
+}
+
+.viewing {
+  display: flex;
+  flex-direction: row;
+  /* position: relative; */
+  width: 55%;
+  height: 45%;
+  justify-content: flex-end;
+  margin-left: auto;
+  z-index: -999;
+}
+
+.viewtext {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50%;
+}
+
+
+/* 上面的文字 */
+.viewtext-top {
+  position: relative;
+  /* left: 5%; */
+}
+
+/* 下面的文字 */
+.viewtext-bottom {
+  position: relative;
+  left: 5%;
+  top: 20%;
+}
+
+/* 上面的图片 */
+.viewing-top {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+/* 下面的图片 */
+.viewing-bottom {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: flex-end;
+  margin-left: auto;
+  top: 5%;
+}
+
+.viewtext-h1 {
+  font-family: HYShangWeiShouShuW, HYShangWeiShouShuW;
+  font-weight: 400;
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 5.875rem;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  /* position: relative; */
+  /* top: 15%; */
+  /* left:10%; */
+  margin-left: 10%;
+  margin-top: 10%;
+  display: inline-block;
+  width: 25%;
+  height: 60%;
+
+}
+
+.viewtext-p {
+  width: 45%;
+  height: 100%;
+  font-family: PingFang-thin;
+  font-weight: normal;
+  font-size: 1.3vw;
+  color: #FFFFFF;
+  /* line-height: 10px; */
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  position: relative;
+  letter-spacing: 0.5vh;
+  /* top: 10%; */
+  left: 3%;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  display: none;
+  margin-top: 10%;
+}
+
+
+.swiper-slide .viewtext-H1,
+.swiper-slide .viewing {
+  opacity: 0.5;
+  transition: opacity 0.3s ease,
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* 激活状态的样式 */
+.swiper-slide.active .viewtext-p {
+  display: block;
+}
+
+.swiper-slide.active .viewtext-H1,
+.swiper-slide.active .viewing {
+  opacity: 1;
+}
+
+.swiper-slide.active .viewing {
+  transform: translateX(50px);
+}
+
+.swiper-slide.active {
+  /* 设置鼠标悬停时的背景颜色 */
+  background-color: #D9B582;
+  z-index: -1;
+}
+
+
+.swiper-button-prev {
+  margin-left: 10%;
+}

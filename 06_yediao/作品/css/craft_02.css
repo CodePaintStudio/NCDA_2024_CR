@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: '庞门正道粗书体';
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: no-repeat url('../images/BASE.webp');
+    background-size: cover;
+    overflow-x: hidden;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    width: 0 !important
+}
+
+.logo_bock {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    position: absolute;
+    left: 3.5vw;
+    top: 5vh;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.nav {
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    position: absolute;
+    /* background-color: #fff; */
+    top: 20vh;
+}
+
+.tp1_1 {
+    display: flex;
+    position: absolute;
+    top: 3vh;
+    left: 16vw;
+    transform: scale(2);
+}
+
+.tp1_2 {
+    display: flex;
+    position: absolute;
+    top: 2vh;
+    left: 24vw;
+    transform: scale(2);
+}
+
+.tp1_3 {
+    display: flex;
+    position: absolute;
+    top: 33vh;
+    left: 4vw;
+    transform: scale(2);
+}
+
+.tp2_1 {
+    display: flex;
+    position: absolute;
+    top: 3vh;
+    left: 66vw;
+    transform: scale(2) rotateY(180deg);
+}
+
+.tp2_2 {
+    display: flex;
+    position: absolute;
+    top: 2vh;
+    left: 70.2vw;
+    transform: scale(2) rotateY(180deg);
+}
+
+.tp2_3 {
+    display: flex;
+    position: absolute;
+    top: 33vh;
+    left: 87vw;
+    transform: scale(2) rotateY(180deg);
+}
+
+.el2 {
+    display: flex;
+    position: absolute;
+    width: 19.6875vw;
+    height: 39.537vh;
+    background: rgba(212, 192, 146, 1);
+    top: 0vh;
+    left: 41vw;
+}
+
+.el2-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14.6875vw;
+    height: 34.537vh;
+    border: 6px dashed rgba(102, 87, 52, 1);
+    background: no-repeat url('../images/YX 1.svg');
+    background-position: center;
+    transition: background-size 1s linear;
+}
+
+.el2-item:hover {
+    background-size: 220%;
+    /* 鼠标移入时背景图变大 */
+}
+
+.el4 {
+    position: absolute;
+    top: 136vh;
+    left: 86vw;
+}
+
+.el5 {
+    position: absolute;
+    top: 90vh;
+    left: 86vw;
+}
+
+.el6 {
+    position: absolute;
+    top: 136vh;
+    left: -8vw;
+}
+
+.el7 {
+    position: absolute;
+    top: 105vh;
+    left: -8vw;
+}
+
+.el8 {
+    position: absolute;
+    top: 74vh;
+    left: -8vw;
+}
+
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 0%;
+    z-index: 1000;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    /* background-color: #4CAF50; */
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 20px;
+    background: rgba(69, 58, 34, 1);
+    box-shadow: 0px 2px 4px rgba(46, 39, 23, 1);
+}
+
+.scroll-to-top img {
+    fill: #fff;
+}
+
+.f {
+    position: absolute;
+    top: 4vh;
+    left: 81vw;
+    transform: scale(1.5) rotate(-45deg);
+}
+
+.item1 {
+    width: 100vw;
+    height: 165vh;
+}
+
+.k1 {
+    position: absolute;
+    top: 75vh;
+    left: 18vw;
+    transition: transform 0.5s linear;
+    cursor: pointer;
+}
+
+.wz1 {
+    position: absolute;
+    left: 15vw;
+    top: 87vh;
+    text-shadow: 11px 6px 6px rgba(148, 125, 71, 1);
+    /** 文本1 */
+    font-size: 72px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 99.79px;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    vertical-align: top;
+    transition: transform 0.5s linear;
+}
+
+.wz1-1 {
+    position: absolute;
+    left: 15vw;
+    top: 100vh;
+    width: 25vw;
+    /** 文本1 */
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 20px;
+    line-height: 66.53px;
+    color: rgba(69, 58, 34, 1);
+    text-shadow: 11px 6px 6px rgba(148, 125, 71, 1);
+    text-align: left;
+    vertical-align: top;
+    text-indent: 2em;
+    transition: transform 0.5s linear;
+}
+
+.k2 {
+    position: absolute;
+    top: 100vh;
+    left: 18vw;
+    transition: transform 0.5s linear;
+}
+
+.wz2 {
+    position: absolute;
+    left: 15vw;
+    top: 112vh;
+    text-shadow: 11px 6px 6px rgba(148, 125, 71, 1);
+    /** 文本1 */
+    font-size: 72px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 99.79px;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    vertical-align: top;
+    transition: transform 0.5 linear;
+}
+
+.wz2-1 {
+    position: absolute;
+    left: 15vw;
+    top: 125vh;
+    width: 25vw;
+    /** 文本1 */
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 20px;
+    line-height: 66.53px;
+    color: rgba(69, 58, 34, 1);
+    text-shadow: 11px 6px 6px rgba(148, 125, 71, 1);
+    text-align: left;
+    vertical-align: top;
+    text-indent: 2em;
+}
+
+.sp video {
+    position: absolute;
+    width: 50vw;
+    height: 80vh;
+    /* background-color: red; */
+    top: 70vh;
+    left: 40vw;
+    border-radius: 5%;
+}
+
+.q {
+    position: absolute;
+    width: 7vw;
+    height: 9vh;
+    border-radius: 50%;
+    border: 1px solid;
+    top: 3vh;
+    left: 90vw;
+    font-size: 1.0417vw;
+    cursor: pointer;
+}

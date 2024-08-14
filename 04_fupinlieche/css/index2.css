@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: #FFF;
+}
+
+li{
+  list-style: none;
+}
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: PingFang SC;
+}
+.main {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/首页/bg.png");
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+.main .duan{
+  display: flex;
+  position: absolute;
+  width: 7.0313vw;
+  height: 17.8646vw;
+  right: 8vw;
+  top: 8vh;
+  writing-mode: vtb-rl;
+  line-height: 1.1979vw;
+}
+.main .duan p{
+  margin: 5px 10px;
+  font-weight: 400;
+  font-size: 0.8333vw;
+  letter-spacing: 0;
+}
+.main a {
+  position: relative;
+}
+
+.main .a>img:nth-child(1) {
+  position: absolute;
+  top: 5vh;
+  left: 0.5vw;
+  width: 35.5729vw;
+  transform: rotateZ(-27deg);
+  transition: all 1s ease-out;
+}
+.main .a>img:nth-child(2) {
+  position: absolute;
+  top: 5vh;
+  left: 13.3vw;
+  width: 32.6563vw;
+  transform: rotateZ(17deg);
+  transition: all 1s ease-out;
+}
+
+.main .a>img:nth-child(3) {
+  position: absolute;
+  top: 30vh;
+  left: 4vw;
+  width: 51.7188vw;
+  transform: rotateZ(11deg);
+  transition: all 1s ease-out;
+}
+
+.b img {
+  position: absolute;
+  bottom: 0vh;
+  right: 0vw;
+  width: 74vw;
+}
+.car img{
+  position: absolute;
+  bottom: -3vh;
+  left: 0vw;
+  width: 29vw;
+}
+ 
+.bigzi img {
+  position: absolute;
+  top: 14vh;
+  right: 21vw;
+  width: 26vw;
+  transition: transform 1s ease-out
+  
+}
+.zi1 img {
+  position: absolute;
+  top: 13vh;
+  right: 1vw;
+  width: 3vw;
+}
+.zi2 img {
+  position: absolute;
+  bottom: 13vh;
+  right: 1vw;
+  width: 3vw;
+}
+

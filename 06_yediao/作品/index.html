@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/modernizr.js"></script>
+    <link rel="stylesheet" href="./assets/style/font.css">
+    <title>index</title>
+    <style>
+        body {
+            background-image: url("./img/index_bg.jpg");
+            overflow: -moz-scrollbars-none;
+            -ms-overflow-style: none;
+        }
+
+        body::-webkit-scrollbar {
+            width: 0 !important
+        }
+
+        .item1 {
+            color: #000;
+        }
+
+        .logo_block .logo {
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .logo {
+            transition: transform 1s;
+        }
+
+        .logo_block:hover .logo {
+            transform: scale(2.1);
+        }
+
+        h1 {
+            opacity: 0;
+            font-family: '庞门正道粗书体';
+            transition: opacity 1s;
+        }
+
+        body:hover h1 {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="cd-main-content">
+        <div class="center">
+            <h1 class="f">
+                欢迎来到叶雕世界，点击图片进入
+            </h1>
+            <!-- <a href="#0" class="cd-btn cd-modal-trigger">开启叶雕新世界</a> -->
+            <a href="#0" class="cd-modal-trigger item1">
+                <div class="logo_block">
+                    <img src="./images/YX 4.svg" alt="" class="logo">
+                </div>
+            </a>
+        </div>
+    </main>YX
+    <div class="cd-transition-layer">
+        <div class="bg-layer"></div>
+    </div>
+
+    <script src="./js/jquery-2.1.4.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        var txtAnim2 = {
+            len: 0,
+            txtDom: "",
+            arrTxt: [],
+            init: function (obj) {
+                this.obj = obj;
+                this.txtDom = obj.innerHTML.replace(/\s+/g, "");
+                this.len = this.txtDom.length;
+                obj.innerHTML = "";
+                this.addDom();
+                this.start(); // 调用start方法来初始化动画  
+            },
+            addDom: function () {
+                for (var i = 0; i < this.len; i++) {
+                    var spanDom = document.createElement("span");
+                    spanDom.innerHTML = this.txtDom.substring(i, i + 1);
+                    spanDom.style.position = "relative"; // 直接在创建时设置position  
+                    this.obj.appendChild(spanDom);
+                    this.arrTxt.push(spanDom);
+                }
+            },
+            start: function () {
+                let txtAnimThis = this; // 保存当前txtAnim的上下文  
+                console.log(this.len);
+                for (var i = 0; i < this.len; i++) {
+                    (function (index) { // 使用闭包来捕获当前索引  
+                        txtAnimThis.arrTxt[index].onmouseover = function () {
+                            this.stop = 0;
+                            this.speed = -1;
+                            this.timer = setInterval(function () {
+                                this.stop += this.speed;
+                                if (this.stop <= -20) {
+                                    this.speed = 1;
+                                }
+                                this.style.top = this.stop + "px";
+
+                                if (this.stop >= 0) {
+                                    clearInterval(this.timer);
+                                    this.style.top = "0px";
+                                }
+                            }.bind(this), 15); // 使用bind来确保this指向正确的span元素  
+                        };
+
+                        txtAnimThis.arrTxt[index].onmouseout = function () {
+                            clearInterval(this.timer); // 清除定时器  
+                            this.style.top = "0px"; // 重置位置  
+                        };
+                    })(i); // 立即执行函数表达式，传入当前索引  
+                }
+            }
+        };
+        const f = document.querySelector('.f')
+        txtAnim2.init(f);
+        f.addEventListener('mouseover', () => {
+            f.style.color = 'red'
+            f.style.fontWeight = 'bold'
+        })
+        f.addEventListener('mouseout', () => {
+            f.style.color = 'black'
+            f.style.fontWeight = 'normal'
+        })
+    </script>
+</body>
+
+</html>

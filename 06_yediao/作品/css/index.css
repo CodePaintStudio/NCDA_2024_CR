@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: '庞门正道粗书体';
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(242, 235, 216, 1);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: transparent;
+}
+
+.logo_bock {
+    z-index: 1;
+    width: 90px;
+    height: 90px;
+    margin-top: 30px;
+    margin-left: 38px;
+}
+
+.nav {
+    position: absolute;
+    width: 181px;
+    height: 312px;
+    z-index: 2;
+    background-image: url("../images/JX 1.svg");
+    /* margin-top: 89px;
+    margin-left: -57px; */
+    top: 6vh;
+    left: 3vw;
+    transition: opacity 0.5s, top 0.5s, left 0.5s;
+}
+
+.item {
+    width: 150px;
+    height: 45px;
+    background: no-repeat url("../images/KU.svg");
+    background-position: center;
+    background-size: cover;
+}
+
+.item {
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+    align-items: center;
+    /** 文本1 */
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    vertical-align: top;
+    text-align: center;
+    line-height: 45px;
+    margin: 25px auto;
+    cursor: pointer;
+}
+
+.item a {
+    color: rgba(0, 0, 0, 1);
+}
+
+.item a:hover {
+    color: red;
+    transform: scale(1.5);
+}
+
+.main {
+    display: flex;
+    height: 658px;
+    width: 658px;
+    background: url("../images/YXBK.svg");
+    margin: 69px auto;
+    z-index: 2;
+    position: relative;
+    left: -3%;
+    top: 15%;
+}
+
+.wz {
+    position: absolute;
+    left: 130px;
+    top: -10px;
+    width: 469px;
+    height: 67px;
+    opacity: 1;
+    /** 文本1 */
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 33.26px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    vertical-align: top;
+
+}
+
+.circle {
+    width: 440px;
+    height: 455px;
+    border-radius: 50%;
+    background: rgba(212, 192, 146, 0.5) url("../images/YX 1.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 2px 35px rgba(148, 125, 71, 1);
+    position: absolute;
+    margin: 100px 130px;
+    transition: transform 1s;
+}
+
+.circle:hover {
+    transform: scale(1.3);
+}
+
+.el {
+    text-shadow: 25px 13px 16px rgba(145, 131, 93, 0.62);
+    /** 文本1 */
+    font-size: 200px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 277.2px;
+    color: rgba(0, 0, 0, 1);
+    text-align: left;
+    vertical-align: top;
+}
+
+.left {
+    position: absolute;
+    left: -40px;
+    top: 300px;
+}
+
+body:hover .left,
+body:hover .right {
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+body:hover .left {
+    animation-name: Jup_left;
+}
+
+.right {
+    position: absolute;
+    right: -40px;
+    top: 40px;
+}
+
+body:hover .right {
+    animation-name: Jup_right;
+}
+
+.logo2_box {
+    display: flex;
+    width: 420px;
+    height: 50px;
+    /* background-color: red; */
+    position: absolute;
+    left: 145px;
+    top: 637px;
+}
+
+.jt {
+    width: 42px;
+    height: 50px;
+    margin-right: 81px;
+    cursor: pointer;
+}
+
+@keyframes Jup_left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes Jup_right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.btn {
+    transition: transform 0.5s;
+}
+
+/* .VIE {
+    display: flex;
+    position: absolute;
+    /* transform: scale(0.5); 
+    top: 45vh;
+    left: -10vw;
+    opacity: 0;
+} */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

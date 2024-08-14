@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+li{
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'PingFang SC';
+    src: url('../fonts/PingFangSC.woff2') format('woff2'),
+    url('../fonts/PingFangSC.woff') format('woff'),
+    url('../fonts/PingFangSC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
