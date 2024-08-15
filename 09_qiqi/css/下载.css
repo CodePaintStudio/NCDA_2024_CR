@@ -1,0 +1,59 @@
+.all{
+    height: 100%;
+    background-image: url(../images/下载/矩形\ 74.png);
+    background-size: 100% 100%;
+}
+.body{
+    position: relative;
+    height: 1000px;
+}
+.phone{
+    position: absolute;
+    top: 187px;
+    left: 18vw;
+    /* width: 27vw; */
+    /* height: 532px; */
+    z-index: 1;
+}
+.gril{
+    position: absolute;
+    top: 341px;
+    left: 41.5vw;
+    /* width: ; */
+    height: 338px;
+    z-index: 1;
+}
+.bowl{
+    position: absolute;
+    top: 456px;
+    left: 27.6%;
+    width: 38vw;
+    /* height: 508px; */
+    z-index: 0;
+}
+.code-cotain{
+    width: 161px;
+    position: relative;
+    top: 395px;
+    left: 70%;
+    display: flex;
+    justify-content: center;
+}
+.download{
+    position: relative;
+    top: 179px;
+    font-family: SimSun, SimSun;
+    font-weight: 400;
+    font-size: 30px;
+    color: #F2F1ED;
+    line-height: 36px;
+    letter-spacing: 5px;
+    font-style: normal;
+    text-transform: none;
+}
+.code{
+    position: absolute;
+    width: 161px;
+    height: 161px;
+    
+}

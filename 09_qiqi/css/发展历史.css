@@ -1,0 +1,875 @@
+@font-face {
+  font-family: 'fanti';
+  src: url('../font/字酷堂清楷体_0.ttf') format(truetype);
+}
+
+@font-face {
+  font-family: 'PingFangSC-Regular';
+  src: url('../font/苹方/苹方/PingFang\ Regular.ttf');
+}
+
+@font-face {
+  font-family: 'PINGFANG-EXTRALIGHT2';
+  src: url('../font/苹方/苹方/PINGFANG\ EXTRALIGHT2.TTF');
+}
+
+@font-face {
+  font-family: 'PingFang-Light';
+  src: url('../font/苹方/苹方/PingFang\ Light.ttf');
+}
+
+@font-face {
+  font-family: 'PINGFANG-LIGHT1';
+  src: url('../font/苹方/苹方/PINGFANG\ LIGHT1.TTF');
+}
+
+@font-face {
+  font-family: 'PingFang-Medium';
+  src: url('../font/苹方/苹方/PingFang\ Medium.ttf');
+}
+
+@font-face {
+  font-family: 'PINGFANG-REGULAR3';
+  src: url('../font/苹方/苹方/PINGFANG\ REGULAR3.TTF');
+}
+
+@font-face {
+  font-family: 'PingFang-Semibold';
+  src: url('../font/苹方/苹方/PingFang\ Semibold.ttf');
+}
+
+@font-face {
+  font-family: 'PingFang-Thin';
+  src: url('../font/苹方/苹方/PingFang\ Thin.ttf');
+}
+
+@font-face {
+  font-family: 'PingFang-Ultralight';
+  src: url('../font/苹方/苹方/PingFang\ Ultralight.ttf');
+}
+
+@keyframes leftEnter {
+  0% {
+      transform: translateX(-1000px);
+      opacity: 0;
+  }
+
+  100% {
+      transform: translateX(0) rotate(0deg);
+      opacity: 1;
+  }
+}
+
+@keyframes rightEnter {
+  0% {
+      transform: translateX(1000px);
+      opacity: 0;
+  }
+
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.all{
+  width: 100%;
+  /* height: 281.25rem; */
+}
+
+.title-selected{
+  color: #FFFFFF !important;
+}
+#title-selected{
+  width: 25%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  left: 38%;
+  transition: width 0.3s ease;
+}
+
+.head {
+  /* display: flex; */
+  height: 43.75rem;
+  width: 100%;
+  /* width: 100vh; */
+  background: url(../images/发展历史/bannner背景.png);
+  background-size: cover;
+  /* position: absolute; */
+  
+}
+
+.headMain {
+  display: flex;  
+  /* flex: 6; */
+  flex-direction: column;
+  width: 100%;
+  /* margin-left: 22.5rem; */
+}
+
+.headMain-navigation {
+  display: flex;
+  /* flex: 1; */
+  height: 6.6875rem;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.headMain-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* flex: 5; */
+}
+
+.headMain-navigation-left {
+  display: flex;
+
+  /* justify-content: center; */
+  align-items:center;
+  margin-top: 1.9375rem;
+}
+
+.headMain-navigation-left-image {
+  height: 4.8125rem;
+  width: 5.4375rem;
+}
+
+.headMain-navigation-left-content {
+  font-family: PingFangSC-Regular;
+  font-size: 1.75rem;
+  color: white;
+  margin-left: 1.0625rem;
+  margin-top: 1.3125rem;
+}
+
+.headMain-navigation-right {
+  /* margin-left: 7.125rem; */
+  margin-top: 3.375rem;
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  /* gap: 1.25rem; */
+}
+
+.headMain-navigation-right-jump {
+  width: auto;
+  position: relative;
+  font-size: 1.375rem;
+  color: #FFFFFF;
+  text-decoration: none;
+  /* flex: 1; */
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-family: PingFangSC-Regular;
+  opacity: 0.7;
+}
+
+
+
+
+
+.headMain-content {
+  display: flex;
+  justify-content: center;
+}
+
+.headMain-content-write {
+  display: flex;
+  width: 39.8125rem;
+  /* flex: 2; */
+  color: white;
+  flex-direction: column;
+}
+
+.headMain-content-image {
+  display: flex;
+  width: 20%;
+  height: 20%;
+  /* margin-left: -4.6875rem; */
+  /* flex:3; */
+}
+.headMain-content-image img{
+  position: relative;
+  width: 37.5rem;
+  height: 37.5rem;
+  /* left: rem; */
+  right: 5rem;
+  top: 8rem;
+}
+
+.headMain-content-write-classOne {
+  margin-top: 7.625rem;
+  opacity: 0.7;
+  font-family: PingFangSC-Regular;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.headMain-content-write-classTwo {
+  width: 35.125rem;
+  margin-top: 1.6875rem;
+  font-size: 3.75rem;
+  font-family: fanti;
+}
+
+.headMain-content-write-classThree {
+  width: 39.8125rem;
+  margin-top: 2.25rem;
+  font-size: 1.25rem;
+  font-family: PingFangSC-Regular;
+  color: #FFFFFF;
+  /* line-height: 5px; */
+  opacity: 0.7;
+  letter-spacing: .25rem;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+}
+
+.headMain-content-write-classFour {
+  margin-top: 1.25rem;
+  font-size: 1.875rem;
+  font-family: PingFangSC-Regular;
+  letter-spacing: 1.25rem;
+  color: #FFFFFF;
+  /* line-height: 0px; */
+  /* letter-spacing: 340px; */
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+}
+
+.headMain-content-write-classFive {
+  width: 38rem;
+  margin-top: 1.9375rem;
+  font-size: 1.125rem;
+  font-family: PingFangSC-Regular;
+  color: #FFFFFF;
+  line-height: 2.25rem;
+  /* letter-spacing: 100px; */
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+  opacity: 0.7;
+  letter-spacing: .125rem;
+}
+
+
+
+
+
+
+.main {
+  width: 62.5%;
+    /* background-color: black; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3.375rem;
+}
+
+.main-content {
+  width: 20rem;
+  height: 3.75rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;  */
+  /* text-align: center; */
+  margin: auto;
+}
+
+.main-content-Chinese {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.main-content-Chinese-LineLeft {
+  width: 20px;
+  height: 3px;
+  border-left: 60px solid rgba(216, 216, 216, 1); 
+  background: #7F634E;
+}
+
+.main-content-Chinese-LineRight {
+  width: 20px;
+  height: 3px;
+  border-right: 60px solid rgba(216, 216, 216, 1); 
+  background: #7F634E;
+}
+
+.main-content-Chinese-text {
+  width: 285px;
+  height: 30px;
+  font-family: SimSun, SimSun;
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000;
+  /* line-height: 0px; */
+  letter-spacing: 5px;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  margin-top: -15px;
+}
+
+.main-content-English {
+  width: 345px;
+  height: 17px;
+  padding-top: 8px;
+  font-family: PingFang SC, PingFang SC;
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
+  /* line-height: 0px; */
+  letter-spacing: 5px;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  margin-left: -13px;
+}
+
+.main-SecondPast {
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/发展历史/10.png);
+}
+
+
+.main-ThirdPast {
+  width: 890px;
+  height: 126px;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  font-family: SimSun, SimSun;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  line-height: 36px;
+  letter-spacing: 4px;
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+}
+
+.main-ForthPast {
+  display: flex;
+  flex-direction: row;
+  /* width: 291px; */
+  height: 425px;
+  width: 100%;
+  /* justify-content: space-between; */
+  padding-top: 3.0625rem;
+
+}
+
+.main-ForthPast-FirstImages {
+  /* flex: 1; */
+  width: 25%;
+  /* width: 291px; */
+  height: 100%;
+}
+
+.main-ForthPast-FirstImages-images {
+  width: 100%;
+  height: 80%;
+  background-image: url(../images/发展历史/1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-position: contain; */
+  background-position: center;  
+  opacity: 0;
+   /* 简单的过渡效果，直到动画开始 */
+  transition: opacity 0.5s ease-out; 
+}
+.main-ForthPast-FirstImages-images.animate {  
+  /* 动画类，当添加到元素时开始动画 */  
+  animation: leftEnter 1.5s ease-out both;  
+  opacity: 1; /* 动画结束时保持显示 */  
+}  
+
+.main-ForthPast-FirstImages-content {
+  padding-top: 1.875rem;
+  width: 100%;
+  height: 20%;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #000000;
+  line-height: 0px;
+  letter-spacing: .3125rem; 
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  opacity: 0.8;
+}
+
+.main-ForthPast-SecondImages{
+  /* flex: 1; */
+  width: 25%;
+  /* width: 291px; */
+  height: 100%;
+  
+}
+
+.main-ForthPast-SecondImages-images {
+  width: 100%;
+  height: 80%;
+  background-image: url(../images/发展历史/2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-position: contain; */
+  background-position: center;  
+  opacity: 0;
+   /* 简单的过渡效果，直到动画开始 */
+  transition: opacity 0.5s ease-out; 
+}
+.main-ForthPast-SecondImages-images.animate {  
+  /* 动画类，当添加到元素时开始动画 */  
+  animation: leftEnter 1.5s ease-out both;  
+  opacity: 1; /* 动画结束时保持显示 */  
+}  
+
+
+.main-ForthPast-SecondImages-content {
+  padding-top: 1.875rem;
+  width: 100%;
+  height: 20%;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #000000;
+  line-height: 0px;
+  letter-spacing: .3125rem; 
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  opacity: 0.8;
+}
+
+.main-ForthPast-ThirdImages {
+  /* flex: 1; */
+  /* width: 18.1875rem; */
+  width: 25%;
+  /* width: 291px; */
+  height: 100%;
+  
+}
+
+.main-ForthPast-ThirdImages-images {
+  width: 100%;
+  height: 80%;
+  background-image: url(../images/发展历史/3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-position: contain; */
+  background-position: center;  
+  opacity: 0;
+   /* 简单的过渡效果，直到动画开始 */
+  transition: opacity 0.5s ease-out; 
+}
+.main-ForthPast-ThirdImages-images.animate {  
+  /* 动画类，当添加到元素时开始动画 */  
+  animation: rightEnter 1.5s ease-out both;  
+  opacity: 1; /* 动画结束时保持显示 */  
+}  
+
+.main-ForthPast-ThirdImages-content {
+  padding-top: 1.875rem;
+  width: 100%;
+  height: 20%;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #000000;
+  line-height: 0px;
+  letter-spacing: .3125rem; 
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  opacity: 0.8;
+}
+
+
+.main-ForthPast-ForthImages {
+  /* flex: 1; */
+  width: 25%;
+  /* width: 291px; */
+  height: 100%;
+  
+}
+
+.main-ForthPast-ForthImages-images {
+  width: 100%;
+  height: 80%;
+  background-image: url(../images/发展历史/4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-position: contain; */
+  background-position: center;  
+  opacity: 0;
+   /* 简单的过渡效果，直到动画开始 */
+  transition: opacity 0.5s ease-out; 
+}
+.main-ForthPast-ForthImages-images.animate {  
+  /* 动画类，当添加到元素时开始动画 */  
+  animation: rightEnter 1.5s ease-out both;  
+  opacity: 1; /* 动画结束时保持显示 */  
+}  
+
+.main-ForthPast-ForthImages-content {
+  padding-top: 1.875rem;
+  width: 100%;
+  height: 20%;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #000000;
+  line-height: 0px;
+  letter-spacing: .3125rem; 
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  opacity: 0.8;
+}
+
+.main-ForthPast-content {
+  padding-top: 25px;
+  display: flex;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+  line-height: 0px;
+  letter-spacing: 5px; 
+  text-align: center;
+  font-style: normal;
+  text-transform: none;
+  opacity: 0.8;
+  margin-left: 105px;
+}
+
+.main-FifthPast {
+  padding-top: 10.75rem;
+  width: 100%;
+  height: 21.5625rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-FifthPast-left {
+  width: 50%;
+  height: 100%;
+  background-image: url(../images/发展历史/5.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: contain;
+  /* opacity: 0; */
+}
+
+@keyframes slideInUp {  
+  from {  
+    transform: translateY(100%);  
+    opacity: 0;  
+  }  
+  to {  
+    transform: translateY(0);  
+    opacity: 1;  
+  }  
+}  
+  
+.animated.slideInUp {  
+  animation: slideInUp 1s  forwards;  
+}
+
+.main-FifthPast-right {
+  padding-left: 3.5rem;
+  width: 46%;/* width: 552px; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-FifthPast-right-FirstContent {
+  width: 100%;
+  height: 11%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+}
+
+.main-FifthPast-right-FirstContent-Chinese {
+  width: 35%;
+  height: 100%;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  font-size: 25px;
+  color: #000000;
+  /* line-height: 0px; */
+  letter-spacing: 3px;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+}
+
+.main-FifthPast-right-FirstContent-English {
+  width: 76%;
+  height: 100%;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  font-size: 13px;
+  color: #000000;
+  /* line-height: 0px; */
+  letter-spacing: 4px;
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+  padding-top: 15px;
+}
+
+.LowLine {
+  width: 1.5rem;
+  height: .1875rem;
+  background-color: #7F634E;
+}
+
+.main-FifthPast-right-SecondContent{
+  height: 37%;
+  padding-top: 5%;
+  font-family: SimSun, SimSun;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #000000;
+  line-height: 29px;
+  /* letter-spacing: 100px; */
+  text-align: left;
+  font-style: normal;
+  text-transform: none;
+  opacity: 0.8;
+}
+
+.main-ForthPast-right {
+  width: 50%;
+  height: 21.5625rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-ForthPast-left {
+  width: 50%;
+  height: 21.5625rem;
+  background-image: url(../images/发展历史/9.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: contain;
+  opacity: 0;
+}
+
+.main-SeventhPast-left {
+  width: 50%;
+  height: 21.5625rem;
+  background-image: url(../images/发展历史/8.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: contain;
+  opacity: 0;
+}
+
+.main-SixthPast-left {
+  width: 50%;
+  height: 21.5625rem;
+  display: flex;
+  flex-direction: row;
+  margin-left: 3.5rem;
+  opacity: 0;
+}
+
+.main-SixthPast-left-left {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/发展历史/6.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: contain;
+}
+
+.main-SixthPast-left-right {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/发展历史/7.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: contain;
+}
+
+.BlackBlock {
+  width: 2%;
+  height: 100%;
+}
+
+.main-FifthPast-right-ThirdContent {
+  position: relative;
+  left: 0%;
+  top: 3%;
+  width: 100%;
+  height: 12%;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-content-LeftRight-left {
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/发展历史/左箭头.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: contain;
+}
+
+.main-content-LeftRight-right {
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/发展历史/右箭头.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: contain;
+  padding-left: 26px;
+}
+
+
+
+
+.foot{
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center ;
+}
+.foot-image{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items:center ;
+}
+.foot{
+  margin-top: 32.5rem;
+  width: 100%;
+  /* background-color: red; */
+  height: 24.5rem;
+  background-image: url(../images/首页/矩形19.png);
+}
+.foot-image{
+  /* position: relative; */
+  background-image: url(../images/首页/图像12.png);
+  width: 32rem;
+  height: 32rem;
+  top:-29.5rem;
+  left: 13rem;
+}
+.foot-image-left{
+  position: relative;
+  width: 20%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.foot-image-left-up{
+  
+  display: flex;
+  align-items: center;
+}
+.foot-image-left-up div:first-child{
+  width: 80px;
+  height: 100px;
+  background-image: url(../images/首页/logo.png);
+  background-repeat: no-repeat;
+}
+.foot-image-left-up div:last-child{
+  width: 125px;
+height: 28px;
+font-family: zktqkt, zktqkt;
+font-weight: 400;
+font-size: 20px;
+color: #FFFFFF;
+line-height: 0px;
+text-align: center;
+font-style: normal;
+text-transform: none;
+}
+.foot-image-left-down{
+  width: 220px;
+  text-align: center;
+  color: white;
+}
+  .foot-image-center{
+    position: relative;
+    width: 20%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .foot-image-center-up{
+    width: 106px;
+height: 40px;
+font-family: PingFang SC, PingFang SC;
+font-weight: 400;
+font-size: 28px;
+color: #FFFFFF;
+line-height: 0px;
+text-align: left;
+font-style: normal;
+text-transform: none;
+  }
+  .foot-image-center-down{
+    width: 106px;
+    height: 106px;
+    background-image: url(../images/下载/二维码.png);
+    background-size: contain;
+  }
+  .foot-image-right{
+    position: relative;
+    width: 20%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .foot-image-right-up{
+    width: 273px;
+height: 40px;
+font-family: PingFang SC, PingFang SC;
+font-weight: 400;
+font-size: 28px;
+color: #FFFFFF;
+line-height: 0px;
+text-align: left;
+font-style: normal;
+text-transform: none;
+  }
+  .foot-image-left-up div{
+    position: relative;
+  }
+  .foot-image-right-down{
+    width: 273px;
+height: 25px;
+font-family: PingFang SC, PingFang SC;
+font-weight: 400;
+font-size: 13px;
+color: #FFFFFF;
+/* line-height: 5px; */
+text-align: left;
+font-style: normal;
+text-transform: none;
+  }
