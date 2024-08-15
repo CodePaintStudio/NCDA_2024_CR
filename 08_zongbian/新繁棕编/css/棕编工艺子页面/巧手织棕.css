@@ -1,0 +1,225 @@
+.loading{
+    background-color: #E5E5E3;
+}
+.body::before{
+    content: "";
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-image: url(../../img/棕编工艺/巧手织棕/装饰纹路.png);
+}
+.body::after{
+    content: "";
+    position: absolute;
+    top: 830px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-image: url(../../img/棕编工艺/巧手织棕/装饰纹路.png);
+}
+
+
+@font-face {
+    font-family: stx;
+    src: url(../../font/STXINGKA.TTF);
+}
+@font-face {
+    font-family: pmzd;
+    src: url(../../font/庞门正道粗书体.ttf);
+}
+@font-face {
+    font-family: sszz;
+    src: url(../../font/江湖+南城往事-上首至尊书法体.ttf);
+}
+
+.body{
+    width: 100%;
+    height: 955px;
+    /* background-color: rgb(255, 255, 255); */
+    background-image: url(../../img/棕编工艺/巧手织棕/背景.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: #FDE2A9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back{
+    position: absolute;
+    font-family: pmzd;
+    font-size: 30px;
+    top: 50px;
+    left: 100px;
+    width: 60px;
+    height: 40px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.swiper{
+    position: relative;
+    /* display: inline-block; */
+    width: 80%;
+    height: 700px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+}
+.item1{
+    position: absolute;
+    top: 60px;
+    transition: all 1s;
+    left: 0%;
+    z-index: -1;
+    cursor: pointer;
+    
+}
+.item1 img{
+    width: 300px;
+}
+.item1 .item-content{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    height: 383px;
+    background-image: url(../../img/棕编工艺/巧手织棕/人字文本框.png);
+    background-size: 100% 100%;
+    transform: translateX(1.25rem) translateY(-1.25rem);
+    /* transition: all 1s; */
+    border-radius: 5px;
+    z-index: -2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.item-current{
+    position: absolute;
+    top: 80px;
+    left: calc(50% - 200px);
+    transition: all 1s;
+    cursor: pointer;
+}
+.item-current img{
+    position: relative;
+    width: 450px;
+    transition: all 1s;
+    z-index: 1;
+}
+.item-current .item-content{
+    border: 10px solid rgb(138, 112, 64,0.5);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 450px;
+    height: 550px;
+    /* background-image: url(../../img/棕编工艺/巧手织棕/密编文本框.png); */
+    background-size: 100% 100%;
+    transform: translateX(1.25rem) translateY(-1.25rem);
+    z-index: 0;
+    border-radius: 5px;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.item-current:hover img{
+    transform: translateX(-13rem);
+    transition: all 1s;
+}
+.item-current:hover .item-content{
+    transform: translateX(13rem);
+    transition: all 1s;
+}
+.item3{
+    position: absolute;
+    top: 60px;
+    left: 80%;
+    transition: all 1s;
+    z-index: -1;
+    cursor: pointer;
+}
+.item3 .item-content{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 383px;
+    transform: translateX(1.25rem) translateY(-1.25rem);
+    z-index: -2;
+    border-radius: 5px;
+    background-image: url(../../img/棕编工艺/巧手织棕/胡椒文本框.png);
+    background-size: 100% 100%;
+    /* transition: all 1s; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.item3 img{
+    width: 300px;
+}
+.item-current .item-content-title{
+    width: 100px;
+    height: 100px;
+    /* background-image: url(../../img/棕编工艺/巧手织棕/630E1804AB0E7304144D450B7C73198C.png); */
+    background-size: 100% 100%;
+}
+.item-content-text{
+    padding-top: 10%;
+    overflow: hidden;
+    width: 70%;
+    height: 40%;
+    line-height: 30px;
+    font-size: 17px;
+    writing-mode: vertical-lr;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #695834;
+}
+/* 每个文本框的标题 */
+.imgRen{
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/棕编工艺/巧手织棕/6010ead401bcc16bddbe1840e000110b.png);
+    background-size: 100% 100%;
+}
+.imgMi{
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/棕编工艺/巧手织棕/f8634feb4c42bef94966cd54afacde48.png);
+    background-size: 100% 100%;
+}
+.imgHu{
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/棕编工艺/巧手织棕/7bfa7b409016b7f8fb2c539c38e5a263.png);
+    background-size: 100% 100%;
+}
+
+.backImgRen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/棕编工艺/巧手织棕/人字文本框.png);
+    background-size: 100% 100%;
+    z-index:-2;
+}
+.backImgMi{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/棕编工艺/巧手织棕/密编文本框.png);
+    background-size: 100% 100%;
+    z-index:-2;
+}
+.backImgHu{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/棕编工艺/巧手织棕/胡椒文本框.png);
+    background-size: 100% 100%;
+    z-index:-2;
+}

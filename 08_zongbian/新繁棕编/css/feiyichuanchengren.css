@@ -1,0 +1,681 @@
+@font-face {
+    font-family: stx;
+    src: url(../font/STXINGKA.TTF);
+}
+@font-face {
+    font-family: pmzd;
+    src: url(../font/庞门正道粗书体.ttf);
+}
+@font-face {
+    font-family: sszz;
+    src: url(../font/江湖+南城往事-上首至尊书法体.ttf);
+}
+
+
+
+.number{
+    /* color: blue; */
+    word-break: normal;
+    text-orientation: sideways;
+}
+
+a{
+    text-decoration: none;
+}
+ 
+
+
+.main{
+    position: relative;
+    height: 56.25rem;
+    padding-top: 60px;
+    background-image: url(../img/非遗传承人/启动页/启动页背景4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #a59681;
+}
+.main2{
+    height: 56.25rem;
+    background-image: url(../img/非遗传承人/启动页/启动页背景5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background: rgba(15,0,0,0.4);
+    z-index:2;
+}
+.header-title{
+    
+    font-family: pmzd;
+    font-size: 1.75rem;
+    color: #A99163;
+    
+}
+.logo{
+    flex: none;
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+    background-image: url(../img/首页/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.content{
+    position: relative;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contentmain{
+    position: relative;
+    display: flex;
+    width: 70%;
+    height: 620px;
+    /* height: 76%; */
+    justify-content: center;
+    align-items: center;
+    z-index:2;
+    /* background-color: red; */
+}
+/*背景中传承的移动*/
+.chuan-cheng{
+    position: absolute;
+    display: float;
+    top: 0rem;
+    left: 0rem;
+    font-size:17rem;
+    font-family: pmzd;
+    color:rgb(212, 193, 164);
+    text-align: center;
+   
+    border:1px solid black;
+    z-index:1;
+
+}
+.chuan-cheng-kong{
+    border:1px solid black;
+}
+.chuan-cheng-chuan{
+    position: absolute;
+    font-size: 22vw;
+    /* border:1px solid black; */
+    margin-right: 2rem;
+    animation:chuanDecrease 2s ease;
+    animation-fill-mode: forwards;
+    z-index:0;
+}
+.chuan-cheng-cheng{
+    position: absolute;
+    font-size:18vw;
+    /* border:1px solid black; */
+    /* margin-left: -5rem; */
+    animation:chengEnlarge 2s ease;
+    animation-fill-mode: forwards;
+}
+/*背景中传承的移动的css动画*/
+@keyframes chuanDecrease{
+    from{
+        font-size:22vw;
+        left: 30rem;
+        top: 10rem;
+    }
+    to{
+        font-size:16vw;
+        left:5rem;
+        top:-2rem
+    }
+}
+@keyframes chengEnlarge{
+    from{
+        font-size:18vw;
+        left: 50%;
+        top: 15rem;
+    }
+    to{
+        font-size:20vw;
+        top: 3rem;
+        left: -5rem;
+    }
+}
+
+
+/*云朵动画*/
+.yunduoUp{
+    position: absolute;
+    width: 30vw;
+    height: 28vh;
+    background-image: url(../img/非遗传承人/启动页/纹祥1.png);
+    background-repeat: no-repeat;
+    background-size: 30vw 28vh;
+    right:10vw;
+    top:-2vh;
+    z-index: 0;
+    
+}
+.yunduoDown{
+    position: absolute;
+    width: 30vw;
+    height: 28vh;
+    background-image: url(../img/非遗传承人/启动页/纹祥2.png);
+    background-repeat: no-repeat;
+    background-size: 30vw 28vh;
+    left:10vw;
+    bottom:5vh;
+    z-index: 0;
+}
+
+.yunduo_toLeft{
+    transition: 3s ease;
+    transform: translateX(-35vw);
+}
+.yunduo_toRight{
+    transition: 3s ease;
+    transform: translateX(53vw);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*左右卷轴*/
+.juanzhouLeft{
+    position: relative;
+    width: 5.05rem;
+    z-index:2;
+    cursor: pointer;
+}
+.juanzhouRight{
+    position: relative;
+    width: 5.05rem;
+    z-index:2;
+    cursor: pointer;
+}
+
+/* 没用 */
+.to_Left{
+    transition: 2s ease;
+    left:0%;
+    transform: translateX(-80vw);
+    z-index:1;
+    /* animation: juanzhouCenterLeft 2.1s ease; 
+    animation-fill-mode: forwards;*/
+    
+}
+.to_Right{
+    transition: 2s ease;
+    transform: translateX(30vw);
+    z-index:1;
+    /* animation: juanzhouCenterRight 2.1s ease; 
+    animation-fill-mode: forwards;*/
+    
+}
+
+/*卷轴内容部分*/
+
+
+.shuzhouCenter{
+    position:relative;
+    
+    width: 0%;
+    height: 100%;
+    background-image: url(../img/首页/书轴内部.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+   
+    
+}
+ .shuzhou_Center{
+    transition: 2s ease;
+    width: 100%;
+    
+} 
+
+
+.page1{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    
+    display: none;
+    cursor: pointer;
+}
+.page2{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.page3{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+/*page1*/
+.P1center1{
+    position: absolute;
+    top:9.4%;
+    left: 3%;
+    width: 94%;
+    height: 495px;
+}
+.P1center{
+   
+    /* border: 2px solid pink;  */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.LJY1{
+    position: relative;
+
+    /* border:2px solid pink; */
+    
+    height: 60%;
+    
+}
+.P1ren{
+    /* border: 2px solid black; */
+    height: 100%;
+}
+.yinzhang2{
+    position: absolute;
+    
+    height: 6vw;
+    right: 0vw;
+    bottom: 0vh;
+}
+
+
+.xuBgi{
+    position: absolute;
+    right: 1vw;
+    bottom: 0vh;
+    opacity: 0.5;
+}
+.P1wenzi{
+    position: relative;
+    height: 35%;
+    /* border:2px solid pink; */
+}
+.chuanchengRen1zi{
+   
+    
+    left:10vw;
+    top: 35vh;
+    font-family: sszz;
+    font-size:2rem;
+    color:rgb(161, 143, 115)
+}
+.P1fuhao2{
+    position: absolute;
+    bottom: 0vh;
+    right: 0vh;
+    font-family: sszz;
+    font-size:2rem;
+    color:rgb(161, 143, 115)
+}
+/*page2*/
+.centerPage2{
+    position: absolute;
+    top:9.4%;
+    left: 3%;
+    /* border: 2px solid pink; */
+    width: 94%;
+    height: 495px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.zi_title{
+    position: absolute;
+    color:white;
+    font-family: pmzd;
+    font-size:1rem;
+    left:25vw;
+    top:0.2vh;
+}
+.page2ListR{
+  
+    font-family: pmzd;
+    color: rgb(124, 95, 37);
+    font-size:0.9vw;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    position: relative;
+    top: -3vh;
+    left: 5%;
+}
+.P2fuhao1{
+    position: absolute;
+    bottom: 0;
+    right: -1vw;
+}
+
+
+.renPage2{
+    
+    position: relative;
+    padding-left: 5%;
+    width: 24vw;
+    height: 33vh;
+
+    
+}
+.P2ren{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/非遗传承人/传承人2/刘俊英头像.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.P2yinzhang{
+    position: absolute;
+    width: 3vw;
+    height: 6vw;
+    right:4vw;
+    bottom:2vh;
+}
+.P2ziL{
+    
+    width: 2vw;
+    height: 12vh;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    color: rgb(124, 95, 37);
+    font-family: pmzd;
+    font-size: 1.2vw;
+    
+    
+    border-left: 2px solid red;
+    left: 35vw;
+    top: 7vh;
+}
+
+
+
+
+.P2ulContain{
+    padding-right:20% ;
+    left:38vw;
+    top:4rem;
+    font-size: 1.02rem;
+    display: flex;
+    width: 14vw;
+    height: 80%;
+   
+}
+.P2ul{
+    padding-top:10%;
+    color: rgb(124, 95, 37);
+    font-family: pmzd;
+    font-size: 1vw;
+    text-orientation: upright;
+    word-break: break-all;
+    writing-mode: vertical-lr;
+    z-index:2;
+    letter-spacing: -3px;
+    line-height: 25px;
+}
+/* .P2ul{
+    padding: 10px;
+} */
+.P2ul div::before{
+    content: "●";
+}
+.P2ul div:last-child::before{
+    /* content:none; */
+}
+.P2ul div:last-child{
+    /* margin-top: 15%; */
+}
+.P2ulZi{
+    display: flex;
+    padding-left:10px;
+}
+.P2ulZi .shuzi{
+    
+   line-height: 20px;
+   
+}
+.P2ulZi i{
+     width: 10px; 
+     height: 90px;
+     font-size: 10px;
+    font-family: sszz;
+    letter-spacing: -0.5px;
+    /* flex-wrap: nowrap;
+    text-orientation: upright;
+    word-break: break-all;
+    writing-mode: vertical-lr; */
+} 
+.P2Bgiyi{
+   position: absolute;
+    right: 5rem;
+    bottom: 3.6rem;
+    opacity: 0.6;
+    z-index:1;
+}
+.DownPage3{
+  
+    width: 2.3vw;
+    height: 4vh;
+    right: 2vw;
+    top:27.5vh;
+    
+    background-image: url(../img/非遗传承人/传承人2/下一页标志符号.png);
+    background-repeat: no-repeat;
+    background-size: 2.3vw 4vh;
+    cursor: pointer;
+    
+}
+
+/*page3*/
+.centerPage3{
+    
+    position: absolute;
+    top:9.4%;
+    left: 3%;
+    
+    width: 94%;
+    height: 495px;
+    position: relative;
+    
+}
+.hideP3{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.centerP3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.UpPage2{
+    
+    width: 2.3vw;
+    height: 4vh;
+ 
+    left:2vw;
+    top:27.5vh;
+    background-image: url(../img/非遗传承人/传承人3/上一页标志符号.png);
+    background-repeat: no-repeat;
+    background-size: 2.3vw 4vh;
+    cursor: pointer;
+}
+.P3ulLContain{
+    
+    position: absolute;
+    left:3%;
+    width: 10%;
+    height: 80%;
+    display: flex;
+    z-index: 2;
+}
+
+.P3ziL{
+   
+    width: 2vw;
+    height: 12vh;
+   
+    word-break: break-all;
+    writing-mode: vertical-rl;
+    color: rgb(105, 72, 6);
+    font-family: pmzd;
+    font-size: 1.1rem;
+    border-left: 2px solid red;
+    
+}
+
+
+.P3ul{
+    padding-top:10%;
+    color: rgb(143, 120, 70);
+    font-family: pmzd;
+    font-size: 0.94vw;
+    text-orientation: upright;
+    word-break: break-all;
+    writing-mode:vertical-lr;
+    position: relative;
+    
+}
+.P3ulZi::before{
+    content: "●";
+}
+.P3ulZi::after{
+    content: "";
+}
+.P3ulZi{
+    display: flex;
+    padding-left: 10px;
+}
+
+/* .P3ul li{
+    padding: 0.15vw;
+    word-break: break-all;
+    writing-mode:vertical-lr;
+    position: relative; 
+   
+    height: 100%;
+
+} 
+.P3ul li i{
+    writing-mode: sideways-rl;
+    text-align: right;
+    text-wrap: nowrap;
+    width: 1rem;
+    height: 2rem;
+} */
+
+.ulUnderLi{
+    position: absolute;
+    color: rgb(143, 120, 70);
+    font-family: pmzd;
+    writing-mode:vertical-rl;
+    
+    bottom: 0vh;
+    
+}
+
+
+
+.P3BgiEr{
+    position: absolute;
+    bottom: 0vh;
+    left:0vw;
+    opacity: 0.8;
+}
+.P3Start{
+    
+    right:14vw;
+    top:28vh;
+    display: block;
+}
+.num1{
+  
+    color: rgb(156, 124, 76);
+    font-family: sszz;
+    left:7.5vw;
+    top:5vh;
+}
+.num2{
+   
+    color: rgb(156, 124, 76);
+    font-family: sszz;
+    left: 7.2vw;
+    top:35.8vh;
+}
+.num3{
+    
+    color: rgb(156, 124, 76);
+    font-family: sszz;
+    left:2vw;
+    top:21.8vh
+}
+.num4{
+    
+    color: rgb(156, 124, 76);
+    font-family: sszz;
+    left:2.6vw;
+    top:41vh
+}
+
+
+
+.vedioPut{
+    position: relative;
+    /* border: 2px solid black; */
+    width: 60%;
+    height: 100%;
+    
+}
+.P3ren{
+    position: absolute;
+    height: 100%;
+    
+    right: 0;
+    bottom: 0;
+}
+.P3Start{
+    position: absolute;
+    right:38%;
+    top:40%;
+    
+    height: 20%;
+    display: block;
+}
+.video1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display:none;
+    z-index:3;
+    background-color: black;
+}

@@ -1,0 +1,144 @@
+@font-face {
+    font-family: stx;
+    src: url(../font/STXINGKA.TTF);
+}
+@font-face {
+    font-family: pmzd;
+    src: url(../font/庞门正道粗书体.ttf);
+}
+@font-face {
+    font-family: sszz;
+    src: url(../font/江湖+南城往事-上首至尊书法体.ttf);
+}
+img{
+    transition: all 0.7s;
+}
+a{
+    text-decoration: none;
+}
+.body1{
+    width: 100%;
+    height: 56.25rem;
+    background-image: url(../img/首页/路径启动页.png);
+    display: none;
+    background-size: cover;
+}
+.body2{
+    width: 100%;
+    padding-top: 60px;
+    height: 75rem;
+    background-image: url(../img/首页/首页背景.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* display: none; */
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background: rgba(15,0,0,0.4);
+}
+.header a{
+    z-index: 100;
+}
+.header-title{
+    font-family: pmzd;
+    font-size: 28px;
+    color: #A99163;
+}
+.logo{
+    flex: none;
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+    background-image: url(../img/首页/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.main-title{
+    margin-top: 4.525rem;
+    transition: all;
+    animation: slide 4s ease infinite;
+}
+.title-sub{
+    position: relative;
+    left: -3.125rem;
+    top: -15.625rem;
+}
+
+.main-mountain{
+    position: relative;
+    width: 100%;
+    height: 30.25rem;
+}
+.m-1{
+    position: absolute;
+    right: -6rem;
+    top: -10rem; 
+    z-index: 4;
+    /*height: 50.6875rem;
+    width: 50.75rem;*/
+}
+.m-2{
+    position: absolute;
+    left: -34.85rem;
+    top: -33.82rem;
+    z-index: 1;
+}
+.sizeM-2{
+    height: 100rem;
+    width: 110.12rem
+}
+.m-3{
+    right: 5rem;
+    position: absolute;
+    z-index:2;
+    top: 2.34rem;
+    height: 31.6875rem;
+    width: 35%;
+}
+.m-4{
+    position: absolute;
+    z-index:3;
+    left:-17.58rem;
+    top: 0.1rem;
+}
+.sizeM-4{
+    height: 80rem;
+    width: 115rem;  
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+    position: relative;
+    top: -6.25rem;
+}
+.filter{
+    width: 100%;
+    height: 100%;
+    background-color: #323022;
+    filter: blur(30px);
+    opacity: 0.8;
+}
+@keyframes slide {
+    0% { transform: translateX(0); }
+   
+    50% { transform: translateX(50px); }
+    
+    100%{transform: translateX(0);}
+  }
