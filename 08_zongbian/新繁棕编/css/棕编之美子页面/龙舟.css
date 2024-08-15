@@ -1,0 +1,189 @@
+@font-face {
+    font-family: stx;
+    src: url(../../font/STXINGKA.TTF);
+}
+@font-face {
+    font-family: pmzd;
+    src: url(../../font/庞门正道粗书体.ttf);
+}
+@font-face {
+    font-family: sszz;
+    src: url(../../font/江湖+南城往事-上首至尊书法体.ttf);
+}
+a{
+    text-decoration: none;
+}
+/* body{
+    overflow: hidden;
+} */
+
+.back{
+    position: absolute;
+    font-family: pmzd;
+    font-size: 30px;
+    top: 200px;
+    left: 150px;
+    width: 60px;
+    height: 40px;
+    transition: all 1s;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.body1{
+    /* height: 79.25rem; */
+    overflow: hidden;
+    background-image: url(../../img/棕编之美/棕编之美2/背景1.png);
+    background-size: 100% 100%;
+    transition: all 2s;
+}
+.body2{
+    /* width: 100%; */
+    padding-top: 60px;
+    height: 56.25rem;
+    background-image: url(../../img/棕编之美/棕编之美2/背景2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #E9DBCB;
+    /* display: flex; */
+    /* z-index: 10; */
+    
+}
+.bg-word{
+    position: absolute;
+    right: 4%;
+}
+.header{
+    position: relative;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background: rgba(15,0,0,0.4);
+    z-index: 5;
+}
+.header a{
+    z-index: 100;
+}
+.header-title{
+    font-family: pmzd;
+    font-size: 28px;
+    color: #DBBD81;
+}
+.logo{
+    flex: none;
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+    background-image: url(../../img/首页/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.main{
+    position: relative;
+    height: 100%;
+    width: 85%;
+    margin: auto;
+    background-image: url(../../img/棕编之美/棕编之美2/背景4.png);
+    background-size: 100% 100%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+.leaf1{
+    position: absolute;
+    top: 20%;
+}
+.leaf2{
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+    
+}
+.tip{
+    position: absolute;
+    top:24%;
+    left: 20%;
+}
+.left{
+    margin-left: 100px;
+    width: 40%;
+    height: 50%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 1.25rem;
+    /* justify-content: space-evenly; */
+}
+.left div:first-child{
+    /* width: 150px; */
+    /* height: 0px; */
+    font-family: pmzd;
+    font-weight: 400;
+    font-size: 30px;
+    color: #947047;
+    /* line-height: 0px; */
+    text-align: left;
+    font-style: normal;
+    text-transform: none;
+
+
+
+    
+}
+.left div:nth-child(2){
+    width: 100%;
+    text-align: left;
+    font-family: PingFang SC, PingFang SC;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(70, 51, 51);
+    line-height: 22px;
+    font-style: normal;
+    text-transform: none;
+}
+.left div:nth-child(3){
+    width: 100%;
+    text-align: left;
+    font-family: PingFang SC, PingFang SC;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(70, 51, 51);
+    line-height: 22px;
+    font-style: normal;
+    text-transform: none;
+}
+.left div:nth-child(4){
+    width: 100%;
+    text-align: left;
+    font-family: PingFang SC, PingFang SC;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(70, 51, 51);
+    line-height: 22px;
+    font-style: normal;
+    text-transform: none;
+}
+.weight{
+    font-family: PingFang SC, PingFang SC;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2D1F03;
+    /* line-height: 22px; */
+    text-align: justified;
+    font-style: normal;
+    text-transform: none;
+}
+.right{
+    margin-left: 200px;
+    width: 430px;
+    height: 282px;
+    /* background-color: black; */
+    background-image: url(../../img/棕编之美/棕编之美2/龙舟.png);
+    background-size: 100% 100%;
+    z-index: 10;
+}

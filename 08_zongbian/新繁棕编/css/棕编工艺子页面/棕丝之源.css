@@ -1,0 +1,675 @@
+@font-face {
+    font-family: stx;
+    src: url(../../font/STXINGKA.TTF);
+}
+@font-face {
+    font-family: pmzd;
+    src: url(../../font/庞门正道粗书体.ttf);
+}
+@font-face {
+    font-family: sszz;
+    src: url(../../font/江湖+南城往事-上首至尊书法体.ttf);
+}
+a{
+    text-decoration: none;
+}
+body{
+    position: relative;
+    /* overflow: hidden; */
+    z-index: -20;
+}
+.body1{
+    /* height: 79.25rem; */
+    overflow: hidden;
+}
+.body2{
+    /* width: 100%; */
+    position: relative;
+    padding-top: 60px;
+    height: 56.1rem;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料启动页部分/背景.png);
+    background-color: #D8B269;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -10;
+    /* display: none; */
+    overflow: hidden;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.header{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background: rgba(15,0,0,0.4);
+    transition: all 1s;
+}
+.header a{
+    z-index: 100;
+}
+.header-title{
+    font-family: pmzd;
+    font-size: 28px;
+    color: #DBBD81;
+}
+.logo{
+    flex: none;
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+    background-image: url(../../img/首页/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.back{
+    position: absolute;
+    font-family: pmzd;
+    font-size: 30px;
+    top: 150px;
+    left: 80px;
+    width: 60px;
+    height: 40px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.main1{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 91%;
+    justify-content: space-evenly;
+    z-index: -5;
+}
+.main-left{
+    position: relative;
+    left: 0;
+    top: -8.75rem;
+    width: 38%;
+    height: 117%;
+    /* background-color: red; */
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料启动页部分/左背景.png);
+    background-size: cover;
+    z-index: -1;
+    transition: all 1s;
+    cursor: pointer;
+}
+.main-left:hover{
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料启动页部分/左背景（1）.png);
+}
+.main-left:hover .left-contain{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.main-left:hover .left-contain-pic{
+    opacity: 1;
+}
+
+.left-contain{
+    position: absolute;
+    top: 20%;
+    width: 37%;
+    right: -5%;
+    height: 60%;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料启动页部分/左画.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+.left-contain-pic{
+    width: 70%;
+    height: 75%;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料启动页部分/左内容.png);
+    background-size: 100% 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+
+}
+.left-contain-word{
+    font-size: 20px;
+    font-family: pmzd;
+    width: 0;
+    color: #fff;
+    line-height: 30px;
+    transition: all 1s;
+
+}
+
+.main-right{
+    position: relative;
+    top: -8.75rem;
+    width: 38%;
+    height: 117%;
+    /* background-color: red; */
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料启动页部分/右背景.png);
+    background-size: cover;
+    z-index: -1;
+    transition: all 1s;
+    cursor: pointer;
+}
+.main-right:hover{
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料启动页部分/右背景（1）.png);
+}
+.main-right:hover .right-contain{
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.main-right:hover .right-contain-pic{
+    opacity: 1;
+    
+}
+
+.right-contain{
+    position: absolute;
+    top: 20%;
+    width: 37%;
+    left: -5%;
+    height: 60%;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料启动页部分/右画.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+.right-contain-pic{
+    width: 70%;
+    height: 75%;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料启动页部分/右内容.png);
+    background-size: 100% 100%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+
+}
+.right-contain-word{
+    font-size: 20px;
+    font-family: pmzd;
+    width: 0;
+    color: #fff;
+    line-height: 30px;
+    transition: all 1s;
+
+}
+
+
+.open-left{
+    position: relative;
+    left: -65px;
+    top: -8.75rem;
+    width: 48%;
+    height: 115%;
+    /* background-color: red; */
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料启动页部分/左背景.png);
+    background-size: cover;
+    z-index: -1;
+    transition: all 1s;
+}
+
+
+.open-left-contain{
+    position: absolute;
+    top: 10%;
+    width: 70%;
+    right: -15%;
+    height: 80%;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料启动页部分/左画.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+
+
+.opened-left{
+    position: absolute;
+    top: 200px;
+    right: -65px;
+    width: 48%;
+    height: 100%;
+    /* background-color: red; */
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料处理/路线.png);
+    background-size: 50% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transition: all 1s;
+}
+
+
+
+
+.open-right{
+    position: relative;
+    right: -65px;
+    top: -8.75rem;
+    width: 48%;
+    height: 115%;
+    /* background-color: red; */
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料启动页部分/右背景.png);
+    background-size: cover;
+    z-index: -1;
+    transition: all 1s;
+}
+
+.opened-right{
+    position: absolute;
+    top: 200px;
+    left: 65px;
+    width: 48%;
+    height: 100%;
+    /* background-color: red; */
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料采集/路线.png);
+    background-size: 50% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transition: all 1s;
+}
+
+
+.open-right-contain{
+    position: absolute;
+    top: 10%;
+    width: 70%;
+    left: -15%;
+    height: 80%;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料启动页部分/右画.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+
+
+
+
+.opened-left-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.opened-left-content-first{
+    position: relative;
+    width: 100%;
+    height: 280px;
+
+    /* background-color: red; */
+}
+.dianl1{
+    position: absolute;
+    left:41.5%;
+    top:-10px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料处理/标志圆点.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.first-pic{
+    position: absolute;
+    right: -500px;
+    top: -150px;
+    width: 30%;
+    height: 100%;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料处理/小人_1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+.first-word{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -2000px;
+    top: -60px;
+    width: 240px;
+    height: 160px;
+    border: 4px dashed #694806;
+    /* line-height: 160px; */
+    
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #694806;
+    transition: all 1s;
+}
+.first-word span{
+    width: 180px;
+}
+
+
+.opened-left-content-second{
+    position: relative;
+    width: 100%;
+    height: 280px;
+    top: -100px;
+}
+.dianl2{
+    position: absolute;
+    left:72.8%;
+    top:130px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料处理/标志圆点.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.second-pic{
+    position: absolute;
+    top: -20px;
+    left: 1000px;
+    width: 30%;
+    height: 100%;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料处理/棕丝_1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+.second-word{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 300%;
+    top: 60px;
+    width: 240px;
+    height: 160px;
+    border: 4px dashed #694806;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #694806;
+    transition: all 1s;
+}
+.second-word span{
+    width: 180px;
+}
+.opened-left-content-third{
+    position: relative;
+    width: 100%;
+    height: 280px;
+    top: 100px;
+}
+.dianl3{
+    position: absolute;
+    left:37%;
+    top:70px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料处理/标志圆点.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.third-pic{
+    position: absolute;
+    top: 160px;
+    left: 600%;
+    width: 30%;
+    height: 100%;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料处理/木桶_1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+.third-word{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 500%;
+    top: 0px;
+    width: 240px;
+    height: 160px;
+    border: 4px dashed #694806;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #694806;
+    transition: all 1s;
+}
+.third-word span{
+    width: 180px;
+}
+.opened-left-content-fourth{
+    position: relative;
+    width: 100%;
+    height: 280px;
+    top: 100px;
+}
+.dianl4{
+    position: absolute;
+    left:71.5%;
+    top:265px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料处理/标志圆点.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.fourth-pic{
+    position: absolute;
+    top: 340px;
+    left: 600%;
+    width: 30%;
+    height: 100%;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料处理/晾晒.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+.fourth-word{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 200%;
+    top: 200px;
+    width: 240px;
+    height: 160px;
+    border: 4px dashed #694806;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #694806;
+    transition: all 1s;
+}
+.fourth-word span{
+    width: 180px;
+}
+
+.opened-right-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.opened-right-content-first{
+    position: relative;
+    width: 100%;
+    height: 280px;
+}
+.dian1{
+    position: absolute;
+    left:55%;
+    top:-8px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料处理/标志圆点.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.r-first-pic{
+    position: absolute;
+    right: 800%;
+    top: -50px;
+    width: 30%;
+    height: 100%;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料采集/棕榈叶.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+.r-first-word{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 500%;
+    top: 80px;
+    width: 180px;
+    height: 120px;
+    border: 4px dashed #694806;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #694806;
+    transition: all 1s;
+}
+.opened-right-content-second{
+    position: relative;
+    width: 100%;
+    height: 280px;
+}
+.dian2{
+    position: absolute;
+    left:26%;
+    top:130px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料处理/标志圆点.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.r-second-pic{
+    position: absolute;
+    right: 150%;
+    width: 30%;
+    height: 100%;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料采集/春秋.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+.r-second-word{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 350%;
+    top: 80px;
+    width: 180px;
+    height: 120px;
+    border: 4px dashed #694806;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #694806;
+    transition: all 1s;
+}
+
+.opened-right-content-third{
+    position: relative;
+    width: 100%;
+    height: 280px;
+}
+.dian3{
+    position: absolute;
+    left:60%;
+    top:130px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料处理/标志圆点.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.r-third-pic{
+    position: absolute;
+    right: 700%;
+    width: 30%;
+    height: 100%;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料采集/棕树_1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+.r-third-word{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 300%;
+    top: 80px;
+    width: 180px;
+    height: 120px;      
+    border: 4px dashed #694806;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #694806;
+    transition: all 1s;
+}
+.opened-right-content-fourth{
+    position: relative;
+    width: 100%;
+    height: 280px;
+}
+.r-fourth-pic{
+    position: absolute;
+    right: 700%;
+    top: 200px;
+    width: 30%;
+    height: 100%;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料采集/剪刀_1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+.dian4{
+    position: absolute;
+    left:24.5%;
+    top:350px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../../img/棕编工艺/材料启动（棕丝之源）/材料处理/标志圆点.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+.r-fourth-word{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 500%;
+    top: 300px;
+    width: 180px;
+    height: 120px;
+    border: 4px dashed #694806;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #694806;
+    transition: all 1s;
+}
