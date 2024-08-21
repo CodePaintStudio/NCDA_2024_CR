@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("../font/cangeaiminxingkai.ttf") format("truetype"),
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: url(../images/main2-bg.png);
+}
+
+.zhanshi {
+  position: absolute;
+  width: 30vw;
+  height: 80vh;
+  margin-top: 15vh;
+  margin-left: 8vw;
+  background-color: #fff;
+  background-size: cover;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+    /* background-image: url(../images/face-bg2.png); */
+}
+
+.yanse {
+  position: absolute;
+  margin-top: 20vh;
+  margin-left: 42vw;
+  width: 50vw;
+  height: 21vh;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.yanbu {
+  position: absolute;
+  margin-top: 47vh;
+  margin-left: 42vw;
+  width: 50vw;
+  height: 21vh;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.tuibu {
+  position: absolute;
+  margin-top: 74vh;
+  margin-left: 42vw;
+  width: 50vw;
+  height: 21vh;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.font {
+  position: absolute;
+  font-size: 4vw;
+  text-align: center;
+  width: 10vw;
+  height: 21vh;
+  color: #fff;
+  background-color: #e34d4d;
+  border-radius: 25px;
+  font-family: "MyCustomFont", Arial, sans-serif;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+  /* box-shadow: 0.3vw 0.1vw 0px rgba(32, 31, 31, 0.106); */
+  z-index: 1;
+}
+
+.yanse-pic,
+.yanbu-pic,
+.tuibu-pic {
+  position: absolute;
+  margin-left: 10vw;
+  width: 40vw;
+  height: 21vh;
+  overflow: hidden;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  /* background-color: #268736; */
+  z-index: 2;
+}
+
+.box1 {
+  width: 8vw;
+  height: 21vh;
+  background-color: #cde0db;
+  margin-left: 2.25vw;
+  flex-shrink: 0;
+  border-radius: 25px;
+  /* box-shadow: 0.3vw 0.1vw 0px rgba(32, 31, 31, 0.106); */
+  cursor: pointer;
+}
+
+.a {
+  width: 8vw;
+  height: 21vh;
+}
+
+.enlarge-image {
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
