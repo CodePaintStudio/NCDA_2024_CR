@@ -1,0 +1,16 @@
+{
+  "id": "4569899",
+  "name": "hanbao",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "925314",
+      "name": "汉堡包",
+      "font_class": "hanbaobao",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    }
+  ]
+}
